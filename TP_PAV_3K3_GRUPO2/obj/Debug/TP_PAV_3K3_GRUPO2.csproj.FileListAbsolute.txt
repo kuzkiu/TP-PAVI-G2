@@ -1,0 +1,13 @@
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Form1.resources
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
+D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegProducto.resources

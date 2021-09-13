@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace TP_PAV_3K3_GRUPO2
 {
-    public partial class Frm_RegCliente : Form
+    public partial class Frm_AltaClientes : Form
     {
         public String Cuil
         {
@@ -84,7 +84,7 @@ namespace TP_PAV_3K3_GRUPO2
 
 
 
-        public Frm_RegCliente()
+        public Frm_AltaClientes()
         {
             InitializeComponent();
         }

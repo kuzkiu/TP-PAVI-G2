@@ -1,7 +1,7 @@
 ﻿
 namespace TP_PAV_3K3_GRUPO2
 {
-    partial class Frm_RegCliente
+    partial class Frm_AltaClientes
     {
         /// <summary>
         /// Required designer variable.

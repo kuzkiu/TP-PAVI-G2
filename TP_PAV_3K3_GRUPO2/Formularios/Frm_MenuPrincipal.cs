@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace TP_PAV_3K3_GRUPO2
 {
 
-    public partial class Form1 : Form
+    public partial class Frm_MenuPrincipal : Form
     {
         //variables inicio de sesion
         private String usuario;
@@ -40,7 +40,7 @@ namespace TP_PAV_3K3_GRUPO2
         public String Rubro;
 
 
-        public Form1()
+        public Frm_MenuPrincipal()
         {
             InitializeComponent();
         }
@@ -65,7 +65,7 @@ namespace TP_PAV_3K3_GRUPO2
         //Registrar Cliente
         private void registrarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_RegCliente reg_cli = new Frm_RegCliente();
+            Frm_AltaClientes reg_cli = new Frm_AltaClientes();
             reg_cli.ShowDialog();
             if (reg_cli.Cuil == "")
             {
@@ -191,7 +191,7 @@ namespace TP_PAV_3K3_GRUPO2
 
         private void registrarArticuloToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_RegProducto reg_prod = new Frm_RegProducto();
+            Frm_AltaArticulos reg_prod = new Frm_AltaArticulos();
             reg_prod.ShowDialog();
             if (reg_prod.Descripcion == "")
             {
@@ -221,26 +221,26 @@ namespace TP_PAV_3K3_GRUPO2
                 return;
             }
 
-            if (reg_prod.Marca == "")
-            {
-                MessageBox.Show("No se valido ninguna mParca");
-                reg_prod.Dispose();
-                return;
-            }
+            //if (reg_prod.Marca == "")
+            //{
+            //    MessageBox.Show("No se valido ninguna mParca");
+            //    reg_prod.Dispose();
+            //    return;
+            //}
 
-            if (reg_prod.Rubro == "")
-            {
-                MessageBox.Show("No se valido ningún rubro");
-                reg_prod.Dispose();
-                return;
-            }
-            
+            //if (reg_prod.Rubro == "")
+            //{
+            //    MessageBox.Show("No se valido ningún rubro");
+            //    reg_prod.Dispose();
+            //    return;
+            //}
+
             this.Descripcion = reg_prod.Descripcion;
             this.Pre_Costo = reg_prod.PCosto;
             this.Pre_Venta = reg_prod.PVenta;
             this.Stock = reg_prod.Stock;
-            this.Marca = reg_prod.Marca;
-            this.Rubro = reg_prod.Rubro;
+            //this.Marca = reg_prod.Marca;
+            //this.Rubro = reg_prod.Rubro;
             reg_prod.Dispose();
             MessageBox.Show("Artículo cargado correctamente");
 

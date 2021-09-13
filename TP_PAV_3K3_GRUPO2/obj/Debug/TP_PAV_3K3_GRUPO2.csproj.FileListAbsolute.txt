@@ -11,3 +11,18 @@ D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PA
 D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
 D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
 D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegProducto.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaClientes.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources

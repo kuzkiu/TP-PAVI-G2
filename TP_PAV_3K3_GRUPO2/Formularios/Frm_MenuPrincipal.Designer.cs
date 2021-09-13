@@ -1,7 +1,7 @@
 ﻿
 namespace TP_PAV_3K3_GRUPO2
 {
-    partial class Form1
+    partial class Frm_MenuPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.

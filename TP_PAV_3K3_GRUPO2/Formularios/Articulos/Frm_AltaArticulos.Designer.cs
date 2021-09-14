@@ -217,7 +217,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_AltaArticulos";
-            this.Text = " ";
+            this.Text = " Registrar Artículo";
             this.Load += new System.EventHandler(this.Frm_AltaArticulos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -216,5 +216,17 @@ namespace TP_PAV_3K3_GRUPO2
         {
 
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // Frm_RegEmpleado
+            // 
+            this.ClientSize = new System.Drawing.Size(429, 405);
+            this.Name = "Frm_RegEmpleado";
+            this.ResumeLayout(false);
+
+        }
     }
 }

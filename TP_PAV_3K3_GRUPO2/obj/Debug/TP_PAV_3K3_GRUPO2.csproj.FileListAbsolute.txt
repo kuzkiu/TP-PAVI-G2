@@ -30,4 +30,6 @@ C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Frm_RegEmpleado.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubros.Frm_RegRubro.resources

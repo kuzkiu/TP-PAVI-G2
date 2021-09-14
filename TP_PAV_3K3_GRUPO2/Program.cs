@@ -16,7 +16,7 @@ namespace TP_PAV_3K3_GRUPO2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_MenuPrincipal());
+            Application.Run(new Frm_RegRubro());
             //Application.Run(new Frm_AltaArticulos());
             //Application.Run(new Frm_ConsultaArticulos());
             //Application.Run(new Frm_ModificarArticulos());

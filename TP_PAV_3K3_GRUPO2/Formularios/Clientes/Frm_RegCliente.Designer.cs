@@ -42,6 +42,10 @@ namespace TP_PAV_3K3_GRUPO2
             this.txt_Cuil = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_loc = new System.Windows.Forms.TextBox();
+            this.txt_barrio = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.txt_piso = new System.Windows.Forms.TextBox();
             this.txt_Depto = new System.Windows.Forms.TextBox();
             this.txt_calle = new System.Windows.Forms.TextBox();
@@ -53,17 +57,13 @@ namespace TP_PAV_3K3_GRUPO2
             this.button1 = new System.Windows.Forms.Button();
             this.cb_tipoDoc = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_loc = new System.Windows.Forms.TextBox();
-            this.txt_barrio = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 84);
+            this.label1.Location = new System.Drawing.Point(79, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 20);
             this.label1.TabIndex = 1;
@@ -72,7 +72,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 136);
+            this.label2.Location = new System.Drawing.Point(37, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 20);
             this.label2.TabIndex = 2;
@@ -81,7 +81,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 180);
+            this.label3.Location = new System.Drawing.Point(29, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 20);
             this.label3.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(70, 215);
+            this.label4.Location = new System.Drawing.Point(75, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 20);
             this.label4.TabIndex = 4;
@@ -119,7 +119,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(59, 64);
+            this.label7.Location = new System.Drawing.Point(64, 64);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 20);
             this.label7.TabIndex = 9;
@@ -128,7 +128,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(38, 31);
+            this.label8.Location = new System.Drawing.Point(46, 31);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 20);
             this.label8.TabIndex = 10;
@@ -137,7 +137,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(50, 95);
+            this.label9.Location = new System.Drawing.Point(53, 99);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 20);
             this.label9.TabIndex = 11;
@@ -146,7 +146,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(64, 128);
+            this.label10.Location = new System.Drawing.Point(64, 134);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 20);
             this.label10.TabIndex = 12;
@@ -154,15 +154,16 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // txt_Cuil
             // 
-            this.txt_Cuil.Location = new System.Drawing.Point(195, 44);
+            this.txt_Cuil.Location = new System.Drawing.Point(196, 54);
             this.txt_Cuil.Name = "txt_Cuil";
-            this.txt_Cuil.Size = new System.Drawing.Size(100, 26);
+            this.txt_Cuil.Size = new System.Drawing.Size(176, 26);
             this.txt_Cuil.TabIndex = 13;
+            this.txt_Cuil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Cuil_KeyPress);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(104, 253);
+            this.label11.Location = new System.Drawing.Point(109, 239);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 20);
             this.label11.TabIndex = 14;
@@ -182,77 +183,111 @@ namespace TP_PAV_3K3_GRUPO2
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txt_numdir);
-            this.groupBox1.Location = new System.Drawing.Point(73, 282);
+            this.groupBox1.Location = new System.Drawing.Point(70, 268);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(355, 230);
+            this.groupBox1.Size = new System.Drawing.Size(355, 244);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dirección";
             // 
+            // txt_loc
+            // 
+            this.txt_loc.Location = new System.Drawing.Point(126, 198);
+            this.txt_loc.Name = "txt_loc";
+            this.txt_loc.Size = new System.Drawing.Size(176, 26);
+            this.txt_loc.TabIndex = 23;
+            // 
+            // txt_barrio
+            // 
+            this.txt_barrio.Location = new System.Drawing.Point(126, 166);
+            this.txt_barrio.Name = "txt_barrio";
+            this.txt_barrio.Size = new System.Drawing.Size(176, 26);
+            this.txt_barrio.TabIndex = 22;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(60, 169);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 20);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "Barrio:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(34, 201);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(81, 20);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "Localidad:";
+            // 
             // txt_piso
             // 
-            this.txt_piso.Location = new System.Drawing.Point(123, 128);
+            this.txt_piso.Location = new System.Drawing.Point(126, 131);
             this.txt_piso.Name = "txt_piso";
-            this.txt_piso.Size = new System.Drawing.Size(100, 26);
+            this.txt_piso.Size = new System.Drawing.Size(176, 26);
             this.txt_piso.TabIndex = 19;
+            this.txt_piso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_piso_KeyPress);
             // 
             // txt_Depto
             // 
-            this.txt_Depto.Location = new System.Drawing.Point(123, 93);
+            this.txt_Depto.Location = new System.Drawing.Point(126, 96);
             this.txt_Depto.Name = "txt_Depto";
-            this.txt_Depto.Size = new System.Drawing.Size(100, 26);
+            this.txt_Depto.Size = new System.Drawing.Size(176, 26);
             this.txt_Depto.TabIndex = 18;
+            this.txt_Depto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Depto_KeyPress);
             // 
             // txt_calle
             // 
-            this.txt_calle.Location = new System.Drawing.Point(123, 61);
+            this.txt_calle.Location = new System.Drawing.Point(126, 61);
             this.txt_calle.Name = "txt_calle";
-            this.txt_calle.Size = new System.Drawing.Size(100, 26);
+            this.txt_calle.Size = new System.Drawing.Size(176, 26);
             this.txt_calle.TabIndex = 17;
             // 
             // txt_numdir
             // 
-            this.txt_numdir.Location = new System.Drawing.Point(123, 25);
+            this.txt_numdir.Location = new System.Drawing.Point(126, 25);
             this.txt_numdir.Name = "txt_numdir";
-            this.txt_numdir.Size = new System.Drawing.Size(100, 26);
+            this.txt_numdir.Size = new System.Drawing.Size(176, 26);
             this.txt_numdir.TabIndex = 16;
+            this.txt_numdir.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numdir_KeyPress);
             // 
             // txt_numtel
             // 
-            this.txt_numtel.Location = new System.Drawing.Point(195, 250);
+            this.txt_numtel.Location = new System.Drawing.Point(196, 236);
             this.txt_numtel.Name = "txt_numtel";
-            this.txt_numtel.Size = new System.Drawing.Size(100, 26);
+            this.txt_numtel.Size = new System.Drawing.Size(176, 26);
             this.txt_numtel.TabIndex = 17;
+            this.txt_numtel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numtel_KeyPress);
             // 
             // txt_NumDoc
             // 
-            this.txt_NumDoc.Location = new System.Drawing.Point(195, 174);
+            this.txt_NumDoc.Location = new System.Drawing.Point(196, 162);
             this.txt_NumDoc.Name = "txt_NumDoc";
-            this.txt_NumDoc.Size = new System.Drawing.Size(100, 26);
+            this.txt_NumDoc.Size = new System.Drawing.Size(176, 26);
             this.txt_NumDoc.TabIndex = 18;
+            this.txt_NumDoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NumDoc_KeyPress);
             // 
             // txt_Razon
             // 
-            this.txt_Razon.Location = new System.Drawing.Point(195, 84);
+            this.txt_Razon.Location = new System.Drawing.Point(195, 87);
             this.txt_Razon.Name = "txt_Razon";
-            this.txt_Razon.Size = new System.Drawing.Size(100, 26);
+            this.txt_Razon.Size = new System.Drawing.Size(177, 26);
             this.txt_Razon.TabIndex = 21;
+            this.txt_Razon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Razon_KeyPress);
             // 
             // cb_TipoTel
             // 
             this.cb_TipoTel.FormattingEnabled = true;
-            this.cb_TipoTel.Items.AddRange(new object[] {
-            "Fijo",
-            "Celular",
-            "Fax"});
-            this.cb_TipoTel.Location = new System.Drawing.Point(195, 212);
+            this.cb_TipoTel.Location = new System.Drawing.Point(196, 199);
             this.cb_TipoTel.Name = "cb_TipoTel";
-            this.cb_TipoTel.Size = new System.Drawing.Size(100, 28);
+            this.cb_TipoTel.Size = new System.Drawing.Size(176, 28);
             this.cb_TipoTel.TabIndex = 22;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(476, 517);
+            this.button1.Location = new System.Drawing.Point(361, 518);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 33);
             this.button1.TabIndex = 23;
@@ -263,59 +298,25 @@ namespace TP_PAV_3K3_GRUPO2
             // cb_tipoDoc
             // 
             this.cb_tipoDoc.FormattingEnabled = true;
-            this.cb_tipoDoc.Items.AddRange(new object[] {
-            "DNI"});
-            this.cb_tipoDoc.Location = new System.Drawing.Point(196, 128);
+            this.cb_tipoDoc.Location = new System.Drawing.Point(195, 125);
             this.cb_tipoDoc.Name = "cb_tipoDoc";
-            this.cb_tipoDoc.Size = new System.Drawing.Size(100, 28);
+            this.cb_tipoDoc.Size = new System.Drawing.Size(177, 28);
             this.cb_tipoDoc.TabIndex = 24;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(132, 44);
+            this.label6.Location = new System.Drawing.Point(145, 57);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 20);
             this.label6.TabIndex = 25;
             this.label6.Text = "Cuil";
             // 
-            // txt_loc
-            // 
-            this.txt_loc.Location = new System.Drawing.Point(122, 195);
-            this.txt_loc.Name = "txt_loc";
-            this.txt_loc.Size = new System.Drawing.Size(100, 26);
-            this.txt_loc.TabIndex = 23;
-            // 
-            // txt_barrio
-            // 
-            this.txt_barrio.Location = new System.Drawing.Point(122, 160);
-            this.txt_barrio.Name = "txt_barrio";
-            this.txt_barrio.Size = new System.Drawing.Size(100, 26);
-            this.txt_barrio.TabIndex = 22;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(57, 160);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 20);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Barrio:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(31, 195);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(81, 20);
-            this.label13.TabIndex = 21;
-            this.label13.Text = "Localidad:";
-            // 
             // Frm_RegCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 559);
+            this.ClientSize = new System.Drawing.Size(500, 559);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cb_tipoDoc);
             this.Controls.Add(this.button1);
@@ -333,7 +334,8 @@ namespace TP_PAV_3K3_GRUPO2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_RegCliente";
-            this.Text = "Frm_RegCliente";
+            this.Text = "Registrar Cliente";
+            this.Load += new System.EventHandler(this.Frm_RegCliente_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

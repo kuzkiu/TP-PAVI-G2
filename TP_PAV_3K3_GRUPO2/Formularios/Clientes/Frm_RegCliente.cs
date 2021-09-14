@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP_PAV_3K3_GRUPO2.Clases;
+using TP_PAV_3K3_GRUPO2.Negocio;
 
 namespace TP_PAV_3K3_GRUPO2
 {
@@ -114,6 +116,21 @@ namespace TP_PAV_3K3_GRUPO2
                 this.txt_Cuil.Focus();
                 return;
             }
+            if(this.txt_Cuil.Text != "")
+            {
+                Ne_Cliente cliente_cuil = new Ne_Cliente();
+                DataTable tabla_cuil = new DataTable();
+                tabla_cuil = cliente_cuil.BuscarCuils();
+                for (int i=0; i<tabla_cuil.Rows.Count; i++) 
+                {
+                    if (tabla_cuil.Rows[i]["cuil_cliente"] == txt_Cuil.Text) 
+                    {
+                        MessageBox.Show("Cuil ya existente. Ingrese otro");
+                        return;
+                    }
+                }
+            
+            }
 
             if (this.txt_Razon.Text == "")
             {
@@ -136,19 +153,14 @@ namespace TP_PAV_3K3_GRUPO2
                 return;
             }
 
-            if (this.cb_TipoTel.Text == "")
+            if (this.cb_TipoTel.Text == "" & this.txt_numtel.Text != "" || this.cb_TipoTel.Text != "" & this.txt_numtel.Text == "")
             {
-                MessageBox.Show("El tipo teléfono está vacio");
+                MessageBox.Show("Tipo Telefono y Telefono deben estar simultaneamente vacios o llenos");
                 this.cb_TipoTel.Focus();
                 return;
             }
 
-            if (this.txt_numtel.Text == "")
-            {
-                MessageBox.Show("El numero teléfono está vacio");
-                this.txt_numtel.Focus();
-                return;
-            }
+          
 
             if (this.txt_numdir.Text == "")
             {
@@ -178,11 +190,103 @@ namespace TP_PAV_3K3_GRUPO2
                 return;
             }
 
+            if ((this.txt_piso.Text =="" & this.txt_Depto.Text !="") || (this.txt_piso.Text != "" & this.txt_Depto.Text == ""))
+            {
+                MessageBox.Show("Piso y depto deben estar ambos vacios o ambos deben tener un valor ");
+                this.txt_loc.Focus();
+                return;
+            }
+
+            else
+            {
+                Ne_Cliente clie = new Ne_Cliente();
+                Ne_TipoTel tipoTel = new Ne_TipoTel();
+                string id_tipotel =tipoTel.Buscar_id(TipoTel).ToString();
+                Ne_Direccion dir = new Ne_Direccion();
+                string id_direc = dir.Buscar_id_direccion().ToString();
+                Ne_Barrio bar = new Ne_Barrio();
+                string id_barrio = bar.Buscar_idBarrio(Barrio).ToString();
+                Ne_TIpoDocumento tipodoc = new Ne_TIpoDocumento();
+                string id_tipodocu = tipodoc.Buscar_idTipoDoc(TipoDoc).ToString();
+
+
+                //cambiar los txt cuando sepa como convertirlos a int.
+                clie.Registrar_Cliente_Final(Cuil, RazonS, Telefono, id_tipotel, id_direc, id_barrio, 
+                    Calle, NumeroDir, Piso, Depto, id_tipodocu, NumDoc);
+               
+            }
+
+
             this.Close();
         }
 
         private void Frm_RegCliente_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void txt_Cuil_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.SoloNumeros(e);
+        }
+
+        private void txt_Razon_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.SoloLetras(e);
+        }
+
+        private void txt_NumDoc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_NumDoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.SoloNumeros(e);
+        }
+
+        private void txt_numtel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.SoloNumeros(e);
+        }
+
+        private void txt_numdir_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.SoloNumeros(e);
+        }
+
+        private void txt_calle_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.SoloLetras(e);
+        }
+
+        private void txt_Depto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.SoloLetras(e);
+        }
+
+        private void txt_piso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.SoloNumeros(e);
+        }
+
+        private void Frm_RegCliente_Load_1(object sender, EventArgs e)
+        {
+            Ne_TIpoDocumento tipo_doc = new Ne_TIpoDocumento();
+            DataTable tabla_cmb_tipodoc = new DataTable();
+            tabla_cmb_tipodoc = tipo_doc.Buscar_nombreTipoDocumento();
+            for (int i = 0; i < tabla_cmb_tipodoc.Rows.Count; i++)
+            {
+                cb_tipoDoc.Items.Add(tabla_cmb_tipodoc.Rows[i]["nombre"]);
+            }
+
+            Ne_TipoTel tipotel = new Ne_TipoTel();
+            DataTable tabla_cmb_tipotel = new DataTable();
+            tabla_cmb_tipotel = tipotel.Buscar_nombreTipoTel();
+            for (int i = 0; i < tabla_cmb_tipotel.Rows.Count; i++)
+            {
+                cb_TipoTel.Items.Add(tabla_cmb_tipotel.Rows[i]["nombre"]);
+            }
 
         }
     }

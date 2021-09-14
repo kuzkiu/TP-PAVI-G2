@@ -166,6 +166,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.modificarArtículoToolStripMenuItem.Name = "modificarArtículoToolStripMenuItem";
             this.modificarArtículoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarArtículoToolStripMenuItem.Text = "Modificar Artículo";
+            this.modificarArtículoToolStripMenuItem.Click += new System.EventHandler(this.modificarArtículoToolStripMenuItem_Click);
             // 
             // mostrarEmpleadoToolStripMenuItem
             // 
@@ -193,26 +194,26 @@ namespace TP_PAV_3K3_GRUPO2
             // registrarRubroToolStripMenuItem
             // 
             this.registrarRubroToolStripMenuItem.Name = "registrarRubroToolStripMenuItem";
-            this.registrarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.registrarRubroToolStripMenuItem.Text = "Registrar Rubro";
             this.registrarRubroToolStripMenuItem.Click += new System.EventHandler(this.registrarRubroToolStripMenuItem_Click);
             // 
             // mostrarRubroToolStripMenuItem
             // 
             this.mostrarRubroToolStripMenuItem.Name = "mostrarRubroToolStripMenuItem";
-            this.mostrarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mostrarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.mostrarRubroToolStripMenuItem.Text = "Mostrar Rubro";
             // 
             // consultarRubroToolStripMenuItem
             // 
             this.consultarRubroToolStripMenuItem.Name = "consultarRubroToolStripMenuItem";
-            this.consultarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.consultarRubroToolStripMenuItem.Text = "Modificar Rubro";
             // 
             // eliminarRubroToolStripMenuItem
             // 
             this.eliminarRubroToolStripMenuItem.Name = "eliminarRubroToolStripMenuItem";
-            this.eliminarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.eliminarRubroToolStripMenuItem.Text = "Eliminar Rubro";
             // 
             // administrarMarcaToolStripMenuItem
@@ -484,7 +485,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.ClientSize = new System.Drawing.Size(528, 268);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_MenuPrincipal";

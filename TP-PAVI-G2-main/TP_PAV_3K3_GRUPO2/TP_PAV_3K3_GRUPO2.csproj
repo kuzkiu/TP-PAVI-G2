@@ -96,6 +96,7 @@
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocios\NE_Articulos.cs" />
+    <Compile Include="Negocios\NE_Rubro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Articulos\Frm_ModificarArticulos.resx">

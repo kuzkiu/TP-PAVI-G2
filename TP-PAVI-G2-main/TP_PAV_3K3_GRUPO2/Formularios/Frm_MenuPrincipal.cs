@@ -282,6 +282,11 @@ namespace TP_PAV_3K3_GRUPO2
             _reg_rubro.Dispose();
             MessageBox.Show("Rubro cargado correctamente");
         }
+
+        private void modificarArtículoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

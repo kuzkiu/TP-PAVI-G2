@@ -65,7 +65,7 @@ namespace TP_PAV_3K3_GRUPO2
         //Registrar Cliente
         private void registrarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_AltaClientes reg_cli = new Frm_AltaClientes();
+            Frm_RegCliente reg_cli = new Frm_RegCliente();
             reg_cli.ShowDialog();
             if (reg_cli.Cuil == "")
             {
@@ -193,60 +193,72 @@ namespace TP_PAV_3K3_GRUPO2
         {
             Frm_AltaArticulos reg_prod = new Frm_AltaArticulos();
             reg_prod.ShowDialog();
-            if (reg_prod.Descripcion == "")
-            {
-                MessageBox.Show("No se ingresado una descripción");
-                reg_prod.Dispose();
-                return;
-            }
-
-            if (reg_prod.PCosto == "")
-            {
-                MessageBox.Show("No se valido ningún precio costo");
-                reg_prod.Dispose();
-                return;
-            }
-
-            if (reg_prod.PVenta == "")
-            {
-                MessageBox.Show("No se valido ningún precio de venta");
-                reg_prod.Dispose();
-                return;
-            }
-
-            if (reg_prod.Stock == "")
-            {
-                MessageBox.Show("No se valido ningún stock");
-                reg_prod.Dispose();
-                return;
-            }
-
-            //if (reg_prod.Marca == "")
+            //if (reg_prod.Descripcion == "")
             //{
-            //    MessageBox.Show("No se valido ninguna mParca");
+            //    MessageBox.Show("No se ingresado una descripción");
             //    reg_prod.Dispose();
             //    return;
             //}
 
-            //if (reg_prod.Rubro == "")
+            //if (reg_prod.PCosto == "")
             //{
-            //    MessageBox.Show("No se valido ningún rubro");
+            //    MessageBox.Show("No se valido ningún precio costo");
             //    reg_prod.Dispose();
             //    return;
             //}
 
-            this.Descripcion = reg_prod.Descripcion;
-            this.Pre_Costo = reg_prod.PCosto;
-            this.Pre_Venta = reg_prod.PVenta;
-            this.Stock = reg_prod.Stock;
-            //this.Marca = reg_prod.Marca;
-            //this.Rubro = reg_prod.Rubro;
-            reg_prod.Dispose();
-            MessageBox.Show("Artículo cargado correctamente");
+            //if (reg_prod.PVenta == "")
+            //{
+            //    MessageBox.Show("No se valido ningún precio de venta");
+            //    reg_prod.Dispose();
+            //    return;
+            //}
+
+            //if (reg_prod.Stock == "")
+            //{
+            //    MessageBox.Show("No se valido ningún stock");
+            //    reg_prod.Dispose();
+            //    return;
+            //}
+
+            ////if (reg_prod.Marca == "")
+            ////{
+            ////    MessageBox.Show("No se valido ninguna mParca");
+            ////    reg_prod.Dispose();
+            ////    return;
+            ////}
+
+            ////if (reg_prod.Rubro == "")
+            ////{
+            ////    MessageBox.Show("No se valido ningún rubro");
+            ////    reg_prod.Dispose();
+            ////    return;
+            ////}
+
+            //this.Descripcion = reg_prod.Descripcion;
+            //this.Pre_Costo = reg_prod.PCosto;
+            //this.Pre_Venta = reg_prod.PVenta;
+            //this.Stock = reg_prod.Stock;
+            ////this.Marca = reg_prod.Marca;
+            ////this.Rubro = reg_prod.Rubro;
+            //reg_prod.Dispose();
+            //MessageBox.Show("Artículo cargado correctamente");
 
         }
 
         private void modificarTelefonoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registrarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_RegEmpleado reg_prod = new Frm_RegEmpleado();
+            reg_prod.ShowDialog();
+
+        }
+
+        private void registrarRubroToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

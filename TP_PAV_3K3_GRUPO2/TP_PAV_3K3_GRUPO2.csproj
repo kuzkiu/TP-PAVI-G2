@@ -47,12 +47,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\BE_Acceso_Datos.cs" />
+    <Compile Include="Clases\Be_BaseDatos.cs" />
     <Compile Include="Clases\ComboBox01.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\Grilla.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Clases\Validacion.cs" />
     <Compile Include="Formularios\Articulos\Frm_ModificarArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,17 +67,45 @@
     <Compile Include="Formularios\Articulos\Frm_ConsultaArticulos.Designer.cs">
       <DependentUpon>Frm_ConsultaArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Clientes\Frm_AdmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Frm_AdmCliente.Designer.cs">
+      <DependentUpon>Frm_AdmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Frm_BajaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Frm_BajaCliente.Designer.cs">
+      <DependentUpon>Frm_BajaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Frm_ClienteBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Frm_ClienteBase.Designer.cs">
+      <DependentUpon>Frm_ClienteBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Frm_ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Frm_ModificarCliente.Designer.cs">
+      <DependentUpon>Frm_ModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Frm_RegCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Frm_RegCliente.Designer.cs">
+      <DependentUpon>Frm_RegCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Empleados\Frm_RegEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleados\Frm_RegEmpleado.Designer.cs" />
     <Compile Include="Formularios\Frm_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Frm_MenuPrincipal.Designer.cs">
       <DependentUpon>Frm_MenuPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Clientes\Frm_AltaClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Clientes\Frm_AltaClientes.Designer.cs">
-      <DependentUpon>Frm_AltaClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Articulos\Frm_AltaArticulos.cs">
       <SubType>Form</SubType>
@@ -90,6 +120,12 @@
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocios\NE_Articulos.cs" />
+    <Compile Include="Negocios\Ne_Barrio.cs" />
+    <Compile Include="Negocios\Ne_Cliente.cs" />
+    <Compile Include="Negocios\Ne_Direccion.cs" />
+    <Compile Include="Negocios\NE_Rubro.cs" />
+    <Compile Include="Negocios\Ne_TIpoDocumento.cs" />
+    <Compile Include="Negocios\Ne_TipoTel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Articulos\Frm_ModificarArticulos.resx">
@@ -98,11 +134,24 @@
     <EmbeddedResource Include="Formularios\Articulos\Frm_ConsultaArticulos.resx">
       <DependentUpon>Frm_ConsultaArticulos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Clientes\Frm_AdmCliente.resx">
+      <DependentUpon>Frm_AdmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Clientes\Frm_BajaCliente.resx">
+      <DependentUpon>Frm_BajaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Clientes\Frm_ClienteBase.resx">
+      <DependentUpon>Frm_ClienteBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Clientes\Frm_ModificarCliente.resx">
+      <DependentUpon>Frm_ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Clientes\Frm_RegCliente.resx">
+      <DependentUpon>Frm_RegCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleados\Frm_RegEmpleado.resx" />
     <EmbeddedResource Include="Formularios\Frm_MenuPrincipal.resx">
       <DependentUpon>Frm_MenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Clientes\Frm_AltaClientes.resx">
-      <DependentUpon>Frm_AltaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Articulos\Frm_AltaArticulos.resx">
       <DependentUpon>Frm_AltaArticulos.cs</DependentUpon>
@@ -132,6 +181,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Formularios\Rubros\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

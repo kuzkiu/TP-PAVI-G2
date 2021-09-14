@@ -200,13 +200,13 @@ namespace TP_PAV_3K3_GRUPO2
             else
             {
                 Ne_Cliente clie = new Ne_Cliente();
-                Ne_TipoTel tipoTel = new Ne_TipoTel();
+                Ne_Cliente tipoTel = new Ne_Cliente();
                 string id_tipotel =tipoTel.Buscar_id(TipoTel).ToString();
-                Ne_Direccion dir = new Ne_Direccion();
+                Ne_Cliente dir = new Ne_Cliente();
                 string id_direc = dir.Buscar_id_direccion().ToString();
-                Ne_Barrio bar = new Ne_Barrio();
+                Ne_Cliente bar = new Ne_Cliente();
                 string id_barrio = bar.Buscar_idBarrio(Barrio).ToString();
-                Ne_TIpoDocumento tipodoc = new Ne_TIpoDocumento();
+                Ne_Cliente tipodoc = new Ne_Cliente();
                 string id_tipodocu = tipodoc.Buscar_idTipoDoc(TipoDoc).ToString();
 
 
@@ -272,7 +272,7 @@ namespace TP_PAV_3K3_GRUPO2
 
         private void Frm_RegCliente_Load_1(object sender, EventArgs e)
         {
-            Ne_TIpoDocumento tipo_doc = new Ne_TIpoDocumento();
+            Ne_Cliente tipo_doc = new Ne_Cliente();
             DataTable tabla_cmb_tipodoc = new DataTable();
             tabla_cmb_tipodoc = tipo_doc.Buscar_nombreTipoDocumento();
             for (int i = 0; i < tabla_cmb_tipodoc.Rows.Count; i++)
@@ -280,7 +280,7 @@ namespace TP_PAV_3K3_GRUPO2
                 cb_tipoDoc.Items.Add(tabla_cmb_tipodoc.Rows[i]["nombre"]);
             }
 
-            Ne_TipoTel tipotel = new Ne_TipoTel();
+            Ne_Cliente tipotel = new Ne_Cliente();
             DataTable tabla_cmb_tipotel = new DataTable();
             tabla_cmb_tipotel = tipotel.Buscar_nombreTipoTel();
             for (int i = 0; i < tabla_cmb_tipotel.Rows.Count; i++)

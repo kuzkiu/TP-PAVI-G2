@@ -118,3 +118,25 @@ C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_P
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
+D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb

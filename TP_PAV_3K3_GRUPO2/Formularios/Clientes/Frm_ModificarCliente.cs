@@ -21,7 +21,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
 
         private void Frm_ModificarCliente_Load(object sender, EventArgs e)
         {
-            Ne_TIpoDocumento tipo_doc = new Ne_TIpoDocumento();
+            Ne_Cliente tipo_doc = new Ne_Cliente();
             DataTable tabla_cmb_tipodoc = new DataTable();
             tabla_cmb_tipodoc = tipo_doc.Buscar_nombreTipoDocumento();
             for (int i = 0; i < tabla_cmb_tipodoc.Rows.Count; i++)
@@ -75,11 +75,11 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             else 
             {
                 Ne_Cliente clien_mod = new Ne_Cliente();
-                Ne_Direccion dir = new Ne_Direccion();
+                Ne_Cliente dir = new Ne_Cliente();
                 string id_direc = dir.Buscar_id_direccion_cliente(cmb_cuil.Text).ToString();
-                Ne_Barrio bar = new Ne_Barrio();
+                Ne_Cliente bar = new Ne_Cliente();
                 string id_barrio = bar.Buscar_idBarrio(txt_barrio.Text).ToString();
-                Ne_TIpoDocumento tipodoc = new Ne_TIpoDocumento();
+                Ne_Cliente tipodoc = new Ne_Cliente();
                 string id_tipodocu = tipodoc.Buscar_idTipoDoc(cb_tipoDoc.Text).ToString();
                 clien_mod.modificar_ClienteDefinitivo(cmb_cuil.Text, txt_Razon.Text, id_tipodocu, txt_NumDoc.Text,
                     id_direc, txt_calle.Text, txt_numdir.Text, txt_Depto.Text, txt_piso.Text,id_barrio );

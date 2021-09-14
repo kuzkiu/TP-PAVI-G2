@@ -175,5 +175,95 @@ WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_loca
             return bd.Consulta(sql);
 
         }
+
+        public int Buscar_idBarrio(string nombre)
+        {
+            string sql = @"Select B.id_barrio
+                        From Barrio B
+                        Where B.nombre_barrio = '" + nombre + "'";
+
+            DataTable tabla = new DataTable();
+            tabla = bd.Consulta(sql);
+            DataRow row = tabla.Rows[0];
+            int id = (int)tabla.Rows[0][0];
+            return id;
+
+        }
+        public int Buscar_id_direccion()
+        {
+            string sql = @"Select max(D.id_direccion)
+                        From Direccion D";
+            DataTable tabla = new DataTable();
+            tabla = bd.Consulta(sql);
+            DataRow row = tabla.Rows[0];
+            int id = (int)tabla.Rows[0][0];
+            return id + 1;
+
+        }
+
+        public int Buscar_id_direccion_cliente(string cuil)
+        {
+            string sql = @"Select D.id_direccion
+                        From Direccion D, Clientes C 
+                        WHERE C.cuil_cliente = '" + cuil + "' AND C.id_direccion = D.id_direccion ";
+            DataTable tabla = new DataTable();
+            tabla = bd.Consulta(sql);
+            DataRow row = tabla.Rows[0];
+            int id = (int)tabla.Rows[0][0];
+            return id;
+
+        }
+
+        public int Buscar_idTipoDoc(string nombre)
+        {
+            string sql = @"Select T.id_tipoDocumento
+                        From Tipo_documento T
+                        Where T.nombre ='" + nombre + "'";
+
+            DataTable tabla = new DataTable();
+            tabla = bd.Consulta(sql);
+            DataRow row = tabla.Rows[0];
+            int id = (int)tabla.Rows[0][0];
+            return id;
+
+        }
+
+        public DataTable Buscar_nombreTipoDocumento()
+        {
+            DataTable tabla_nombreTD = new DataTable();
+            string sql = @"Select T.nombre
+                        FROM Tipo_documento T";
+            tabla_nombreTD = bd.Consulta(sql);
+            return tabla_nombreTD;
+        }
+
+        public int Buscar_id(string nombre)
+        {
+            if (nombre != "")
+            {
+                string sql = @"Select T.id_tipoTelefono
+                        From Tipo_telefono T
+                        Where T.nombre = '" + nombre + "'";
+
+                DataTable tabla = new DataTable();
+                tabla = bd.Consulta(sql);
+                DataRow row = tabla.Rows[0];
+                int id = (int)tabla.Rows[0][0];
+                return id;
+            }
+
+            return -1;
+
+        }
+
+        public DataTable Buscar_nombreTipoTel()
+        {
+            DataTable tabla_nombreTT = new DataTable();
+            string sql = @"Select T.nombre
+                        FROM Tipo_telefono T";
+            tabla_nombreTT = bd.Consulta(sql);
+            return tabla_nombreTT;
+        }
     }
 }
+

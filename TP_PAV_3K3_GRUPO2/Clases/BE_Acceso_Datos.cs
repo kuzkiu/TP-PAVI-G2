@@ -51,5 +51,22 @@ namespace TP_PAV_3K3_GRUPO2.Clases
             Cmd.ExecuteNonQuery();
             Cerrar();
         }
+
+        private void EjecutarNoSelect(string sql) //--> sirve para modificar o borrar
+        {
+            Conectar();
+            Cmd.CommandText = sql;
+            Cmd.ExecuteNonQuery();
+            Cerrar();
+        }
+
+        public void DarBaja(string sql)
+        {
+            EjecutarNoSelect(sql);
+        }
+
+
+
+
     }
 }

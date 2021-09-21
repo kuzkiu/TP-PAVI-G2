@@ -54,6 +54,12 @@
     <Compile Include="Clases\Grilla.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Clases\Label_Text.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clases\Label_Text.Designer.cs">
+      <DependentUpon>Label_Text.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Validacion.cs" />
     <Compile Include="Formularios\Articulos\Frm_ModificarArticulos.cs">
       <SubType>Form</SubType>
@@ -66,6 +72,24 @@
     </Compile>
     <Compile Include="Formularios\Articulos\Frm_ConsultaArticulos.Designer.cs">
       <DependentUpon>Frm_ConsultaArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cargo\Frm_BajaCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cargo\Frm_BajaCargo.Designer.cs">
+      <DependentUpon>Frm_BajaCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cargo\Frm_ModificarCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cargo\Frm_ModificarCargo.Designer.cs">
+      <DependentUpon>Frm_ModificarCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cargo\Frm_RegCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cargo\Frm_RegCargo.Designer.cs">
+      <DependentUpon>Frm_RegCargo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Clientes\Frm_AdmCliente.cs">
       <SubType>Form</SubType>
@@ -123,6 +147,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Marca\Frm_RegMarca.Designer.cs" />
+    <Compile Include="Formularios\Rubro\Frm_BajaRubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Rubro\Frm_BajaRubro.Designer.cs">
+      <DependentUpon>Frm_BajaRubro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Rubro\Frm_RegRubro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,15 +160,28 @@
       <DependentUpon>Frm_RegRubro.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocios\NE_Articulos.cs" />
+    <Compile Include="Negocios\NE_Cargo.cs" />
     <Compile Include="Negocios\Ne_Cliente.cs" />
     <Compile Include="Negocios\NE_Rubro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clases\Label_Text.resx">
+      <DependentUpon>Label_Text.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Articulos\Frm_ModificarArticulos.resx">
       <DependentUpon>Frm_ModificarArticulos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Articulos\Frm_ConsultaArticulos.resx">
       <DependentUpon>Frm_ConsultaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cargo\Frm_BajaCargo.resx">
+      <DependentUpon>Frm_BajaCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cargo\Frm_ModificarCargo.resx">
+      <DependentUpon>Frm_ModificarCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cargo\Frm_RegCargo.resx">
+      <DependentUpon>Frm_RegCargo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Clientes\Frm_AdmCliente.resx">
       <DependentUpon>Frm_AdmCliente.cs</DependentUpon>
@@ -166,6 +209,9 @@
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Marca\Frm_RegMarca.resx" />
+    <EmbeddedResource Include="Formularios\Rubro\Frm_BajaRubro.resx">
+      <DependentUpon>Frm_BajaRubro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Rubro\Frm_RegRubro.resx">
       <DependentUpon>Frm_RegRubro.cs</DependentUpon>
     </EmbeddedResource>

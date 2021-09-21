@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using TP_PAV_3K3_GRUPO2.Formularios.Base;
 using TP_PAV_3K3_GRUPO2.Formularios;
 using TP_PAV_3K3_GRUPO2.Formularios.Rubro;
+using TP_PAV_3K3_GRUPO2.Formularios.Cargo;
 
 namespace TP_PAV_3K3_GRUPO2
 {
@@ -45,6 +46,10 @@ namespace TP_PAV_3K3_GRUPO2
         //variables de Rubro
         public String _id_Rubro;
         public String _nombre;
+
+        //variables de Cargo
+        public String _Cod_cargo_;
+        public String Denominacion;
 
 
         public Frm_MenuPrincipal()
@@ -182,24 +187,12 @@ namespace TP_PAV_3K3_GRUPO2
 
         }
 
+        //ALTA RUBRO
         private void registrarRubroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frm_RegRubro _reg_rubro = new Frm_RegRubro();
             _reg_rubro.ShowDialog();
 
-            if (_reg_rubro.idRubro == "")
-            {
-                MessageBox.Show("No se ingresado un id para el rubro");
-                _reg_rubro.Dispose();
-                return;
-            }
-
-            if (_reg_rubro.nombreRubro == "")
-            {
-                MessageBox.Show("No se ingresado un nombre para el rubro");
-                _reg_rubro.Dispose();
-                return;
-            }
 
             this._id_Rubro = _reg_rubro.idRubro;
             this._nombre = _reg_rubro.nombreRubro;
@@ -219,6 +212,43 @@ namespace TP_PAV_3K3_GRUPO2
         {
             Frm_RegMarca reg_prod = new Frm_RegMarca();
             reg_prod.ShowDialog();
+        }
+
+        private void administrarRubroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //ALTA CARGO
+        private void registrarCargoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_RegCargo _reg_cargo = new Frm_RegCargo();
+            _reg_cargo.ShowDialog();
+
+           
+
+            this._Cod_cargo_ = _reg_cargo.Codigo_cargo;
+            this.Denominacion = _reg_cargo._denominacion_;
+            _reg_cargo.Dispose();
+            //MessageBox.Show("Cargo cargado correctamente");
+
+
+        }
+
+
+        //BAJA CARGO
+        private void eliminarCargoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_BajaCargo _baja_cargo = new Frm_BajaCargo();
+            _baja_cargo.ShowDialog();
+
+        }
+
+        //BAJA RUBRO
+        private void eliminarRubroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_BajaRubro _baja_rubro_ = new Frm_BajaRubro();
+            _baja_rubro_.ShowDialog();
         }
     }
 }

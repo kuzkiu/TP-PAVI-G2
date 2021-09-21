@@ -52,6 +52,11 @@ namespace TP_PAV_3K3_GRUPO2
             this.consultarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarCargoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarCargoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarCargoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarCargoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarCargoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,7 +116,7 @@ namespace TP_PAV_3K3_GRUPO2
             // registrarClienteToolStripMenuItem
             // 
             this.registrarClienteToolStripMenuItem.Name = "registrarClienteToolStripMenuItem";
-            this.registrarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarClienteToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.registrarClienteToolStripMenuItem.Text = "Registrar Cliente";
             this.registrarClienteToolStripMenuItem.Click += new System.EventHandler(this.registrarClienteToolStripMenuItem_Click);
             // 
@@ -132,26 +137,26 @@ namespace TP_PAV_3K3_GRUPO2
             // registrarArticuloToolStripMenuItem
             // 
             this.registrarArticuloToolStripMenuItem.Name = "registrarArticuloToolStripMenuItem";
-            this.registrarArticuloToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.registrarArticuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarArticuloToolStripMenuItem.Text = "Registrar Articulo";
             this.registrarArticuloToolStripMenuItem.Click += new System.EventHandler(this.registrarArticuloToolStripMenuItem_Click);
             // 
             // modificarArtículoToolStripMenuItem
             // 
             this.modificarArtículoToolStripMenuItem.Name = "modificarArtículoToolStripMenuItem";
-            this.modificarArtículoToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.modificarArtículoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarArtículoToolStripMenuItem.Text = "Modificar Artículo";
             // 
             // mostrarEmpleadoToolStripMenuItem
             // 
             this.mostrarEmpleadoToolStripMenuItem.Name = "mostrarEmpleadoToolStripMenuItem";
-            this.mostrarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.mostrarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mostrarEmpleadoToolStripMenuItem.Text = "Mostrar Artículo";
             // 
             // eliminarEmpleadoToolStripMenuItem1
             // 
             this.eliminarEmpleadoToolStripMenuItem1.Name = "eliminarEmpleadoToolStripMenuItem1";
-            this.eliminarEmpleadoToolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
+            this.eliminarEmpleadoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.eliminarEmpleadoToolStripMenuItem1.Text = "Eliminar Artículo";
             // 
             // administrarRubroToolStripMenuItem
@@ -162,33 +167,35 @@ namespace TP_PAV_3K3_GRUPO2
             this.consultarRubroToolStripMenuItem,
             this.eliminarRubroToolStripMenuItem});
             this.administrarRubroToolStripMenuItem.Name = "administrarRubroToolStripMenuItem";
-            this.administrarRubroToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.administrarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.administrarRubroToolStripMenuItem.Text = "Administrar Rubro";
+            this.administrarRubroToolStripMenuItem.Click += new System.EventHandler(this.administrarRubroToolStripMenuItem_Click);
             // 
             // registrarRubroToolStripMenuItem
             // 
             this.registrarRubroToolStripMenuItem.Name = "registrarRubroToolStripMenuItem";
-            this.registrarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.registrarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarRubroToolStripMenuItem.Text = "Registrar Rubro";
             this.registrarRubroToolStripMenuItem.Click += new System.EventHandler(this.registrarRubroToolStripMenuItem_Click);
             // 
             // mostrarRubroToolStripMenuItem
             // 
             this.mostrarRubroToolStripMenuItem.Name = "mostrarRubroToolStripMenuItem";
-            this.mostrarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.mostrarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mostrarRubroToolStripMenuItem.Text = "Mostrar Rubro";
             // 
             // consultarRubroToolStripMenuItem
             // 
             this.consultarRubroToolStripMenuItem.Name = "consultarRubroToolStripMenuItem";
-            this.consultarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.consultarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarRubroToolStripMenuItem.Text = "Modificar Rubro";
             // 
             // eliminarRubroToolStripMenuItem
             // 
             this.eliminarRubroToolStripMenuItem.Name = "eliminarRubroToolStripMenuItem";
-            this.eliminarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.eliminarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarRubroToolStripMenuItem.Text = "Eliminar Rubro";
+            this.eliminarRubroToolStripMenuItem.Click += new System.EventHandler(this.eliminarRubroToolStripMenuItem_Click);
             // 
             // administrarMarcaToolStripMenuItem
             // 
@@ -204,7 +211,7 @@ namespace TP_PAV_3K3_GRUPO2
             // registrarMarcaToolStripMenuItem
             // 
             this.registrarMarcaToolStripMenuItem.Name = "registrarMarcaToolStripMenuItem";
-            this.registrarMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarMarcaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.registrarMarcaToolStripMenuItem.Text = "Registrar Marca";
             this.registrarMarcaToolStripMenuItem.Click += new System.EventHandler(this.registrarMarcaToolStripMenuItem_Click);
             // 
@@ -232,7 +239,8 @@ namespace TP_PAV_3K3_GRUPO2
             this.registrarEmpleadoToolStripMenuItem,
             this.consultarEmpleadoToolStripMenuItem,
             this.modificarEmpleadoToolStripMenuItem,
-            this.eliminarEmpleadoToolStripMenuItem});
+            this.eliminarEmpleadoToolStripMenuItem,
+            this.administrarCargoToolStripMenuItem1});
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
             this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(77, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
@@ -261,6 +269,43 @@ namespace TP_PAV_3K3_GRUPO2
             this.eliminarEmpleadoToolStripMenuItem.Name = "eliminarEmpleadoToolStripMenuItem";
             this.eliminarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.eliminarEmpleadoToolStripMenuItem.Text = "Eliminar Empleado";
+            // 
+            // administrarCargoToolStripMenuItem1
+            // 
+            this.administrarCargoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarCargoToolStripMenuItem1,
+            this.eliminarCargoToolStripMenuItem1,
+            this.modificarCargoToolStripMenuItem1,
+            this.consultarCargoToolStripMenuItem1});
+            this.administrarCargoToolStripMenuItem1.Name = "administrarCargoToolStripMenuItem1";
+            this.administrarCargoToolStripMenuItem1.Size = new System.Drawing.Size(181, 22);
+            this.administrarCargoToolStripMenuItem1.Text = "Administrar Cargo";
+            // 
+            // registrarCargoToolStripMenuItem1
+            // 
+            this.registrarCargoToolStripMenuItem1.Name = "registrarCargoToolStripMenuItem1";
+            this.registrarCargoToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.registrarCargoToolStripMenuItem1.Text = "Registrar Cargo";
+            this.registrarCargoToolStripMenuItem1.Click += new System.EventHandler(this.registrarCargoToolStripMenuItem1_Click);
+            // 
+            // eliminarCargoToolStripMenuItem1
+            // 
+            this.eliminarCargoToolStripMenuItem1.Name = "eliminarCargoToolStripMenuItem1";
+            this.eliminarCargoToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.eliminarCargoToolStripMenuItem1.Text = "Eliminar Cargo";
+            this.eliminarCargoToolStripMenuItem1.Click += new System.EventHandler(this.eliminarCargoToolStripMenuItem1_Click);
+            // 
+            // modificarCargoToolStripMenuItem1
+            // 
+            this.modificarCargoToolStripMenuItem1.Name = "modificarCargoToolStripMenuItem1";
+            this.modificarCargoToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.modificarCargoToolStripMenuItem1.Text = "Modificar Cargo";
+            // 
+            // consultarCargoToolStripMenuItem1
+            // 
+            this.consultarCargoToolStripMenuItem1.Name = "consultarCargoToolStripMenuItem1";
+            this.consultarCargoToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.consultarCargoToolStripMenuItem1.Text = "Consultar Cargo";
             // 
             // ventasToolStripMenuItem
             // 
@@ -461,7 +506,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.ClientSize = new System.Drawing.Size(528, 268);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_MenuPrincipal";
@@ -526,6 +571,11 @@ namespace TP_PAV_3K3_GRUPO2
         private System.Windows.Forms.ToolStripMenuItem consultarTipoTelefonoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarTipoTelefonoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarTipoTelefonoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarCargoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem registrarCargoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem eliminarCargoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem modificarCargoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem consultarCargoToolStripMenuItem1;
     }
 }
 

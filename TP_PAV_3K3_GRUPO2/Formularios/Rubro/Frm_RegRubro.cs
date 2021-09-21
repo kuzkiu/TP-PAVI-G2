@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP_PAV_3K3_GRUPO2.Negocios;
 
 namespace TP_PAV_3K3_GRUPO2.Formularios.Rubro
 {
@@ -37,18 +38,29 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Rubro
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (this.txt_idRubro.Text == "")
+            if (txt_idRubro.Text == "")
             {
-                MessageBox.Show("El id de Rubro está vacio");
+                MessageBox.Show("no se ha ingresado un ID de rubro");
                 this.txt_idRubro.Focus();
                 return;
             }
 
-            if (this.txt_nomRubro.Text == "")
+            else if (txt_nomRubro.Text == "")
             {
-                MessageBox.Show("El nombre del rubro está vacio");
+                MessageBox.Show("no se ha ingresado un nombre de rubro");
                 this.txt_nomRubro.Focus();
                 return;
+            }
+
+            else
+            {
+                //INSERTAR NUEVO RUBRO
+                NE_Rubro _rubro_ = new NE_Rubro();
+                _rubro_.id_Rubro_ = idRubro;
+                _rubro_.nombre_Rubro = nombreRubro;
+                _rubro_.Insertar();
+                MessageBox.Show("Rubro ingresado correctamente");
+
             }
 
             this.Close();

@@ -18,10 +18,16 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
         public void Insertar()
         {
             string sqlInsert = "";
-            sqlInsert = @"INSERT INTO Rubro (id_rubro, nombre) VALUES (";
-            sqlInsert += ", " + id_Rubro_ ;
-            sqlInsert += ", " + nombre_Rubro + ")";
+            sqlInsert = @"INSERT INTO Rubro (id_rubro, nombre, alta_logica) VALUES ('" + id_Rubro_ + "','" + nombre_Rubro + "', 1)";
             BDD.Insertar(sqlInsert);
+        }
+
+
+        public void BorrarReg()
+        {
+            string sqlBorrar = "";
+            sqlBorrar += @"DELETE FROM Rubro WHERE id_rubro =" + id_Rubro_;
+            BDD.DarBaja(sqlBorrar);
         }
 
     }

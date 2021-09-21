@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\TP_PAV_3K3_GRUPO2",
-    "\\TP_PAV_3K3_GRUPO2\\Formularios"
+    "\\TP_PAV_3K3_GRUPO2\\Formularios",
+    "\\TP_PAV_3K3_GRUPO2\\Formularios\\Clientes"
   ],
-  "SelectedNode": "\\TP_PAV_3K3_GRUPO2\\Formularios\\Frm_MenuPrincipal.cs",
+  "SelectedNode": "\\TP_PAV_3K3_GRUPO2\\Formularios\\Clientes\\Frm_ModificarCliente.cs",
   "PreviewInSolutionExplorer": false
 }

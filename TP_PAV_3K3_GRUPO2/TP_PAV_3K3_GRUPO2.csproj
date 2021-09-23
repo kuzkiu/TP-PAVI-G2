@@ -61,6 +61,12 @@
       <DependentUpon>Label_Text.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Validacion.cs" />
+    <Compile Include="Formularios\Articulos\Frm_EliminarArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Articulos\Frm_EliminarArticulos.Designer.cs">
+      <DependentUpon>Frm_EliminarArticulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Articulos\Frm_ModificarArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Clases\Label_Text.resx">
       <DependentUpon>Label_Text.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Articulos\Frm_EliminarArticulos.resx">
+      <DependentUpon>Frm_EliminarArticulos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Articulos\Frm_ModificarArticulos.resx">
       <DependentUpon>Frm_ModificarArticulos.cs</DependentUpon>

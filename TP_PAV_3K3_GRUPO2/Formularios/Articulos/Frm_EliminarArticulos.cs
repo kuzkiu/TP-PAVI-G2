@@ -11,7 +11,7 @@ using TP_PAV_3K3_GRUPO2.Negocios;
 
 namespace TP_PAV_3K3_GRUPO2
 {
-    public partial class Frm_ModificarArticulos : Form
+    public partial class Frm_EliminarArticulos : Form
     {
         public String Descripcion 
         {
@@ -52,7 +52,7 @@ namespace TP_PAV_3K3_GRUPO2
 
 
 
-        public Frm_ModificarArticulos()
+        public Frm_EliminarArticulos()
         {
             InitializeComponent();
         }
@@ -184,13 +184,6 @@ namespace TP_PAV_3K3_GRUPO2
             int length2 = value2.Length - 2;
             txt_venta.Text = value.Substring(0, length2);
             txt_stock.Text = grid_Articulos.Rows[renglon].Cells[6].Value.ToString();
-            txt_descripcion.Enabled = true;
-            cmb_marca.Enabled = true;
-            cmb_rubro.Enabled = true;
-            txt_costo.Enabled = true;
-            txt_venta.Enabled = true;
-            txt_stock.Enabled = true;
-
         }
 
         private void grid_Articulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -200,50 +193,13 @@ namespace TP_PAV_3K3_GRUPO2
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-            if (this.txt_descripcion.Text == "")
+            DialogResult result = MessageBox.Show("¿Está seguro que desea eliminar el artículo?", "¡Atención!", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
             {
-                MessageBox.Show("La descripción esta vacía.", "Registrar artículo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.txt_descripcion.Focus();
-                return;
+                //aqui el codigo
 
-            }
-
-            //if (this.txt_marca.Text == "")
-            //{
-            //    MessageBox.Show("La marca esta vacia");
-            //    this.txt_marca.Focus();
-            //    return;
-
-            //}
-            //if (this.txt_rubro.Text == "")
-            //{
-            //    MessageBox.Show("La rubro esta vacia");
-            //    this.txt_rubro.Focus();
-            //    return;
-
-            //}
-            if (this.txt_costo.Text == "")
-            {
-                MessageBox.Show("El costo de compra está vacío.", "Registrar artículo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.txt_costo.Focus();
-                return;
-
-            }
-            if (this.txt_venta.Text == "")
-            {
-                MessageBox.Show("El costo de venta está vacío.", "Registrar artículo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.txt_venta.Focus();
-                return;
-
-            }
-            if (this.txt_stock.Text == "")
-            {
-                MessageBox.Show("El stock está vacío.", "Registrar artículo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.txt_stock.Focus();
-                return;
-
-            }
-            //GRABAR NUEVO ARTICULO
+            
+            //Eliminar
             NE_Articulos articulo = new NE_Articulos();
             articulo.id_articulo = txt_id_articulo.Text;
             articulo.id_rubro = cmb_rubro.SelectedValue.ToString();
@@ -252,7 +208,7 @@ namespace TP_PAV_3K3_GRUPO2
             articulo.precio_costo = txt_costo.Text;
             articulo.precio_venta = txt_venta.Text;
             articulo.stock_actual = txt_stock.Text;
-            articulo.Modificar();
+            articulo.Eliminar();
 
             //Limpiar campos
             txt_descripcion.Text = string.Empty;
@@ -260,7 +216,7 @@ namespace TP_PAV_3K3_GRUPO2
             txt_costo.Text = string.Empty;
             txt_venta.Text = string.Empty;
             txt_stock.Text = string.Empty;
-            MessageBox.Show("El artículo fue modificado correctamente.", "Registrar artículo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("El artículo fue eliminado correctamente.", "Eliminar artículo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             txt_descripcion.Enabled = false;
             cmb_marca.Enabled = false;
             cmb_rubro.Enabled = false;
@@ -272,6 +228,7 @@ namespace TP_PAV_3K3_GRUPO2
             DataTable tabla = new DataTable();
             tabla = articulo.BuscarArticulos();
             grid_Articulos.Cargar(tabla);
+            }
 
         }
 

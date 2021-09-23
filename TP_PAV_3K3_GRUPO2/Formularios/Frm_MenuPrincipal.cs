@@ -250,6 +250,24 @@ namespace TP_PAV_3K3_GRUPO2
             Frm_BajaRubro _baja_rubro_ = new Frm_BajaRubro();
             _baja_rubro_.ShowDialog();
         }
+
+        private void modificarArtículoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ModificarArticulos _modArt = new Frm_ModificarArticulos();
+            _modArt.ShowDialog();
+        }
+
+        private void mostrarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ConsultaArticulos _modArt = new Frm_ConsultaArticulos();
+            _modArt.ShowDialog();
+        }
+
+        private void eliminarEmpleadoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_EliminarArticulos _modArt = new Frm_EliminarArticulos();
+            _modArt.ShowDialog();
+        }
     }
 }
 

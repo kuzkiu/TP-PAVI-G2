@@ -40,6 +40,7 @@ namespace TP_PAV_3K3_GRUPO2.Clases
                             break;
                         case "D":
                             this.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            this.Columns[i].DefaultCellStyle.Format = "N2";
                             break;
                         case "C":
                             this.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -61,6 +62,7 @@ namespace TP_PAV_3K3_GRUPO2.Clases
                 for (int columna = 0; columna < tabla.Columns.Count; columna++)
                 {
                     this.Rows[fila].Cells[columna].Value = tabla.Rows[fila][columna];
+
                 }
             }
             this.Columns[0].Visible = false;

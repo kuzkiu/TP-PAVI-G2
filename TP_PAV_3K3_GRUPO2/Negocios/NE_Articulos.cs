@@ -20,14 +20,14 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
 
         BE_Acceso_Datos _BD = new BE_Acceso_Datos();
 
-        public DataTable BuscarArticulos(string descripcion, string columna)
+   public DataTable BuscarArticulos()
         {
           
             string sql = @"SELECT A.id_articulo, A.descripcion, R.nombre, M.nombre, A.precio_costo,
-            A.precio_costo, A.stock_actual FROM Articulo AS A
+            A.precio_costo, A.stock_actual FROM Articulos AS A
             INNER JOIN Rubro AS R ON A.id_rubro = R.id_rubro
             INNER JOIN Marca AS M ON A.id_marca = M.id_marca
-            WHERE  " + columna + "  like '%" + descripcion + "%'";
+            WHERE  A.Alta_logica = 1";
             DataTable tabla = new DataTable();
             return _BD.EjecutarSelect(sql);
             
@@ -35,22 +35,32 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
         }
         public void Insertar()
         {
+            string ultimoID = @"SELECT MAX(id_articulo) maximo FROM articulos";
+            DataTable tabla = new DataTable();
+            tabla = _BD.EjecutarSelect(ultimoID);
+            int MaxID = 0;
+            if (tabla.Rows.Count > 0)
+            {
+                MaxID = Convert.ToInt32(tabla.Rows[0][0]) + 1;
+            }
+
             string sqlInsert = "";
-            sqlInsert = @"INSERT INTO articulo (id_articulo, id_rubro, id_marca, 
-            descripcion, precio_costo, precio_venta, stock_actual) VALUES (";
-            sqlInsert +=  4;
+            sqlInsert = @"INSERT INTO articulos (id_articulo, id_rubro, id_marca, 
+            descripcion, precio_costo, precio_venta, stock_actual, alta_logica) VALUES (";
+            sqlInsert +=  MaxID;
             sqlInsert += ", " + id_rubro;
             sqlInsert += ", "+ id_marca;
             sqlInsert += ", '"+ descripcion +"'";
             sqlInsert += ", "+ precio_costo;
             sqlInsert += ", " + precio_venta;
-            sqlInsert += ", " + stock_actual + ")";
+            sqlInsert += ", " + stock_actual;
+            sqlInsert += ", " + 1 + ")";
             _BD.Insertar(sqlInsert);
         }
         public void Modificar()
         {
             string sqlModificar = "";
-            sqlModificar = @"UPDATE articulo SET ";
+            sqlModificar = @"UPDATE articulos SET ";
             sqlModificar += "id_rubro = " + id_rubro;
             sqlModificar += ", id_marca = " + id_marca;
             sqlModificar += ", descripcion = '" + descripcion + "'";
@@ -59,6 +69,20 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
             sqlModificar += ", stock_actual = " + stock_actual;
             sqlModificar += " WHERE id_articulo = " + id_articulo;
             _BD.Modificar(sqlModificar);
+        }
+        public void Eliminar()
+        {
+            string sqlEliminar = "";
+            sqlEliminar = @"UPDATE articulos SET ";
+            sqlEliminar += "id_rubro = " + id_rubro;
+            sqlEliminar += ", id_marca = " + id_marca;
+            sqlEliminar += ", descripcion = '" + descripcion + "'";
+            sqlEliminar += ", precio_costo = '" + precio_costo + "'";
+            sqlEliminar += ", precio_venta = '" + precio_venta + "'";
+            sqlEliminar += ", stock_actual = " + stock_actual;
+            sqlEliminar += ", alta_logica = " + 0;
+            sqlEliminar += " WHERE id_articulo = " + id_articulo;
+            _BD.Eliminar(sqlEliminar);
         }
     }
 

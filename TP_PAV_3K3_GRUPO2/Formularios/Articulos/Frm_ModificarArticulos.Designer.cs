@@ -41,10 +41,10 @@ namespace TP_PAV_3K3_GRUPO2
             this.btn_Limpiar = new System.Windows.Forms.Button();
             this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.btn_guardar = new System.Windows.Forms.Button();
+            this.txt_id_articulo = new System.Windows.Forms.TextBox();
             this.cmb_marca = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.cmb_rubro = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.grid_Articulos = new TP_PAV_3K3_GRUPO2.Clases.Grilla();
-            this.txt_id_articulo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Articulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +60,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 227);
+            this.label2.Location = new System.Drawing.Point(63, 227);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 18);
             this.label2.TabIndex = 1;
@@ -69,7 +69,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 189);
+            this.label3.Location = new System.Drawing.Point(20, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 18);
             this.label3.TabIndex = 2;
@@ -78,7 +78,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 151);
+            this.label4.Location = new System.Drawing.Point(17, 151);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 18);
             this.label4.TabIndex = 3;
@@ -86,7 +86,8 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // txt_venta
             // 
-            this.txt_venta.Location = new System.Drawing.Point(188, 182);
+            this.txt_venta.Enabled = false;
+            this.txt_venta.Location = new System.Drawing.Point(130, 185);
             this.txt_venta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_venta.Name = "txt_venta";
             this.txt_venta.Size = new System.Drawing.Size(206, 24);
@@ -95,7 +96,8 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // txt_costo
             // 
-            this.txt_costo.Location = new System.Drawing.Point(188, 146);
+            this.txt_costo.Enabled = false;
+            this.txt_costo.Location = new System.Drawing.Point(130, 149);
             this.txt_costo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_costo.Name = "txt_costo";
             this.txt_costo.Size = new System.Drawing.Size(206, 24);
@@ -104,7 +106,8 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // txt_stock
             // 
-            this.txt_stock.Location = new System.Drawing.Point(188, 218);
+            this.txt_stock.Enabled = false;
+            this.txt_stock.Location = new System.Drawing.Point(130, 221);
             this.txt_stock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_stock.Name = "txt_stock";
             this.txt_stock.Size = new System.Drawing.Size(206, 24);
@@ -114,7 +117,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 75);
+            this.label5.Location = new System.Drawing.Point(61, 75);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 18);
             this.label5.TabIndex = 9;
@@ -123,7 +126,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 113);
+            this.label6.Location = new System.Drawing.Point(60, 113);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 18);
             this.label6.TabIndex = 11;
@@ -131,7 +134,7 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // btn_Limpiar
             // 
-            this.btn_Limpiar.Location = new System.Drawing.Point(308, 272);
+            this.btn_Limpiar.Location = new System.Drawing.Point(248, 264);
             this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(86, 35);
@@ -142,21 +145,30 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // txt_descripcion
             // 
-            this.txt_descripcion.Location = new System.Drawing.Point(120, 33);
+            this.txt_descripcion.Enabled = false;
+            this.txt_descripcion.Location = new System.Drawing.Point(128, 31);
             this.txt_descripcion.Name = "txt_descripcion";
-            this.txt_descripcion.Size = new System.Drawing.Size(273, 24);
+            this.txt_descripcion.Size = new System.Drawing.Size(263, 24);
             this.txt_descripcion.TabIndex = 0;
             this.txt_descripcion.TextChanged += new System.EventHandler(this.txt_descripcion_TextChanged);
             // 
             // btn_guardar
             // 
-            this.btn_guardar.Location = new System.Drawing.Point(199, 270);
+            this.btn_guardar.Location = new System.Drawing.Point(130, 263);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(94, 36);
             this.btn_guardar.TabIndex = 17;
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.UseVisualStyleBackColor = true;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
+            // 
+            // txt_id_articulo
+            // 
+            this.txt_id_articulo.Location = new System.Drawing.Point(424, 218);
+            this.txt_id_articulo.Name = "txt_id_articulo";
+            this.txt_id_articulo.Size = new System.Drawing.Size(100, 24);
+            this.txt_id_articulo.TabIndex = 18;
+            this.txt_id_articulo.Visible = false;
             // 
             // cmb_marca
             // 
@@ -168,8 +180,10 @@ namespace TP_PAV_3K3_GRUPO2
             this.cmb_marca._tabla_cargar_descriptor = "nombre";
             this.cmb_marca._tabla_cargar_pk = "id_marca";
             this.cmb_marca._Validable = false;
+            this.cmb_marca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_marca.Enabled = false;
             this.cmb_marca.FormattingEnabled = true;
-            this.cmb_marca.Location = new System.Drawing.Point(187, 111);
+            this.cmb_marca.Location = new System.Drawing.Point(129, 114);
             this.cmb_marca.Name = "cmb_marca";
             this.cmb_marca.Size = new System.Drawing.Size(206, 26);
             this.cmb_marca.TabIndex = 16;
@@ -184,8 +198,10 @@ namespace TP_PAV_3K3_GRUPO2
             this.cmb_rubro._tabla_cargar_descriptor = "nombre";
             this.cmb_rubro._tabla_cargar_pk = "id_rubro";
             this.cmb_rubro._Validable = false;
+            this.cmb_rubro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_rubro.Enabled = false;
             this.cmb_rubro.FormattingEnabled = true;
-            this.cmb_rubro.Location = new System.Drawing.Point(186, 72);
+            this.cmb_rubro.Location = new System.Drawing.Point(128, 75);
             this.cmb_rubro.Name = "cmb_rubro";
             this.cmb_rubro.Size = new System.Drawing.Size(206, 26);
             this.cmb_rubro.TabIndex = 15;
@@ -201,14 +217,6 @@ namespace TP_PAV_3K3_GRUPO2
             this.grid_Articulos.TabIndex = 14;
             this.grid_Articulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Articulos_CellContentClick);
             this.grid_Articulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Articulos_CellDoubleClick);
-            // 
-            // txt_id_articulo
-            // 
-            this.txt_id_articulo.Location = new System.Drawing.Point(424, 218);
-            this.txt_id_articulo.Name = "txt_id_articulo";
-            this.txt_id_articulo.Size = new System.Drawing.Size(100, 24);
-            this.txt_id_articulo.TabIndex = 18;
-            this.txt_id_articulo.Visible = false;
             // 
             // Frm_ModificarArticulos
             // 
@@ -236,7 +244,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_ModificarArticulos";
-            this.Text = "Consulta de artículos";
+            this.Text = "Modificar artículos";
             this.Load += new System.EventHandler(this.Frm_ConsultaArticulos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_Articulos)).EndInit();
             this.ResumeLayout(false);

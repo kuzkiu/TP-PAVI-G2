@@ -142,7 +142,7 @@ namespace TP_PAV_3K3_GRUPO2
 
             NE_Articulos articulo = new NE_Articulos();
             DataTable tabla = new DataTable();
-            tabla = articulo.BuscarArticulos("Art", "descripcion");
+            tabla = articulo.BuscarArticulos();
             grid_Articulos.Cargar(tabla);
         }
 

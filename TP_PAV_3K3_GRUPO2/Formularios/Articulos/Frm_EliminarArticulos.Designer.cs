@@ -1,7 +1,7 @@
 ﻿
 namespace TP_PAV_3K3_GRUPO2
 {
-    partial class Frm_AltaArticulos
+    partial class Frm_EliminarArticulos
     {
         /// <summary>
         /// Required designer variable.
@@ -33,16 +33,19 @@ namespace TP_PAV_3K3_GRUPO2
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.txt_venta = new System.Windows.Forms.TextBox();
             this.txt_costo = new System.Windows.Forms.TextBox();
             this.txt_stock = new System.Windows.Forms.TextBox();
-            this.btn_Guardar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_Limpiar = new System.Windows.Forms.Button();
+            this.txt_descripcion = new System.Windows.Forms.TextBox();
+            this.btn_guardar = new System.Windows.Forms.Button();
+            this.txt_id_articulo = new System.Windows.Forms.TextBox();
             this.cmb_marca = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.cmb_rubro = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
+            this.grid_Articulos = new TP_PAV_3K3_GRUPO2.Clases.Grilla();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Articulos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,56 +84,35 @@ namespace TP_PAV_3K3_GRUPO2
             this.label4.TabIndex = 3;
             this.label4.Text = "Precio costo:";
             // 
-            // txt_descripcion
-            // 
-            this.txt_descripcion.Location = new System.Drawing.Point(129, 34);
-            this.txt_descripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_descripcion.Name = "txt_descripcion";
-            this.txt_descripcion.Size = new System.Drawing.Size(265, 24);
-            this.txt_descripcion.TabIndex = 0;
-            this.txt_descripcion.TextChanged += new System.EventHandler(this.txt_descripcion_TextChanged);
-            this.txt_descripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_descripcion_KeyPress);
-            // 
             // txt_venta
             // 
-            this.txt_venta.Location = new System.Drawing.Point(129, 185);
+            this.txt_venta.Enabled = false;
+            this.txt_venta.Location = new System.Drawing.Point(130, 185);
             this.txt_venta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_venta.Name = "txt_venta";
             this.txt_venta.Size = new System.Drawing.Size(206, 24);
             this.txt_venta.TabIndex = 4;
             this.txt_venta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_venta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_venta_KeyPress);
             // 
             // txt_costo
             // 
-            this.txt_costo.Location = new System.Drawing.Point(129, 149);
+            this.txt_costo.Enabled = false;
+            this.txt_costo.Location = new System.Drawing.Point(130, 149);
             this.txt_costo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_costo.Name = "txt_costo";
             this.txt_costo.Size = new System.Drawing.Size(206, 24);
             this.txt_costo.TabIndex = 3;
             this.txt_costo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_costo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_costo_KeyPress);
             // 
             // txt_stock
             // 
-            this.txt_stock.Location = new System.Drawing.Point(129, 221);
+            this.txt_stock.Enabled = false;
+            this.txt_stock.Location = new System.Drawing.Point(130, 221);
             this.txt_stock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_stock.Name = "txt_stock";
             this.txt_stock.Size = new System.Drawing.Size(206, 24);
             this.txt_stock.TabIndex = 5;
             this.txt_stock.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_stock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_stock_KeyPress);
-            // 
-            // btn_Guardar
-            // 
-            this.btn_Guardar.Location = new System.Drawing.Point(186, 272);
-            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Size = new System.Drawing.Size(86, 35);
-            this.btn_Guardar.TabIndex = 6;
-            this.btn_Guardar.Text = "Guardar";
-            this.btn_Guardar.UseVisualStyleBackColor = true;
-            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click_1);
             // 
             // label5
             // 
@@ -152,75 +134,119 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // btn_Limpiar
             // 
-            this.btn_Limpiar.Location = new System.Drawing.Point(308, 272);
+            this.btn_Limpiar.Location = new System.Drawing.Point(248, 264);
             this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(86, 35);
-            this.btn_Limpiar.TabIndex = 7;
+            this.btn_Limpiar.TabIndex = 6;
             this.btn_Limpiar.Text = "Limpiar";
             this.btn_Limpiar.UseVisualStyleBackColor = true;
             this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
+            // 
+            // txt_descripcion
+            // 
+            this.txt_descripcion.Enabled = false;
+            this.txt_descripcion.Location = new System.Drawing.Point(128, 31);
+            this.txt_descripcion.Name = "txt_descripcion";
+            this.txt_descripcion.Size = new System.Drawing.Size(263, 24);
+            this.txt_descripcion.TabIndex = 0;
+            this.txt_descripcion.TextChanged += new System.EventHandler(this.txt_descripcion_TextChanged);
+            // 
+            // btn_guardar
+            // 
+            this.btn_guardar.Location = new System.Drawing.Point(130, 263);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(94, 36);
+            this.btn_guardar.TabIndex = 17;
+            this.btn_guardar.Text = "Eliminar";
+            this.btn_guardar.UseVisualStyleBackColor = true;
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
+            // 
+            // txt_id_articulo
+            // 
+            this.txt_id_articulo.Location = new System.Drawing.Point(424, 218);
+            this.txt_id_articulo.Name = "txt_id_articulo";
+            this.txt_id_articulo.Size = new System.Drawing.Size(100, 24);
+            this.txt_id_articulo.TabIndex = 18;
+            this.txt_id_articulo.Visible = false;
             // 
             // cmb_marca
             // 
             this.cmb_marca._ComboSinSeleccion = false;
             this.cmb_marca._MensajeError = null;
             this.cmb_marca._Nombre_campo = null;
-            this.cmb_marca._Nombre_tabla = null;
+            this.cmb_marca._Nombre_tabla = "";
             this.cmb_marca._tabla_cargar_combo = "Marca";
             this.cmb_marca._tabla_cargar_descriptor = "nombre";
             this.cmb_marca._tabla_cargar_pk = "id_marca";
             this.cmb_marca._Validable = false;
             this.cmb_marca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_marca.Enabled = false;
             this.cmb_marca.FormattingEnabled = true;
-            this.cmb_marca.Location = new System.Drawing.Point(131, 110);
+            this.cmb_marca.Location = new System.Drawing.Point(129, 114);
             this.cmb_marca.Name = "cmb_marca";
-            this.cmb_marca.Size = new System.Drawing.Size(203, 26);
-            this.cmb_marca.TabIndex = 13;
+            this.cmb_marca.Size = new System.Drawing.Size(206, 26);
+            this.cmb_marca.TabIndex = 16;
             // 
             // cmb_rubro
             // 
             this.cmb_rubro._ComboSinSeleccion = false;
             this.cmb_rubro._MensajeError = null;
             this.cmb_rubro._Nombre_campo = null;
-            this.cmb_rubro._Nombre_tabla = null;
+            this.cmb_rubro._Nombre_tabla = "";
             this.cmb_rubro._tabla_cargar_combo = "Rubro";
             this.cmb_rubro._tabla_cargar_descriptor = "nombre";
             this.cmb_rubro._tabla_cargar_pk = "id_rubro";
             this.cmb_rubro._Validable = false;
             this.cmb_rubro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_rubro.Enabled = false;
             this.cmb_rubro.FormattingEnabled = true;
-            this.cmb_rubro.Location = new System.Drawing.Point(129, 67);
+            this.cmb_rubro.Location = new System.Drawing.Point(128, 75);
             this.cmb_rubro.Name = "cmb_rubro";
             this.cmb_rubro.Size = new System.Drawing.Size(206, 26);
-            this.cmb_rubro.TabIndex = 12;
+            this.cmb_rubro.TabIndex = 15;
             // 
-            // Frm_AltaArticulos
+            // grid_Articulos
+            // 
+            this.grid_Articulos._formatoLetraHeader = System.Drawing.FontStyle.Regular;
+            this.grid_Articulos._tamannoLetraHeader = 9;
+            this.grid_Articulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_Articulos.Location = new System.Drawing.Point(414, 33);
+            this.grid_Articulos.Name = "grid_Articulos";
+            this.grid_Articulos.Size = new System.Drawing.Size(750, 221);
+            this.grid_Articulos.TabIndex = 14;
+            this.grid_Articulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Articulos_CellContentClick);
+            this.grid_Articulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Articulos_CellDoubleClick);
+            // 
+            // Frm_EliminarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 344);
+            this.ClientSize = new System.Drawing.Size(1187, 328);
+            this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.cmb_marca);
             this.Controls.Add(this.cmb_rubro);
+            this.Controls.Add(this.grid_Articulos);
             this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btn_Guardar);
             this.Controls.Add(this.txt_stock);
             this.Controls.Add(this.txt_costo);
             this.Controls.Add(this.txt_venta);
-            this.Controls.Add(this.txt_descripcion);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_descripcion);
+            this.Controls.Add(this.txt_id_articulo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Frm_AltaArticulos";
-            this.Text = "Registrar artículo";
-            this.Load += new System.EventHandler(this.Frm_AltaArticulos_Load);
+            this.Name = "Frm_EliminarArticulos";
+            this.Text = "Eliminar artículos";
+            this.Load += new System.EventHandler(this.Frm_ConsultaArticulos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Articulos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,15 +258,17 @@ namespace TP_PAV_3K3_GRUPO2
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_descripcion;
         private System.Windows.Forms.TextBox txt_venta;
         private System.Windows.Forms.TextBox txt_costo;
         private System.Windows.Forms.TextBox txt_stock;
-        private System.Windows.Forms.Button btn_Guardar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_Limpiar;
+        private Clases.Grilla grid_Articulos;
+        private System.Windows.Forms.TextBox txt_descripcion;
         private Clases.ComboBox01 cmb_rubro;
         private Clases.ComboBox01 cmb_marca;
+        private System.Windows.Forms.Button btn_guardar;
+        private System.Windows.Forms.TextBox txt_id_articulo;
     }
 }

@@ -14,13 +14,18 @@ namespace TP_PAV_3K3_GRUPO2
     {
         public String TipoDoc_E
         {
-            get { return txt_NombreE.Text; }
-            set { txt_NombreE.Text = value; }
+            get { return cb_tipoDocE.Text; }
+            set { cb_tipoDocE.Text = value; }
+        }
+        public String TipoCargo_E
+        {
+            get { return cb_cargoE.Text; }
+            set { cb_cargoE.Text = value; }
         }
         public String NroDocumento_E
         {
-            get { return txt_NombreE.Text; }
-            set { txt_NombreE.Text = value; }
+            get { return txt_DocumentoE.Text; }
+            set { txt_DocumentoE.Text = value; }
         }
         public String Nombre_E
         {
@@ -32,16 +37,28 @@ namespace TP_PAV_3K3_GRUPO2
             get { return txt_ApellidoE.Text; }
             set { txt_ApellidoE.Text = value; }
         }
+
         public String FechaIng_E
         {
-            get { return dp_FechaIngE.Text; }
-            set { dp_FechaIngE.Text = value; }
+            get { return dp_FechaIngE.Value.ToString("yyyy/MM/dd"); }
+            set { dp_FechaIngE.Value.ToString("yyyy/MM/dd"); }
         }
         public String FechaNac_E
         {
-            get { return dp_FechaNacE.Text; }
-            set { dp_FechaNacE.Text = value; }//No se si es TEXT O  SELECT
+            get { return dp_FechaNacE.Value.ToString("yyyy/MM/dd"); }
+            set { dp_FechaNacE.Value.ToString("yyyy/MM/dd"); }
         }
+        /*
+                 public String FechaIng_E
+        {
+            get { return dp_FechaIngE.Value.ToString("YYYY/MM/DDDD"); }
+            set { dp_FechaIngE.Value.ToString("MM/dd/yyyy"); }
+        }
+        public String FechaNac_E
+        {
+            get { return dp_FechaNacE.Value.ToString("MM/dd/yyyy"); }
+            set { dp_FechaNacE.Value.ToString("MM/dd/yyyy"); }
+        }*/
         public String Calle_E
         {
             get { return txt_calleE.Text; }
@@ -58,6 +75,11 @@ namespace TP_PAV_3K3_GRUPO2
             get { return txt_pisoE.Text; }
             set { txt_pisoE.Text = value; }
         }
+        public String Depto_E
+        {
+            get { return txt_deptoE.Text; }
+            set { txt_deptoE.Text = value; }
+        }
         public String BarrioE
         {
             get { return txt_barrioE.Text; }
@@ -73,16 +95,33 @@ namespace TP_PAV_3K3_GRUPO2
 
         public Frm_RegEmpleado()
         {
-
+            
             InitializeComponent();
         }
 
         private void Frm_RegEmpleado_Load(object sender, EventArgs e)
         {
+            Negocios.NE_Empleados tipo_doc = new Negocios.NE_Empleados();
+            DataTable tabla_cmb_tipodoc = new DataTable();
+            tabla_cmb_tipodoc = tipo_doc.Buscar_nombreTipoDocumento();
+            for (int i = 0; i < tabla_cmb_tipodoc.Rows.Count; i++)
+            {
 
-        }
+               // MessageBox.Show(tabla_cmb_tipodoc.Rows[i]["nombre"].ToString());
+                cb_tipoDocE.Items.Add(tabla_cmb_tipodoc.Rows[i]["nombre"]);
+            }
+            Negocios.NE_Empleados tipotel = new Negocios.NE_Empleados();
+            DataTable tabla_cmb_tipocargo = new DataTable();
+            tabla_cmb_tipocargo = tipotel.Buscar_nombreTipoCargo();
+            for (int i = 0; i < tabla_cmb_tipocargo.Rows.Count; i++)
+            {
+                cb_cargoE.Items.Add(tabla_cmb_tipocargo.Rows[i]["denominacion"]);
+            }
+            
 
-        private void label1_Click(object sender, EventArgs e)
+    }
+
+    private void label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -179,7 +218,58 @@ namespace TP_PAV_3K3_GRUPO2
                 this.txt_NombreE.Focus();
                 return;
             }
+            else
+            {
+            Negocios.NE_Empleados clie = new Negocios.NE_Empleados();
+                /*Ne_Cliente tipoTel = new Ne_Cliente();
+                string id_tipotel = tipoTel.Buscar_id(TipoTel).ToString();
+                Ne_Cliente dir = new Ne_Cliente();
+                string id_direc = dir.Buscar_id_direccion().ToString();*/
+                Negocios.NE_Empleados cargo = new Negocios.NE_Empleados();
+                string id_cargo = cargo.Buscar_idTipoCargo(TipoCargo_E).ToString();
+                Negocios.NE_Empleados tipodoc = new Negocios.NE_Empleados();
+                MessageBox.Show(TipoCargo_E);
+                string id_tipodocu = tipodoc.Buscar_idTipoDoc(TipoDoc_E).ToString();
+                Negocios.NE_Empleados dir = new Negocios.NE_Empleados();
+                string id_direc = dir.Buscar_id_direccion().ToString();
+                Negocios.NE_Empleados bar = new Negocios.NE_Empleados();
+                string id_barrio = bar.Buscar_idBarrio(BarrioE).ToString();
+                //MessageBox.Show(id_barrio);
 
+                //cambiar los txt cuando sepa como convertirlos a int.
+
+                clie.Registrar_EmpleadoFinal(NroDocumento_E, Nombre_E, Apellido_E, FechaNac_E, FechaIng_E, id_cargo, 
+                    id_tipodocu,
+                    id_direc, id_barrio, Calle_E, Numero_E, Piso_E,Depto_E);
+                //clie.Insertar(NroDocumento_E, Nombre_E,Apellido_E, FechaNac_E, FechaIng_E, id_cargo, id_tipodocu);//Nombre_E,Apellido_E, FechaNac_E, FechaIng_E, id_tipodocu, id_cargo);
+                //TipoDoc_E, NroDocumento_E, Nombre_E, Apellido_E, FechaIng_E, FechaNac_E, Calle_E, Numero_E, Piso_E, BarrioE, Localidad_E
+            }
+            
+           MessageBox.Show("Ha registrado un nuevo empleado con exito");
+            
+
+        }
+        //Parte de combobox
+
+        private void Frm_RegEmpleado_Load_1(object sender, EventArgs e)
+        {
+            Negocios.NE_Empleados tipo_doc = new Negocios.NE_Empleados();
+            DataTable tabla_cmb_tipodoc = new DataTable();
+            tabla_cmb_tipodoc = tipo_doc.Buscar_nombreTipoDocumento();
+            for (int i = 0; i < tabla_cmb_tipodoc.Rows.Count; i++)
+            {
+
+            MessageBox.Show(tabla_cmb_tipodoc.Rows[i]["nombre"].ToString());
+                //cb_tipoDocE.Items.Add(tabla_cmb_tipodoc.Rows[i]["nombre"]);
+            }
+            /*
+            Ne_Cliente tipotel = new Ne_Cliente();
+            DataTable tabla_cmb_tipotel = new DataTable();
+            tabla_cmb_tipotel = tipotel.Buscar_nombreTipoTel();
+            for (int i = 0; i < tabla_cmb_tipotel.Rows.Count; i++)
+            {
+                cb_TipoTelE.Items.Add(tabla_cmb_tipotel.Rows[i]["nombre"]);
+            }*/
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -209,10 +299,15 @@ namespace TP_PAV_3K3_GRUPO2
 
         private void cb_tipoDocE_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void txt_DocumentoE_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_ApellidoE_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -90,6 +90,7 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // cb_tipoDocE
             // 
+            this.cb_tipoDocE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_tipoDocE.FormattingEnabled = true;
             this.cb_tipoDocE.Location = new System.Drawing.Point(156, 18);
             this.cb_tipoDocE.Name = "cb_tipoDocE";
@@ -129,6 +130,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.txt_ApellidoE.Name = "txt_ApellidoE";
             this.txt_ApellidoE.Size = new System.Drawing.Size(121, 20);
             this.txt_ApellidoE.TabIndex = 7;
+            this.txt_ApellidoE.TextChanged += new System.EventHandler(this.txt_ApellidoE_TextChanged);
             // 
             // dp_FechaNacE
             // 
@@ -177,6 +179,7 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // cb_cargoE
             // 
+            this.cb_cargoE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_cargoE.FormattingEnabled = true;
             this.cb_cargoE.Location = new System.Drawing.Point(156, 175);
             this.cb_cargoE.Name = "cb_cargoE";
@@ -354,7 +357,6 @@ namespace TP_PAV_3K3_GRUPO2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cb_tipoDocE;
         private System.Windows.Forms.TextBox txt_DocumentoE;
         private System.Windows.Forms.TextBox txt_NombreE;
         private System.Windows.Forms.Label label4;
@@ -379,5 +381,6 @@ namespace TP_PAV_3K3_GRUPO2
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.ComboBox cb_tipoDocE;
     }
 }

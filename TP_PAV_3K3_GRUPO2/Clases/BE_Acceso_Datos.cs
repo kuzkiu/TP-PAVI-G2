@@ -70,6 +70,16 @@ namespace TP_PAV_3K3_GRUPO2.Clases
         {
             EjecutarNoSelect(sql);
         }
+        //consulta
+        public DataTable Consulta(string sql)
+        {
+            Conectar();
+            Cmd.CommandText = sql;
+            DataTable tabla = new DataTable();
+            tabla.Load(Cmd.ExecuteReader());
+            Cerrar();
+            return tabla;
+        }
 
 
 

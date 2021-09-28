@@ -51,7 +51,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_cuil = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.btn_buscar = new System.Windows.Forms.Button();
             this.txt_tipodoc = new System.Windows.Forms.TextBox();
             this.txt_tipotel = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -237,11 +236,13 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // cmb_cuil
             // 
+            this.cmb_cuil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_cuil.FormattingEnabled = true;
             this.cmb_cuil.Location = new System.Drawing.Point(191, 40);
             this.cmb_cuil.Name = "cmb_cuil";
             this.cmb_cuil.Size = new System.Drawing.Size(176, 28);
             this.cmb_cuil.TabIndex = 55;
+            this.cmb_cuil.SelectedIndexChanged += new System.EventHandler(this.cmb_cuil_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -252,16 +253,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_buscar
-            // 
-            this.btn_buscar.Location = new System.Drawing.Point(386, 35);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(94, 36);
-            this.btn_buscar.TabIndex = 57;
-            this.btn_buscar.Text = "Mostrar";
-            this.btn_buscar.UseVisualStyleBackColor = true;
-            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click_1);
             // 
             // txt_tipodoc
             // 
@@ -309,7 +300,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             this.ClientSize = new System.Drawing.Size(507, 561);
             this.Controls.Add(this.txt_tipotel);
             this.Controls.Add(this.txt_tipodoc);
-            this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmb_cuil);
             this.Controls.Add(this.label6);
@@ -357,7 +347,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmb_cuil;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.TextBox txt_tipodoc;
         private System.Windows.Forms.TextBox txt_tipotel;
         private System.Windows.Forms.Label label11;

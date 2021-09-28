@@ -18,31 +18,29 @@ namespace TP_PAV_3K3_GRUPO2.Negocio
         {
             if (cuil != "" & RazonS != "")
             {
-                string sql = @"SELECT C.cuil_cliente, C.razon_social, X.numero_telefono, TE.nombre, C.nro_documento, T.nombre, D.calle, D.numero, D.piso, D.depto, B.nombre_barrio, L.nombre_localidad
- FROM Clientes C, Barrio B, Localidad L, Tipo_documento T, Direccion D, telefonoXcliente X, tipo_telefono TE 
+                string sql = @"SELECT C.cuil_cliente, C.razon_social, C.nro_documento, T.nombre, D.calle, D.numero, D.piso, D.depto, B.nombre_barrio, L.nombre_localidad
+ FROM Clientes C, Barrio B, Localidad L, Tipo_documento T, Direccion D
  WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_localidad = L.id_localidad AND
-  C.id_tipoDocumento = T.id_tipoDocumento AND C.cuil_cliente = X.cuil_cliente AND X.id_Tipo_Telefono = TE.id_tipoTelefono
-  AND C.cuil_cliente LIKE '%" + cuil + "%' AND C.razon_social LIKE '%" + RazonS + "%'  AND (X.numero_telefono ='' OR (NOT(X.numero_telefono =''))) AND C.alta_logica = 1 ";
+  C.id_tipoDocumento = T.id_tipoDocumento AND C.cuil_cliente LIKE '%" + cuil + "%' AND C.razon_social LIKE '%" + RazonS + "%'  AND C.alta_logica = 1 ";
 
                 return bd.Consulta(sql);
             }
             if (cuil == "" & RazonS == "")
             {
-                string sql = @"SELECT C.cuil_cliente, C.razon_social, X.numero_telefono, TE.nombre, C.nro_documento, T.nombre, D.calle, D.numero, D.piso, D.depto, B.nombre_barrio, L.nombre_localidad
- FROM Clientes C, Barrio B, Localidad L, Tipo_documento T, Direccion D, telefonoXcliente X, tipo_telefono TE 
+                string sql = @"SELECT C.cuil_cliente, C.razon_social, C.nro_documento, T.nombre, D.calle, D.numero, D.piso, D.depto, B.nombre_barrio, L.nombre_localidad
+ FROM Clientes C, Barrio B, Localidad L, Tipo_documento T, Direccion D
  WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_localidad = L.id_localidad AND
-  C.id_tipoDocumento = T.id_tipoDocumento AND C.cuil_cliente = X.cuil_cliente AND X.id_Tipo_Telefono = TE.id_tipoTelefono  AND (X.numero_telefono ='' OR (NOT(X.numero_telefono =''))) AND C.alta_logica = 1";
+  C.id_tipoDocumento = T.id_tipoDocumento AND C.alta_logica = 1";
 
                 return bd.Consulta(sql);
             }
 
             if (cuil != "" & RazonS == "")
             {
-                string sql = @"SELECT C.cuil_cliente, C.razon_social, X.numero_telefono, TE.nombre, C.nro_documento, T.nombre, D.calle, D.numero, D.piso, D.depto, B.nombre_barrio, L.nombre_localidad
- FROM Clientes C, Barrio B, Localidad L, Tipo_documento T, Direccion D, telefonoXcliente X, tipo_telefono TE 
+                string sql = @"SELECT C.cuil_cliente, C.razon_social, C.nro_documento, T.nombre, D.calle, D.numero, D.piso, D.depto, B.nombre_barrio, L.nombre_localidad
+ FROM Clientes C, Barrio B, Localidad L, Tipo_documento T, Direccion D
  WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_localidad = L.id_localidad AND
-  C.id_tipoDocumento = T.id_tipoDocumento AND C.cuil_cliente = X.cuil_cliente AND X.id_Tipo_Telefono = TE.id_tipoTelefono
-  AND C.cuil_cliente LIKE '%" + cuil + "%'  AND (X.numero_telefono ='' OR (NOT(X.numero_telefono =''))) AND C.alta_logica = 1";
+  C.id_tipoDocumento = T.id_tipoDocumento AND C.cuil_cliente LIKE '%" + cuil + "%' AND C.alta_logica = 1";
 
                 return bd.Consulta(sql);
 
@@ -50,11 +48,10 @@ namespace TP_PAV_3K3_GRUPO2.Negocio
             }
             if (cuil == "" & RazonS != "")
             {
-                string sql = @"SELECT C.cuil_cliente, C.razon_social, X.numero_telefono, TE.nombre, C.nro_documento, T.nombre, D.calle, D.numero, D.piso, D.depto, B.nombre_barrio, L.nombre_localidad
- FROM Clientes C, Barrio B, Localidad L, Tipo_documento T, Direccion D, telefonoXcliente X, tipo_telefono TE 
+                string sql = @"SELECT C.cuil_cliente, C.razon_social, C.nro_documento, T.nombre, D.calle, D.numero, D.piso, D.depto, B.nombre_barrio, L.nombre_localidad
+ FROM Clientes C, Barrio B, Localidad L, Tipo_documento T, Direccion D
  WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_localidad = L.id_localidad AND
-  C.id_tipoDocumento = T.id_tipoDocumento AND C.cuil_cliente = X.cuil_cliente AND X.id_Tipo_Telefono = TE.id_tipoTelefono
-  AND C.razon_social LIKE '%" + RazonS + "%' AND (X.numero_telefono ='' OR (NOT(X.numero_telefono =''))) AND C.alta_logica = 1";
+  C.id_tipoDocumento = T.id_tipoDocumento AND C.razon_social LIKE '%" + RazonS + "%' AND C.alta_logica = 1";
 
                 return bd.Consulta(sql);
             }
@@ -127,6 +124,10 @@ WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_loca
                         SET alta_logica = 0
                         WHERE Clientes.cuil_cliente = '" + cuil+"'";
             bd.Consulta(sql);
+            String sql1 = @"Update telefonoXcliente
+                        SET alta_logica = 0
+                        WHERE telefonoXcliente.cuil_cliente = '" + cuil + "'";
+            bd.Consulta(sql1);
         }
 
         public DataTable BuscarClienteModificacion(string cuil) 
@@ -163,6 +164,15 @@ WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_loca
             modificar_Direccion(id_direc, calle, num_calle, depto, piso, id_barrio);
 
         
+        }
+
+        public void Modificar_Telefono_Cliente(string viejo_tel, string num_tel, string id_tipotel) 
+        {
+            string sql = @"UPDATE telefonoXcliente
+                        SET numero_telefono = " + num_tel + ", id_Tipo_Telefono = " + id_tipotel +
+                         "WHERE telefonoXcliente.numero_telefono ="+ viejo_tel;
+            bd.Consulta(sql);
+
         }
 
 
@@ -256,7 +266,7 @@ WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_loca
 
         }
 
-        public DataTable Buscar_nombreTipoTel()
+        public DataTable Buscar_nombreTipoTelefono()
         {
             DataTable tabla_nombreTT = new DataTable();
             string sql = @"Select T.nombre
@@ -264,6 +274,67 @@ WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_loca
             tabla_nombreTT = bd.Consulta(sql);
             return tabla_nombreTT;
         }
+
+        public DataTable Buscar_Localidad() 
+        {
+            DataTable tabla_nombrelocalidad = new DataTable();
+            string sql = @"Select Localidad.nombre_localidad
+                        FROM Localidad
+                        WHERE Localidad.alta_logica = 1";
+            tabla_nombrelocalidad = bd.Consulta(sql);
+            return tabla_nombrelocalidad;
+
+        }
+
+        public DataTable Buscar_NombreBarrio(string nombre_localidad) 
+        {
+            DataTable tabla_nombrebarrio = new DataTable();
+            string sql = @"Select B.nombre_barrio
+                        FROM Barrio B, Localidad L
+                        WHERE L.id_localidad = B.id_localidad AND L.nombre_localidad = '" + nombre_localidad + "'";
+            tabla_nombrebarrio = bd.Consulta(sql);
+            return tabla_nombrebarrio;
+
+        }
+
+        public DataTable Buscar_TelefonoCliente(string cuil)
+        {
+            DataTable tabla_tel = new DataTable();
+            string sql = @"SELECT T.numero_telefono, P.nombre
+                           FROM telefonoXcliente T, Tipo_telefono P
+                            WHERE T.cuil_cliente = '" + cuil+"' AND P.id_tipoTelefono= T.id_Tipo_Telefono AND T.alta_logica = 1";
+            tabla_tel = bd.Consulta(sql);
+            return tabla_tel;
+        }
+
+        public DataTable Buscar_NumTelVerificacion() 
+        { 
+            DataTable tabla = new DataTable();
+            string sql = @"SELECT T.numero_telefono
+                            FROM telefonoXcliente T";
+            tabla = bd.Consulta(sql);
+            return tabla;
+        }
+
+        public DataTable Buscar_TipoTelBajaTel(string num_tel)
+        { 
+            string sql = @"SELECT T.nombre
+                           FROM Tipo_telefono T, telefonoXcliente C 
+                            WHERE T.id_tipoTelefono =C.id_Tipo_Telefono AND C.numero_telefono = '"+ num_tel+"'";
+            DataTable tabla = new DataTable();
+            tabla = bd.Consulta(sql);
+            return tabla;
+        }
+
+        public void Eliminar_telefono(string num_tel) 
+        {
+            string sql = @"UPDATE telefonoXcliente
+                            SET telefonoXcliente.alta_logica = 0
+                            WHERE telefonoXcliente.numero_telefono = "+ num_tel;
+            bd.Consulta(sql);
+        }
+
+            
     }
 }
 

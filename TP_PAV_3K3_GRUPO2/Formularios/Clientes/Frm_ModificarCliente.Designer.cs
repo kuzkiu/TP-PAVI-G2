@@ -35,9 +35,9 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             this.txt_Razon = new System.Windows.Forms.TextBox();
             this.txt_NumDoc = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_loc = new System.Windows.Forms.TextBox();
-            this.txt_barrio = new System.Windows.Forms.TextBox();
+            this.cmb_barrio = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.cmb_localidad = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_piso = new System.Windows.Forms.TextBox();
             this.txt_Depto = new System.Windows.Forms.TextBox();
@@ -52,14 +52,14 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_cuil = new System.Windows.Forms.ComboBox();
-            this.btn_Mostrar = new System.Windows.Forms.Button();
+            this.btn_telefono = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(135, 46);
+            this.label6.Location = new System.Drawing.Point(137, 40);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 20);
             this.label6.TabIndex = 40;
@@ -67,9 +67,9 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // cb_tipoDoc
             // 
+            this.cb_tipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_tipoDoc.Enabled = false;
             this.cb_tipoDoc.FormattingEnabled = true;
-            this.cb_tipoDoc.Items.AddRange(new object[] {
-            "DNI"});
             this.cb_tipoDoc.Location = new System.Drawing.Point(185, 114);
             this.cb_tipoDoc.Name = "cb_tipoDoc";
             this.cb_tipoDoc.Size = new System.Drawing.Size(177, 28);
@@ -77,9 +77,9 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(383, 438);
+            this.button1.Location = new System.Drawing.Point(349, 438);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 33);
+            this.button1.Size = new System.Drawing.Size(142, 43);
             this.button1.TabIndex = 38;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
@@ -87,6 +87,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // txt_Razon
             // 
+            this.txt_Razon.Enabled = false;
             this.txt_Razon.Location = new System.Drawing.Point(185, 76);
             this.txt_Razon.Name = "txt_Razon";
             this.txt_Razon.Size = new System.Drawing.Size(177, 26);
@@ -94,6 +95,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // txt_NumDoc
             // 
+            this.txt_NumDoc.Enabled = false;
             this.txt_NumDoc.Location = new System.Drawing.Point(186, 151);
             this.txt_NumDoc.Name = "txt_NumDoc";
             this.txt_NumDoc.Size = new System.Drawing.Size(176, 26);
@@ -101,9 +103,9 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_loc);
-            this.groupBox1.Controls.Add(this.txt_barrio);
+            this.groupBox1.Controls.Add(this.cmb_barrio);
             this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.cmb_localidad);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txt_piso);
             this.groupBox1.Controls.Add(this.txt_Depto);
@@ -115,38 +117,45 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             this.groupBox1.Controls.Add(this.txt_numdir);
             this.groupBox1.Location = new System.Drawing.Point(60, 183);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(355, 230);
+            this.groupBox1.Size = new System.Drawing.Size(355, 249);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dirección";
             // 
-            // txt_loc
+            // cmb_barrio
             // 
-            this.txt_loc.Location = new System.Drawing.Point(126, 198);
-            this.txt_loc.Name = "txt_loc";
-            this.txt_loc.Size = new System.Drawing.Size(176, 26);
-            this.txt_loc.TabIndex = 23;
-            // 
-            // txt_barrio
-            // 
-            this.txt_barrio.Location = new System.Drawing.Point(126, 166);
-            this.txt_barrio.Name = "txt_barrio";
-            this.txt_barrio.Size = new System.Drawing.Size(176, 26);
-            this.txt_barrio.TabIndex = 22;
+            this.cmb_barrio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_barrio.Enabled = false;
+            this.cmb_barrio.FormattingEnabled = true;
+            this.cmb_barrio.Location = new System.Drawing.Point(126, 198);
+            this.cmb_barrio.Name = "cmb_barrio";
+            this.cmb_barrio.Size = new System.Drawing.Size(176, 28);
+            this.cmb_barrio.TabIndex = 23;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(60, 169);
+            this.label12.Location = new System.Drawing.Point(60, 201);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(55, 20);
             this.label12.TabIndex = 20;
             this.label12.Text = "Barrio:";
             // 
+            // cmb_localidad
+            // 
+            this.cmb_localidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_localidad.Enabled = false;
+            this.cmb_localidad.FormattingEnabled = true;
+            this.cmb_localidad.Location = new System.Drawing.Point(126, 164);
+            this.cmb_localidad.Name = "cmb_localidad";
+            this.cmb_localidad.Size = new System.Drawing.Size(176, 28);
+            this.cmb_localidad.TabIndex = 22;
+            this.cmb_localidad.SelectionChangeCommitted += new System.EventHandler(this.cmb_localidad_SelectionChangeCommitted);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(34, 201);
+            this.label13.Location = new System.Drawing.Point(34, 167);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(81, 20);
             this.label13.TabIndex = 21;
@@ -154,6 +163,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // txt_piso
             // 
+            this.txt_piso.Enabled = false;
             this.txt_piso.Location = new System.Drawing.Point(126, 131);
             this.txt_piso.Name = "txt_piso";
             this.txt_piso.Size = new System.Drawing.Size(176, 26);
@@ -161,6 +171,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // txt_Depto
             // 
+            this.txt_Depto.Enabled = false;
             this.txt_Depto.Location = new System.Drawing.Point(126, 96);
             this.txt_Depto.Name = "txt_Depto";
             this.txt_Depto.Size = new System.Drawing.Size(176, 26);
@@ -168,6 +179,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // txt_calle
             // 
+            this.txt_calle.Enabled = false;
             this.txt_calle.Location = new System.Drawing.Point(126, 61);
             this.txt_calle.Name = "txt_calle";
             this.txt_calle.Size = new System.Drawing.Size(176, 26);
@@ -176,7 +188,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(46, 31);
+            this.label8.Location = new System.Drawing.Point(46, 28);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 20);
             this.label8.TabIndex = 10;
@@ -194,7 +206,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(53, 99);
+            this.label9.Location = new System.Drawing.Point(55, 99);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 20);
             this.label9.TabIndex = 11;
@@ -203,7 +215,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(64, 134);
+            this.label10.Location = new System.Drawing.Point(69, 134);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 20);
             this.label10.TabIndex = 12;
@@ -211,6 +223,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // txt_numdir
             // 
+            this.txt_numdir.Enabled = false;
             this.txt_numdir.Location = new System.Drawing.Point(126, 25);
             this.txt_numdir.Name = "txt_numdir";
             this.txt_numdir.Size = new System.Drawing.Size(176, 26);
@@ -227,7 +240,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 154);
+            this.label3.Location = new System.Drawing.Point(16, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 20);
             this.label3.TabIndex = 28;
@@ -245,7 +258,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 82);
+            this.label1.Location = new System.Drawing.Point(69, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 20);
             this.label1.TabIndex = 26;
@@ -253,28 +266,31 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             // 
             // cmb_cuil
             // 
+            this.cmb_cuil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_cuil.FormattingEnabled = true;
             this.cmb_cuil.Location = new System.Drawing.Point(185, 37);
             this.cmb_cuil.Name = "cmb_cuil";
             this.cmb_cuil.Size = new System.Drawing.Size(177, 28);
             this.cmb_cuil.TabIndex = 41;
+            this.cmb_cuil.SelectionChangeCommitted += new System.EventHandler(this.cmb_cuil_SelectionChangeCommitted);
             // 
-            // btn_Mostrar
+            // btn_telefono
             // 
-            this.btn_Mostrar.Location = new System.Drawing.Point(383, 37);
-            this.btn_Mostrar.Name = "btn_Mostrar";
-            this.btn_Mostrar.Size = new System.Drawing.Size(108, 29);
-            this.btn_Mostrar.TabIndex = 42;
-            this.btn_Mostrar.Text = "Mostrar";
-            this.btn_Mostrar.UseVisualStyleBackColor = true;
-            this.btn_Mostrar.Click += new System.EventHandler(this.btn_Mostrar_Click);
+            this.btn_telefono.Enabled = false;
+            this.btn_telefono.Location = new System.Drawing.Point(20, 438);
+            this.btn_telefono.Name = "btn_telefono";
+            this.btn_telefono.Size = new System.Drawing.Size(175, 43);
+            this.btn_telefono.TabIndex = 42;
+            this.btn_telefono.Text = "Administrar Telefonos";
+            this.btn_telefono.UseVisualStyleBackColor = true;
+            this.btn_telefono.Click += new System.EventHandler(this.btn_telefono_Click);
             // 
             // Frm_ModificarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 493);
-            this.Controls.Add(this.btn_Mostrar);
+            this.Controls.Add(this.btn_telefono);
             this.Controls.Add(this.cmb_cuil);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cb_tipoDoc);
@@ -304,8 +320,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
         private System.Windows.Forms.TextBox txt_Razon;
         private System.Windows.Forms.TextBox txt_NumDoc;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt_loc;
-        private System.Windows.Forms.TextBox txt_barrio;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txt_piso;
@@ -321,6 +335,8 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmb_cuil;
-        private System.Windows.Forms.Button btn_Mostrar;
+        private System.Windows.Forms.ComboBox cmb_barrio;
+        private System.Windows.Forms.ComboBox cmb_localidad;
+        private System.Windows.Forms.Button btn_telefono;
     }
 }

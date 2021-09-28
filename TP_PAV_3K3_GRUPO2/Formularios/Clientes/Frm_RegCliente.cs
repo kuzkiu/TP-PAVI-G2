@@ -75,13 +75,13 @@ namespace TP_PAV_3K3_GRUPO2
         }
         public String Barrio
         {
-            get { return txt_barrio.Text; }
-            set { txt_barrio.Text = value; }
+            get { return cmb_Barrio.Text; }
+            set { cmb_Barrio.Text = value; }
         }
         public String Localidad
         {
-            get { return txt_loc.Text; }
-            set { txt_loc.Text = value; }
+            get { return cmb_Localidad.Text; }
+            set { cmb_Localidad.Text = value; }
         }
 
 
@@ -123,7 +123,7 @@ namespace TP_PAV_3K3_GRUPO2
                 tabla_cuil = cliente_cuil.BuscarCuils();
                 for (int i=0; i<tabla_cuil.Rows.Count; i++) 
                 {
-                    if (tabla_cuil.Rows[i]["cuil_cliente"] == txt_Cuil.Text) 
+                    if (tabla_cuil.Rows[i]["cuil_cliente"].ToString() == txt_Cuil.Text) 
                     {
                         MessageBox.Show("Cuil ya existente. Ingrese otro");
                         return;
@@ -176,24 +176,21 @@ namespace TP_PAV_3K3_GRUPO2
                 return;
             }
 
-            if (this.txt_barrio.Text == "")
+            if (this.cmb_Barrio.Text == "")
             {
                 MessageBox.Show("El barrio está vacio");
-                this.txt_barrio.Focus();
                 return;
             }
 
-            if (this.txt_loc.Text == "")
+            if (this.cmb_Localidad.Text == "")
             {
                 MessageBox.Show("La localidad está vacia");
-                this.txt_loc.Focus();
                 return;
             }
 
             if ((this.txt_piso.Text =="" & this.txt_Depto.Text !="") || (this.txt_piso.Text != "" & this.txt_Depto.Text == ""))
             {
                 MessageBox.Show("Piso y depto deben estar ambos vacios o ambos deben tener un valor ");
-                this.txt_loc.Focus();
                 return;
             }
 
@@ -218,11 +215,6 @@ namespace TP_PAV_3K3_GRUPO2
 
 
             this.Close();
-        }
-
-        private void Frm_RegCliente_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void txt_Cuil_KeyPress(object sender, KeyPressEventArgs e)
@@ -282,12 +274,36 @@ namespace TP_PAV_3K3_GRUPO2
 
             Ne_Cliente tipotel = new Ne_Cliente();
             DataTable tabla_cmb_tipotel = new DataTable();
-            tabla_cmb_tipotel = tipotel.Buscar_nombreTipoTel();
+            tabla_cmb_tipotel = tipotel.Buscar_nombreTipoTelefono();
             for (int i = 0; i < tabla_cmb_tipotel.Rows.Count; i++)
             {
                 cb_TipoTel.Items.Add(tabla_cmb_tipotel.Rows[i]["nombre"]);
             }
 
+            Ne_Cliente combo_localidad = new Ne_Cliente();
+            DataTable tabla_cmb_localidad = new DataTable();
+            tabla_cmb_localidad = combo_localidad.Buscar_Localidad();
+            for (int i = 0; i < tabla_cmb_localidad.Rows.Count; i++)
+            {
+                cmb_Localidad.Items.Add(tabla_cmb_localidad.Rows[i]["nombre_localidad"]);
+            }
+
+            
+
+
+        }
+
+        private void cmb_Localidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmb_Barrio.Enabled = true;
+            cmb_Barrio.Items.Clear();
+            Ne_Cliente barrio = new Ne_Cliente();
+            DataTable tabla_barrio = new DataTable();
+            tabla_barrio = barrio.Buscar_NombreBarrio(cmb_Localidad.Text);
+            for (int i = 0; i < tabla_barrio.Rows.Count; i++)
+            {
+                cmb_Barrio.Items.Add(tabla_barrio.Rows[i]["nombre_barrio"]);
+            }
         }
     }
 }

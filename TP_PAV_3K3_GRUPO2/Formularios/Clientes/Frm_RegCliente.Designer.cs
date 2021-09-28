@@ -42,8 +42,8 @@ namespace TP_PAV_3K3_GRUPO2
             this.txt_Cuil = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_loc = new System.Windows.Forms.TextBox();
-            this.txt_barrio = new System.Windows.Forms.TextBox();
+            this.cmb_Barrio = new System.Windows.Forms.ComboBox();
+            this.cmb_Localidad = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_piso = new System.Windows.Forms.TextBox();
@@ -171,8 +171,8 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_loc);
-            this.groupBox1.Controls.Add(this.txt_barrio);
+            this.groupBox1.Controls.Add(this.cmb_Barrio);
+            this.groupBox1.Controls.Add(this.cmb_Localidad);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txt_piso);
@@ -190,24 +190,30 @@ namespace TP_PAV_3K3_GRUPO2
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dirección";
             // 
-            // txt_loc
+            // cmb_Barrio
             // 
-            this.txt_loc.Location = new System.Drawing.Point(126, 198);
-            this.txt_loc.Name = "txt_loc";
-            this.txt_loc.Size = new System.Drawing.Size(176, 26);
-            this.txt_loc.TabIndex = 23;
+            this.cmb_Barrio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Barrio.Enabled = false;
+            this.cmb_Barrio.FormattingEnabled = true;
+            this.cmb_Barrio.Location = new System.Drawing.Point(125, 203);
+            this.cmb_Barrio.Name = "cmb_Barrio";
+            this.cmb_Barrio.Size = new System.Drawing.Size(177, 28);
+            this.cmb_Barrio.TabIndex = 23;
             // 
-            // txt_barrio
+            // cmb_Localidad
             // 
-            this.txt_barrio.Location = new System.Drawing.Point(126, 166);
-            this.txt_barrio.Name = "txt_barrio";
-            this.txt_barrio.Size = new System.Drawing.Size(176, 26);
-            this.txt_barrio.TabIndex = 22;
+            this.cmb_Localidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Localidad.FormattingEnabled = true;
+            this.cmb_Localidad.Location = new System.Drawing.Point(125, 169);
+            this.cmb_Localidad.Name = "cmb_Localidad";
+            this.cmb_Localidad.Size = new System.Drawing.Size(177, 28);
+            this.cmb_Localidad.TabIndex = 22;
+            this.cmb_Localidad.SelectedIndexChanged += new System.EventHandler(this.cmb_Localidad_SelectedIndexChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(60, 169);
+            this.label12.Location = new System.Drawing.Point(55, 206);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(55, 20);
             this.label12.TabIndex = 20;
@@ -216,7 +222,7 @@ namespace TP_PAV_3K3_GRUPO2
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(34, 201);
+            this.label13.Location = new System.Drawing.Point(31, 169);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(81, 20);
             this.label13.TabIndex = 21;
@@ -275,11 +281,13 @@ namespace TP_PAV_3K3_GRUPO2
             this.txt_Razon.Name = "txt_Razon";
             this.txt_Razon.Size = new System.Drawing.Size(177, 26);
             this.txt_Razon.TabIndex = 21;
-            this.txt_Razon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Razon_KeyPress);
             // 
             // cb_TipoTel
             // 
+            this.cb_TipoTel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_TipoTel.FormattingEnabled = true;
+            this.cb_TipoTel.Items.AddRange(new object[] {
+            ""});
             this.cb_TipoTel.Location = new System.Drawing.Point(196, 199);
             this.cb_TipoTel.Name = "cb_TipoTel";
             this.cb_TipoTel.Size = new System.Drawing.Size(176, 28);
@@ -297,6 +305,7 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             // cb_tipoDoc
             // 
+            this.cb_tipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_tipoDoc.FormattingEnabled = true;
             this.cb_tipoDoc.Location = new System.Drawing.Point(195, 125);
             this.cb_tipoDoc.Name = "cb_tipoDoc";
@@ -370,9 +379,9 @@ namespace TP_PAV_3K3_GRUPO2
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cb_tipoDoc;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_loc;
-        private System.Windows.Forms.TextBox txt_barrio;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cmb_Barrio;
+        private System.Windows.Forms.ComboBox cmb_Localidad;
     }
 }

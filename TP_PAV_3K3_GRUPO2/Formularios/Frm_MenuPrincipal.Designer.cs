@@ -177,26 +177,28 @@ namespace TP_PAV_3K3_GRUPO2
             // registrarRubroToolStripMenuItem
             // 
             this.registrarRubroToolStripMenuItem.Name = "registrarRubroToolStripMenuItem";
-            this.registrarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.registrarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarRubroToolStripMenuItem.Text = "Registrar Rubro";
             this.registrarRubroToolStripMenuItem.Click += new System.EventHandler(this.registrarRubroToolStripMenuItem_Click);
             // 
             // mostrarRubroToolStripMenuItem
             // 
             this.mostrarRubroToolStripMenuItem.Name = "mostrarRubroToolStripMenuItem";
-            this.mostrarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.mostrarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mostrarRubroToolStripMenuItem.Text = "Mostrar Rubro";
+            this.mostrarRubroToolStripMenuItem.Click += new System.EventHandler(this.mostrarRubroToolStripMenuItem_Click);
             // 
             // consultarRubroToolStripMenuItem
             // 
             this.consultarRubroToolStripMenuItem.Name = "consultarRubroToolStripMenuItem";
-            this.consultarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.consultarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarRubroToolStripMenuItem.Text = "Modificar Rubro";
+            this.consultarRubroToolStripMenuItem.Click += new System.EventHandler(this.consultarRubroToolStripMenuItem_Click);
             // 
             // eliminarRubroToolStripMenuItem
             // 
             this.eliminarRubroToolStripMenuItem.Name = "eliminarRubroToolStripMenuItem";
-            this.eliminarRubroToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.eliminarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarRubroToolStripMenuItem.Text = "Eliminar Rubro";
             this.eliminarRubroToolStripMenuItem.Click += new System.EventHandler(this.eliminarRubroToolStripMenuItem_Click);
             // 
@@ -303,12 +305,14 @@ namespace TP_PAV_3K3_GRUPO2
             this.modificarCargoToolStripMenuItem1.Name = "modificarCargoToolStripMenuItem1";
             this.modificarCargoToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
             this.modificarCargoToolStripMenuItem1.Text = "Modificar Cargo";
+            this.modificarCargoToolStripMenuItem1.Click += new System.EventHandler(this.modificarCargoToolStripMenuItem1_Click);
             // 
             // consultarCargoToolStripMenuItem1
             // 
             this.consultarCargoToolStripMenuItem1.Name = "consultarCargoToolStripMenuItem1";
             this.consultarCargoToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
             this.consultarCargoToolStripMenuItem1.Text = "Consultar Cargo";
+            this.consultarCargoToolStripMenuItem1.Click += new System.EventHandler(this.consultarCargoToolStripMenuItem1_Click);
             // 
             // ventasToolStripMenuItem
             // 

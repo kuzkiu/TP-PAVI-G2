@@ -30,9 +30,9 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Cargo
         private void InitializeComponent()
         {
             this.label1_titulo = new System.Windows.Forms.Label();
-            this.txt_codigo_cargo = new TP_PAV_3K3_GRUPO2.Clases.Label_Text();
-            this.txt_denominacion = new TP_PAV_3K3_GRUPO2.Clases.Label_Text();
             this.button1 = new System.Windows.Forms.Button();
+            this.txt_denominacion = new TP_PAV_3K3_GRUPO2.Clases.Label_Text();
+            this.txt_codigo_cargo = new TP_PAV_3K3_GRUPO2.Clases.Label_Text();
             this.SuspendLayout();
             // 
             // label1_titulo
@@ -45,26 +45,21 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Cargo
             this.label1_titulo.TabIndex = 0;
             this.label1_titulo.Text = "Modificar Cargo";
             // 
-            // txt_codigo_cargo
+            // button1
             // 
-            this.txt_codigo_cargo._Ancho = 20;
-            this.txt_codigo_cargo._Decimales = 0;
-            this.txt_codigo_cargo._Etiqueta = "Codigo Cargo";
-            this.txt_codigo_cargo._MensajeError = null;
-            this.txt_codigo_cargo._Nobre_tabla = null;
-            this.txt_codigo_cargo._Nombre_campo = null;
-            this.txt_codigo_cargo._ReadOnly = false;
-            this.txt_codigo_cargo._Text = "";
-            this.txt_codigo_cargo._TipoDato = TP_PAV_3K3_GRUPO2.Clases.Label_Text.TipoDato.numero;
-            this.txt_codigo_cargo._Validable = false;
-            this.txt_codigo_cargo.Location = new System.Drawing.Point(27, 67);
-            this.txt_codigo_cargo.Name = "txt_codigo_cargo";
-            this.txt_codigo_cargo.Size = new System.Drawing.Size(205, 28);
-            this.txt_codigo_cargo.TabIndex = 1;
+            this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(81, 145);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 36);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Modificar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_denominacion
             // 
-            this.txt_denominacion._Ancho = 20;
+            this.txt_denominacion._Ancho = 30;
             this.txt_denominacion._Decimales = 0;
             this.txt_denominacion._Etiqueta = "Denominacion";
             this.txt_denominacion._MensajeError = null;
@@ -79,16 +74,22 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Cargo
             this.txt_denominacion.Size = new System.Drawing.Size(205, 28);
             this.txt_denominacion.TabIndex = 2;
             // 
-            // button1
+            // txt_codigo_cargo
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(81, 145);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 36);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Modificar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.txt_codigo_cargo._Ancho = 3;
+            this.txt_codigo_cargo._Decimales = 0;
+            this.txt_codigo_cargo._Etiqueta = "Codigo Cargo";
+            this.txt_codigo_cargo._MensajeError = null;
+            this.txt_codigo_cargo._Nobre_tabla = null;
+            this.txt_codigo_cargo._Nombre_campo = null;
+            this.txt_codigo_cargo._ReadOnly = false;
+            this.txt_codigo_cargo._Text = "";
+            this.txt_codigo_cargo._TipoDato = TP_PAV_3K3_GRUPO2.Clases.Label_Text.TipoDato.numero;
+            this.txt_codigo_cargo._Validable = false;
+            this.txt_codigo_cargo.Location = new System.Drawing.Point(27, 67);
+            this.txt_codigo_cargo.Name = "txt_codigo_cargo";
+            this.txt_codigo_cargo.Size = new System.Drawing.Size(205, 28);
+            this.txt_codigo_cargo.TabIndex = 1;
             // 
             // Frm_ModificarCargo
             // 

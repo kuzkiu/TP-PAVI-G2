@@ -31,7 +31,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Cargo
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txt_codigo_cargo = new TP_PAV_3K3_GRUPO2.Clases.Label_Text();
-            this.txt_denominacion = new TP_PAV_3K3_GRUPO2.Clases.Label_Text();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -62,28 +61,11 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Cargo
             this.txt_codigo_cargo.Size = new System.Drawing.Size(205, 28);
             this.txt_codigo_cargo.TabIndex = 1;
             // 
-            // txt_denominacion
-            // 
-            this.txt_denominacion._Ancho = 20;
-            this.txt_denominacion._Decimales = 0;
-            this.txt_denominacion._Etiqueta = "Denominacion";
-            this.txt_denominacion._MensajeError = null;
-            this.txt_denominacion._Nobre_tabla = null;
-            this.txt_denominacion._Nombre_campo = null;
-            this.txt_denominacion._ReadOnly = false;
-            this.txt_denominacion._Text = "";
-            this.txt_denominacion._TipoDato = TP_PAV_3K3_GRUPO2.Clases.Label_Text.TipoDato.texto;
-            this.txt_denominacion._Validable = false;
-            this.txt_denominacion.Location = new System.Drawing.Point(37, 105);
-            this.txt_denominacion.Name = "txt_denominacion";
-            this.txt_denominacion.Size = new System.Drawing.Size(205, 28);
-            this.txt_denominacion.TabIndex = 2;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(94, 152);
+            this.button1.Location = new System.Drawing.Point(94, 133);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 39);
             this.button1.TabIndex = 3;
@@ -97,7 +79,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Cargo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(318, 217);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_denominacion);
             this.Controls.Add(this.txt_codigo_cargo);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -112,7 +93,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Cargo
 
         private System.Windows.Forms.Label label1;
         private Clases.Label_Text txt_codigo_cargo;
-        private Clases.Label_Text txt_denominacion;
         private System.Windows.Forms.Button button1;
     }
 }

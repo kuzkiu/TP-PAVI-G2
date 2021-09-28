@@ -244,6 +244,14 @@ namespace TP_PAV_3K3_GRUPO2
 
         }
 
+        private void modificarCargoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_ModificarCargo _modif_cargo = new Frm_ModificarCargo();
+            _modif_cargo.ShowDialog();
+
+        }
+
+
         //BAJA RUBRO
         private void eliminarRubroToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -267,6 +275,25 @@ namespace TP_PAV_3K3_GRUPO2
         {
             Frm_EliminarArticulos _modArt = new Frm_EliminarArticulos();
             _modArt.ShowDialog();
+        }
+
+        //modificar rubro
+        private void consultarRubroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ModificarRubro _modifRubro_ = new Frm_ModificarRubro();
+            _modifRubro_.ShowDialog();
+        }
+
+        private void consultarCargoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_ConsultarCargo _consultar_cargo = new Frm_ConsultarCargo();
+            _consultar_cargo.ShowDialog();
+        }
+
+        private void mostrarRubroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ConsultarRubro _consultaRubro_ = new Frm_ConsultarRubro();
+            _consultaRubro_.ShowDialog();
         }
     }
 }

@@ -80,5 +80,10 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Base
             baja_clie.ShowDialog();
             baja_clie.Dispose();
         }
+
+        private void DGV_clientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -166,7 +166,6 @@ C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2
 C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_BajaCargo.resources
 C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ModificarCargo.resources
 C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_BajaRubro.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Clases.Label_Text.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_BajaCargo.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ModificarCargo.resources
@@ -200,3 +199,8 @@ C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_EliminarArticulos.resources
+C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_EliminarArticulos.resources
+C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_ModificarRubro.resources
+C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ConsultarCargo.resources
+C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_ConsultarRubro.resources
+C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache

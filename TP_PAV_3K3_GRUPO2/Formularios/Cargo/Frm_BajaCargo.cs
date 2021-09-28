@@ -19,11 +19,11 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Cargo
             set { txt_codigo_cargo.Text = value; }
         }
 
-        public string _denominacion_
+        /*public string _denominacion_
         {
             get { return txt_denominacion.Text; }
             set { txt_denominacion.Text = value; }
-        }
+        }*/
 
 
         public Frm_BajaCargo()

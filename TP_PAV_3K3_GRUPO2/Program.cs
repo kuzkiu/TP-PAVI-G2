@@ -24,6 +24,10 @@ namespace TP_PAV_3K3_GRUPO2
             //Application.Run(new Frm_RegCargo());
             //Application.Run(new Frm_BajaCargo());
             //Application.Run(new Frm_BajaRubro());
+            //Application.Run(new Frm_ModificarCargo());
+            //Application.Run(new Frm_ModificarRubro());
+            //Application.Run(new Frm_ConsultarCargo());
+            //Application.Run(new Frm_ConsultarRubro());
         }
 
         

@@ -15,6 +15,7 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
         public string denominacion { get; set; }
 
         BE_Acceso_Datos _BD = new BE_Acceso_Datos();
+        Be_BaseDatos bd = new Be_BaseDatos();
 
         public void Insertar()
         {
@@ -30,6 +31,46 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
             sqlBorrar += @"DELETE FROM Cargo WHERE Cod_cargo =" + Cod_cargo;
             _BD.DarBaja(sqlBorrar);
         }
+
+        public void modificarCargo()
+        {
+            string sqlModificar = "";
+            sqlModificar = @"UPDATE Cargo SET ";
+            sqlModificar += "Cod_cargo = " + Cod_cargo;
+            sqlModificar += ", denominacion = '" + denominacion + "'";
+            sqlModificar += "WHERE Cod_cargo =" + Cod_cargo;
+            _BD.Modificar(sqlModificar);
+        }
+
+        public DataTable BuscarCargo(string codigo ,string denominacion)
+        {
+            if(codigo != "" & denominacion != "")
+            {
+                string sql = @"SELECT c.Cod_cargo,c.denominacion FROM Cargo c WHERE c.Cod_cargo LIKE '%" + codigo + "%' AND c.denominacion LIKE '%" + denominacion + "%' AND c.alta_logica = 1";
+                return bd.Consulta(sql);
+            }
+
+            if (codigo != "" & denominacion == "")
+            {
+                string sql = @"SELECT c.Cod_cargo,c.denominacion FROM Cargo c WHERE c.Cod_cargo LIKE '%" + codigo + "%' AND c.denominacion LIKE '%" + denominacion + "%' AND c.alta_logica = 1";
+                return bd.Consulta(sql);
+            }
+
+            if (codigo == "" & denominacion != "")
+            {
+                string sql = @"SELECT c.Cod_cargo,c.denominacion FROM Cargo c WHERE c.Cod_cargo LIKE '%" + codigo + "%' AND c.denominacion LIKE '%" + denominacion + "%' AND c.alta_logica = 1";
+                return bd.Consulta(sql);
+            }
+
+
+
+            DataTable tabla_nul = new DataTable();
+            return tabla_nul;
+        }
+
+
+
+        
 
 
     }

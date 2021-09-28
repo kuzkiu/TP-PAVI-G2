@@ -62,7 +62,6 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
             }
 
 
-
             DataTable tabla_nul = new DataTable();
             return tabla_nul;
         }

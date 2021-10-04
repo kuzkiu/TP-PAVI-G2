@@ -218,6 +218,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.btn_limpiar.TabIndex = 21;
             this.btn_limpiar.Text = "Limpiar";
             this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // grid_Venta
             // 
@@ -226,6 +227,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.grid_Venta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_Venta.Location = new System.Drawing.Point(12, 239);
             this.grid_Venta.Name = "grid_Venta";
+            this.grid_Venta.ReadOnly = true;
             this.grid_Venta.Size = new System.Drawing.Size(511, 307);
             this.grid_Venta.TabIndex = 11;
             this.grid_Venta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Venta_CellContentClick);
@@ -332,6 +334,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.grid_Articulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_Articulos.Location = new System.Drawing.Point(406, 41);
             this.grid_Articulos.Name = "grid_Articulos";
+            this.grid_Articulos.ReadOnly = true;
             this.grid_Articulos.Size = new System.Drawing.Size(498, 188);
             this.grid_Articulos.TabIndex = 23;
             this.grid_Articulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Articulos_CellContentClick);

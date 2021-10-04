@@ -45,7 +45,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             NE_Ventas venta = new NE_Ventas();
             DataTable tabla2 = new DataTable();
             tabla2 = venta.BuscarArticulos();
-            grid_Venta.formatear("ID_Articulo, 0, I; Descripción, 210, I; Precio de venta, 90, D; Cantidad, 60, D; Subtotal, 100, D");
+            grid_Venta.formatear("ID_Articulo, 0, I; Descripción, 210, I; Precio de venta, 90, D; Cantidad, 60, D; Subtotal, 100, D; StockActualizado,0, I");
             BuscarUltFactura();
 
 
@@ -118,9 +118,28 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
                 {
                     if (Convert.ToInt32(txt_cantidad.Text) <= Convert.ToInt32(txt_stock.Text))
                     {
-                        decimal Precio_Servicio_Aux = decimal.TryParse(txt_precio.Text, out Precio_Servicio_Aux) ? Convert.ToDecimal(txt_precio.Text) : (decimal)0.0;
-                        decimal Precio_Servicio = Precio_Servicio_Aux;
-                        grid_Venta.Rows.Add(txt_idarticulo.Text, txt_descripcion.Text, txt_precio.Text, txt_cantidad.Text, Precio_Servicio * Convert.ToInt32(txt_cantidad.Text));
+                        
+                        int bandera = 0;
+                         for (int fila = 0; fila < grid_Venta.Rows.Count; fila++)
+                        {
+                            int a = Convert.ToInt32(grid_Venta.Rows[fila].Cells[0].Value);
+                            int b = Convert.ToInt32(txt_idarticulo.Text);
+
+                            if (b == a)
+                            {
+                                grid_Venta.Rows[fila].Cells[3].Value = Convert.ToInt32(grid_Venta.Rows[fila].Cells[3].Value) + Convert.ToInt32(txt_cantidad.Text);
+                                grid_Venta.Rows[fila].Cells[5].Value = Convert.ToInt32(grid_Venta.Rows[fila].Cells[5].Value) - Convert.ToInt32(txt_cantidad.Text);
+                                bandera = 1;
+                            }
+
+                        }
+
+                        if (bandera ==0)
+                        {
+                            decimal Precio_Servicio_Aux = decimal.TryParse(txt_precio.Text, out Precio_Servicio_Aux) ? Convert.ToDecimal(txt_precio.Text) : (decimal)0.0;
+                            decimal Precio_Servicio = Precio_Servicio_Aux;
+                            grid_Venta.Rows.Add(txt_idarticulo.Text, txt_descripcion.Text, txt_precio.Text, txt_cantidad.Text, Precio_Servicio * Convert.ToInt32(txt_cantidad.Text), Convert.ToInt32(txt_stock.Text) - Convert.ToInt32(txt_cantidad.Text));
+                        }
                         ActualizarTotal();
                         txt_cantidad.Text = "";
                     }
@@ -138,7 +157,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             int suma = 0;
             for (int fila = 0; fila < grid_Venta.Rows.Count; fila++)
             {
-
                 suma = suma + Convert.ToInt32(grid_Venta.Rows[fila].Cells[4].Value);
             }
             //decimal Precio_Servicio_Aux = decimal.TryParse(suma, out Precio_Servicio_Aux) ? Convert.ToDecimal(suma) : (decimal)0.0;
@@ -221,14 +239,49 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             venta.monto_total = txt_total.Text;
             venta.alta_logica = "1";
             venta.Insertar();
+            for (int fila = 0; fila < grid_Venta.Rows.Count-1; fila++)
+            {
+                venta.nro_factura = txt_nroFactura.Text;
+                venta.id_tipoFactura = "1";
+                venta.nro_factura = txt_nroFactura.Text;
+                venta.id_articulo = Convert.ToString(grid_Venta.Rows[fila].Cells[0].Value);
+                venta.precio_unitario = Convert.ToString(grid_Venta.Rows[fila].Cells[2].Value);
+                venta.cantidad = Convert.ToString(grid_Venta.Rows[fila].Cells[3].Value);
+                venta.InsertarDetalle();
+                venta.stock_actual= Convert.ToString(grid_Venta.Rows[fila].Cells[5].Value);
+                venta.ModificarStock();
+            }
 
+            Limpiar();
+            MessageBox.Show("La venta se ha registrado correctamente.", "Registrar Venta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            cmb_clientes.Focus();
+        }
+        private void Limpiar()
+        {
             //Limpiar campos
-            //txt_descripcion.Text = string.Empty;
-            //txt_costo.Text = string.Empty;
-            //txt_venta.Text = string.Empty;
-            //txt_stock.Text = string.Empty;
-            //MessageBox.Show("El artículo fue registrado correctamente.", "Registrar artículo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //txt_descripcion.Focus();
+            cmb_clientes.SelectedIndex = 0;
+            cmb_empleados.SelectedIndex = 0;
+            cmb_fpagos.SelectedIndex = 0;
+            cmb_sucursales.SelectedIndex = 0;
+            txt_idarticulo.Text = string.Empty;
+            txt_cantidad.Text = string.Empty;
+            txt_stock.Text = string.Empty;
+            txt_descripcion.Text = string.Empty;
+            txt_precio.Text = string.Empty;
+            txt_buscar.Text = string.Empty;
+            txt_total.Text = "0.00";
+            BuscarUltFactura();
+            NE_Ventas articulo = new NE_Ventas();
+            DataTable tabla = new DataTable();
+            tabla = articulo.BuscarArticulos();
+            grid_Articulos.Cargar(tabla);
+            grid_Venta.Rows.Clear();
+
+        }
+
+        private void btn_limpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

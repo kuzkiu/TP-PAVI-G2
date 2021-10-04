@@ -20,7 +20,10 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
         public string id_formaDePago { get; set; }
         public string monto_total { get; set; }
         public string alta_logica { get; set; }
-
+        public string id_articulo { get; set; }
+        public string precio_unitario { get; set; }
+        public string cantidad { get; set; }
+        public string stock_actual { get; set; }
         BE_Acceso_Datos _BD = new BE_Acceso_Datos();
 
         public DataTable BuscarArticulos()
@@ -59,6 +62,28 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
             sqlInsert += ", " + monto_total;
             sqlInsert += ", " + 1 + ")";
             _BD.Insertar(sqlInsert);
+        }
+        public void InsertarDetalle()
+        {
+
+            string sqlInsert = "";
+            sqlInsert = @"INSERT INTO detalle_factura (nro_factura, id_tipoFactura, id_articulo, 
+            precio_unitario, cantidad, alta_logica) VALUES (";
+            sqlInsert += nro_factura;
+            sqlInsert += ", " + id_tipoFactura;
+            sqlInsert += ", " + id_articulo;
+            sqlInsert += ", " + precio_unitario;
+            sqlInsert += ", " + cantidad;
+            sqlInsert += ", " + 1 + ")";
+            _BD.Insertar(sqlInsert);
+        }
+        public void ModificarStock()
+        {
+            string sqlModificar = "";
+            sqlModificar = @"UPDATE articulos SET ";
+            sqlModificar += "stock_actual = " + stock_actual;
+            sqlModificar += " WHERE id_articulo = " + id_articulo;
+            _BD.Modificar(sqlModificar);
         }
     }
 }

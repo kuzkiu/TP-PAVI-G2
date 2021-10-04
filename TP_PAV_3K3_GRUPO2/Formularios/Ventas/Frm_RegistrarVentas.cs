@@ -26,12 +26,13 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
         {
             BE_Acceso_Datos _BD = new BE_Acceso_Datos();
 
-
+            txt_total.Text = "0.00";
             dateTimePicker1.Value = DateTime.Today;
             dateTimePicker1.MinDate = new DateTime(2021, 10, 1);
             dateTimePicker1.MaxDate = DateTime.Today;
             //Carga de combos
             cmb_clientes._Cargar();
+            cmb_clientes.SelectedIndex = 0;
             cmb_empleados._Cargar();
             cmb_fpagos._Cargar();
             cmb_sucursales._Cargar();
@@ -39,7 +40,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             NE_Ventas articulo = new NE_Ventas();
             DataTable tabla = new DataTable();
             tabla = articulo.BuscarArticulos();
-            grid_Articulos.formatear("ID_Articulo, 0, I; Descripción, 240, I; Precio de venta, 100, D; Stock, 100, D");
+            grid_Articulos.formatear("ID_Articulo, 0, I; Descripción, 230, I; Precio de venta, 100, D; Stock, 100, D");
             grid_Articulos.Cargar(tabla);
             NE_Ventas venta = new NE_Ventas();
             DataTable tabla2 = new DataTable();
@@ -58,15 +59,10 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
 
         private void grid_Articulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void grid_Articulos_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
             int renglon = e.RowIndex;
             txt_idarticulo.Text = grid_Articulos.Rows[renglon].Cells[0].Value.ToString();
             txt_descripcion.Text = grid_Articulos.Rows[renglon].Cells[1].Value.ToString();
-            
+
             String value = grid_Articulos.Rows[renglon].Cells[2].Value.ToString();
             int length = value.Length - 2;
             txt_precio.Text = value.Substring(0, length);
@@ -74,6 +70,21 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             txt_stock.Text = grid_Articulos.Rows[renglon].Cells[3].Value.ToString();
             txt_cantidad.Enabled = true;
             txt_cantidad.Focus();
+        }
+
+        private void grid_Articulos_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //int renglon = e.RowIndex;
+            //txt_idarticulo.Text = grid_Articulos.Rows[renglon].Cells[0].Value.ToString();
+            //txt_descripcion.Text = grid_Articulos.Rows[renglon].Cells[1].Value.ToString();
+            
+            //String value = grid_Articulos.Rows[renglon].Cells[2].Value.ToString();
+            //int length = value.Length - 2;
+            //txt_precio.Text = value.Substring(0, length);
+
+            //txt_stock.Text = grid_Articulos.Rows[renglon].Cells[3].Value.ToString();
+            //txt_cantidad.Enabled = true;
+            //txt_cantidad.Focus();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -111,6 +122,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
                         decimal Precio_Servicio = Precio_Servicio_Aux;
                         grid_Venta.Rows.Add(txt_idarticulo.Text, txt_descripcion.Text, txt_precio.Text, txt_cantidad.Text, Precio_Servicio * Convert.ToInt32(txt_cantidad.Text));
                         ActualizarTotal();
+                        txt_cantidad.Text = "";
                     }
                    else
                     {
@@ -147,6 +159,76 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
                 MaxID = Convert.ToInt32(tabla3.Rows[0][0]) + 1;
             }
             txt_nroFactura.Text = MaxID.ToString("D8");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_buscar_TextChanged(object sender, EventArgs e)
+        {
+            txt_buscar.CharacterCasing = CharacterCasing.Upper;
+            NE_Ventas articulo = new NE_Ventas();
+            DataTable tabla = new DataTable();
+            tabla = articulo.FiltrarArticulos(txt_buscar.Text);
+            grid_Articulos.Cargar(tabla);
+
+        }
+
+        private void grid_Venta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void grid_Venta_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Desea eliminar el artículo cargado?", "¡Atención!", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                grid_Venta.Rows.Remove(grid_Venta.CurrentRow);
+                ActualizarTotal();
+            }
+
+        }
+
+        private void btn_guardar_Click(object sender, EventArgs e)
+        {
+            //GRABAR NUEVO ARTICULO
+            NE_Ventas venta = new NE_Ventas();
+            venta.nro_factura = txt_nroFactura.Text;
+            venta.id_tipoFactura = "1";
+            venta.fecha_venta = dateTimePicker1.Value.ToString();
+            venta.cuil_cliente = cmb_clientes.SelectedValue.ToString();
+            venta.id_sucursal = cmb_sucursales.SelectedValue.ToString();
+            venta.nro_doc_emp = cmb_empleados.SelectedValue.ToString();
+            venta.id_formaDePago = cmb_fpagos.SelectedValue.ToString();
+            venta.monto_total = txt_total.Text;
+            venta.alta_logica = "1";
+            venta.Insertar();
+
+            //Limpiar campos
+            //txt_descripcion.Text = string.Empty;
+            //txt_costo.Text = string.Empty;
+            //txt_venta.Text = string.Empty;
+            //txt_stock.Text = string.Empty;
+            //MessageBox.Show("El artículo fue registrado correctamente.", "Registrar artículo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //txt_descripcion.Focus();
         }
     }
 }

@@ -183,8 +183,8 @@ namespace TP_PAV_3K3_GRUPO2
 
         private void registrarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_RegEmpleado reg_prod = new Frm_RegEmpleado();
-            reg_prod.ShowDialog();
+            //Frm_RegEmpleado reg_prod = new Frm_RegEmpleado();
+            //reg_prod.ShowDialog();
 
         }
 

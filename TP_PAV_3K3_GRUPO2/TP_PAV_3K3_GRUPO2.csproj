@@ -157,10 +157,6 @@
     <Compile Include="Formularios\Clientes\Frm_RegistrarTelefonoCliente.Designer.cs">
       <DependentUpon>Frm_RegistrarTelefonoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Empleados\Frm_RegEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Empleados\Frm_RegEmpleado.Designer.cs" />
     <Compile Include="Formularios\Frm_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,7 +268,6 @@
     <EmbeddedResource Include="Formularios\Clientes\Frm_RegistrarTelefonoCliente.resx">
       <DependentUpon>Frm_RegistrarTelefonoCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Empleados\Frm_RegEmpleado.resx" />
     <EmbeddedResource Include="Formularios\Frm_MenuPrincipal.resx">
       <DependentUpon>Frm_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>

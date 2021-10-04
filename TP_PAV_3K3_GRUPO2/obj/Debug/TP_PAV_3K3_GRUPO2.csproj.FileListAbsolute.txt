@@ -19,7 +19,6 @@ C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarTelefonoCliente.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_RegistrarTelefonoCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources

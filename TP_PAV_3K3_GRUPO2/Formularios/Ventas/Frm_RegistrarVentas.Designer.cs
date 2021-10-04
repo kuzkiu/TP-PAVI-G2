@@ -35,24 +35,24 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_nroFactura = new System.Windows.Forms.TextBox();
             this.Subtotal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmb_fpagos = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_total = new System.Windows.Forms.TextBox();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_limpiar = new System.Windows.Forms.Button();
-            this.cmb_fpagos = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.grid_Venta = new TP_PAV_3K3_GRUPO2.Clases.Grilla();
             this.cmb_empleados = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.cmb_sucursales = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.cmb_clientes = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.txt_cantidad = new System.Windows.Forms.TextBox();
             this.txt_precio = new System.Windows.Forms.TextBox();
             this.grid_Articulos = new TP_PAV_3K3_GRUPO2.Clases.Grilla();
-            this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.txt_idarticulo = new System.Windows.Forms.TextBox();
             this.txt_stock = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
@@ -109,19 +109,22 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(114, 64);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2021, 10, 4, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(157, 24);
             this.dateTimePicker1.TabIndex = 6;
+            this.dateTimePicker1.Value = new System.DateTime(2021, 10, 4, 0, 0, 0, 0);
             // 
-            // textBox1
+            // txt_nroFactura
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(145, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 24);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_nroFactura.Enabled = false;
+            this.txt_nroFactura.Location = new System.Drawing.Point(145, 105);
+            this.txt_nroFactura.Name = "txt_nroFactura";
+            this.txt_nroFactura.Size = new System.Drawing.Size(126, 24);
+            this.txt_nroFactura.TabIndex = 7;
+            this.txt_nroFactura.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Subtotal
             // 
@@ -152,9 +155,25 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Forma de pago";
             // 
+            // cmb_fpagos
+            // 
+            this.cmb_fpagos._ComboSinSeleccion = false;
+            this.cmb_fpagos._MensajeError = null;
+            this.cmb_fpagos._Nombre_campo = null;
+            this.cmb_fpagos._Nombre_tabla = "";
+            this.cmb_fpagos._tabla_cargar_combo = "Forma_De_Pago";
+            this.cmb_fpagos._tabla_cargar_descriptor = "nombre";
+            this.cmb_fpagos._tabla_cargar_pk = "id_formaDePago";
+            this.cmb_fpagos._Validable = false;
+            this.cmb_fpagos.FormattingEnabled = true;
+            this.cmb_fpagos.Location = new System.Drawing.Point(52, 23);
+            this.cmb_fpagos.Name = "cmb_fpagos";
+            this.cmb_fpagos.Size = new System.Drawing.Size(218, 26);
+            this.cmb_fpagos.TabIndex = 18;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txt_total);
             this.groupBox2.Location = new System.Drawing.Point(543, 376);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(277, 49);
@@ -162,16 +181,16 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Total";
             // 
-            // textBox4
+            // txt_total
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(128, 14);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(142, 29);
-            this.textBox4.TabIndex = 0;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txt_total.Enabled = false;
+            this.txt_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_total.Location = new System.Drawing.Point(128, 14);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(142, 29);
+            this.txt_total.TabIndex = 0;
+            this.txt_total.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_total.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // btn_guardar
             // 
@@ -190,22 +209,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.btn_limpiar.TabIndex = 21;
             this.btn_limpiar.Text = "Limpiar";
             this.btn_limpiar.UseVisualStyleBackColor = true;
-            // 
-            // cmb_fpagos
-            // 
-            this.cmb_fpagos._ComboSinSeleccion = false;
-            this.cmb_fpagos._MensajeError = null;
-            this.cmb_fpagos._Nombre_campo = null;
-            this.cmb_fpagos._Nombre_tabla = "";
-            this.cmb_fpagos._tabla_cargar_combo = "Forma_De_Pago";
-            this.cmb_fpagos._tabla_cargar_descriptor = "nombre";
-            this.cmb_fpagos._tabla_cargar_pk = "id_formaDePago";
-            this.cmb_fpagos._Validable = false;
-            this.cmb_fpagos.FormattingEnabled = true;
-            this.cmb_fpagos.Location = new System.Drawing.Point(52, 23);
-            this.cmb_fpagos.Name = "cmb_fpagos";
-            this.cmb_fpagos.Size = new System.Drawing.Size(218, 26);
-            this.cmb_fpagos.TabIndex = 18;
             // 
             // grid_Venta
             // 
@@ -279,6 +282,15 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Artículo seleccionado";
             // 
+            // txt_descripcion
+            // 
+            this.txt_descripcion.Enabled = false;
+            this.txt_descripcion.Location = new System.Drawing.Point(19, 23);
+            this.txt_descripcion.Name = "txt_descripcion";
+            this.txt_descripcion.Size = new System.Drawing.Size(251, 24);
+            this.txt_descripcion.TabIndex = 18;
+            this.txt_descripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // txt_cantidad
             // 
             this.txt_cantidad.Location = new System.Drawing.Point(128, 93);
@@ -310,15 +322,6 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.grid_Articulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Articulos_CellContentClick);
             this.grid_Articulos.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Articulos_CellContentDoubleClick);
             // 
-            // txt_descripcion
-            // 
-            this.txt_descripcion.Enabled = false;
-            this.txt_descripcion.Location = new System.Drawing.Point(19, 23);
-            this.txt_descripcion.Name = "txt_descripcion";
-            this.txt_descripcion.Size = new System.Drawing.Size(251, 24);
-            this.txt_descripcion.TabIndex = 18;
-            this.txt_descripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // txt_idarticulo
             // 
             this.txt_idarticulo.Location = new System.Drawing.Point(579, 190);
@@ -347,7 +350,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.Controls.Add(this.grid_Venta);
             this.Controls.Add(this.cmb_empleados);
             this.Controls.Add(this.cmb_sucursales);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_nroFactura);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -358,7 +361,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.Controls.Add(this.txt_idarticulo);
             this.Controls.Add(this.txt_stock);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_RegistrarVentas";
             this.Text = "Registrar Ventas";
             this.Load += new System.EventHandler(this.Frm_RegistrarVentas_Load);
@@ -383,7 +386,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_nroFactura;
         private Clases.ComboBox01 cmb_sucursales;
         private Clases.ComboBox01 cmb_empleados;
         private Clases.Grilla grid_Venta;
@@ -392,7 +395,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
         private System.Windows.Forms.GroupBox groupBox1;
         private Clases.ComboBox01 cmb_fpagos;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_total;
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Button btn_limpiar;
         private System.Windows.Forms.GroupBox groupBox3;

@@ -1,276 +1,36 @@
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Form1.resources
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP\TP_PAV_3K3_GRUPO2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegProducto.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Clases.Label_Text.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_EliminarArticulos.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_BajaCargo.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ConsultarCargo.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ModificarCargo.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_RegCargo.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_AdmTelefonoCliente.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_EliminarTelefonoCliente.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarTelefonoCliente.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_RegistrarTelefonoCliente.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_BajaRubro.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_ConsultarRubro.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_ModificarRubro.resources
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
 C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-D:\Nacho\Ing. Sistemas\C#\RepositorioGITHUD\TP_VERSION3.2\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\Luz\Downloads\TP-PAVI-G2-main14-09\TP-PAVI-G2-main\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\matia\Desktop\parte_Matias_Becerra_75484\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2-conpartedematiasbecerra\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-D:\Nacho\Ing. Sistemas\C#\TP_POSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Clases.Label_Text.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_RegCargo.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_BajaCargo.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ModificarCargo.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_BajaRubro.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Clases.Label_Text.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_BajaCargo.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ModificarCargo.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_RegCargo.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_BajaRubro.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Clases.Label_Text.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_BajaCargo.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ModificarCargo.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_RegCargo.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_BajaRubro.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\Luz\Documents\GitHub\TP-PAVI-G2 - copia\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_EliminarArticulos.resources
-<<<<<<< HEAD
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_EliminarArticulos.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_ModificarRubro.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ConsultarCargo.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_ConsultarRubro.resources
-C:\Users\matia\Desktop\PAVI\TRABAJO INTEGRADOR PAVI\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-=======
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Clases.Label_Text.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_EliminarArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_BajaCargo.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ModificarCargo.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_RegCargo.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_AdmTelefonoCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_EliminarTelefonoCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarTelefonoCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_RegistrarTelefonoCliente.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_BajaRubro.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-D:\Nacho\Ing. Sistemas\C#\TP_POSTAPOSTA\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
->>>>>>> ae3ce1b16264f9ab3fedd48294f90a7d563af144
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.AssemblyReference.cache
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Clases.Label_Text.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_EliminarArticulos.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ModificarArticulos.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_ConsultaArticulos.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_BajaCargo.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ConsultarCargo.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_ModificarCargo.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Cargo.Frm_RegCargo.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Base.Frm_AdmCliente.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_AdmTelefonoCliente.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_BajaCliente.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ClienteBase.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_EliminarTelefonoCliente.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarCliente.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_ModificarTelefonoCliente.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_RegCliente.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Clientes.Frm_RegistrarTelefonoCliente.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Empleados.Frm_RegEmpleado.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_MenuPrincipal.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_AltaArticulos.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Frm_Login.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Marca.Frm_RegMarca.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_BajaRubro.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_ConsultarRubro.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_ModificarRubro.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Rubro.Frm_RegRubro.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Properties.Resources.resources
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.GenerateResource.cache
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CoreCompileInputs.cache
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.pdb
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe.config
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.exe
-C:\Users\Facundo\source\repo clonado\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\TP_PAV_3K3_GRUPO2.pdb
+C:\Users\Luz\Documents\GitHub\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Ventas.Frm_RegistrarVentas.resources

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TP_PAV_3K3_GRUPO2.Formularios.Cargo;
 using TP_PAV_3K3_GRUPO2.Formularios.Rubro;
+using TP_PAV_3K3_GRUPO2.Formularios.Ventas;
 
 namespace TP_PAV_3K3_GRUPO2
 {
@@ -18,7 +19,7 @@ namespace TP_PAV_3K3_GRUPO2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_MenuPrincipal());
+            Application.Run(new Frm_RegistrarVentas());
             //Application.Run(new Frm_ModificarArticulos());
             //Application.Run(new Frm_ConsultaArticulos());
             //Application.Run(new Frm_RegCargo());

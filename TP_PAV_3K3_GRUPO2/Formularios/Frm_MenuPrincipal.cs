@@ -11,6 +11,7 @@ using TP_PAV_3K3_GRUPO2.Formularios.Base;
 using TP_PAV_3K3_GRUPO2.Formularios;
 using TP_PAV_3K3_GRUPO2.Formularios.Rubro;
 using TP_PAV_3K3_GRUPO2.Formularios.Cargo;
+using TP_PAV_3K3_GRUPO2.Formularios.Ventas;
 
 namespace TP_PAV_3K3_GRUPO2
 {
@@ -294,6 +295,12 @@ namespace TP_PAV_3K3_GRUPO2
         {
             Frm_ConsultarRubro _consultaRubro_ = new Frm_ConsultarRubro();
             _consultaRubro_.ShowDialog();
+        }
+
+        private void registrarVentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_RegistrarVentas _regVenta_ = new Frm_RegistrarVentas();
+            _regVenta_.ShowDialog(); 
         }
     }
 }

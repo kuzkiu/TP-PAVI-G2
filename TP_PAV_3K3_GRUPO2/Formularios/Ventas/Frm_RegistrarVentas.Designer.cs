@@ -155,7 +155,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cmb_fpagos);
-            this.groupBox1.Location = new System.Drawing.Point(627, 423);
+            this.groupBox1.Location = new System.Drawing.Point(553, 423);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(278, 64);
             this.groupBox1.TabIndex = 18;
@@ -182,7 +182,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txt_total);
-            this.groupBox2.Location = new System.Drawing.Point(627, 368);
+            this.groupBox2.Location = new System.Drawing.Point(553, 368);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(277, 49);
             this.groupBox2.TabIndex = 19;
@@ -202,7 +202,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // 
             // btn_guardar
             // 
-            this.btn_guardar.Location = new System.Drawing.Point(628, 493);
+            this.btn_guardar.Location = new System.Drawing.Point(554, 493);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(121, 45);
             this.btn_guardar.TabIndex = 20;
@@ -212,7 +212,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // 
             // btn_limpiar
             // 
-            this.btn_limpiar.Location = new System.Drawing.Point(783, 493);
+            this.btn_limpiar.Location = new System.Drawing.Point(709, 493);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(121, 45);
             this.btn_limpiar.TabIndex = 21;
@@ -292,7 +292,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.groupBox3.Controls.Add(this.txt_precio);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.Subtotal);
-            this.groupBox3.Location = new System.Drawing.Point(627, 239);
+            this.groupBox3.Location = new System.Drawing.Point(553, 239);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(277, 123);
             this.groupBox3.TabIndex = 22;
@@ -332,7 +332,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.grid_Articulos._formatoLetraHeader = System.Drawing.FontStyle.Regular;
             this.grid_Articulos._tamannoLetraHeader = 10;
             this.grid_Articulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_Articulos.Location = new System.Drawing.Point(406, 41);
+            this.grid_Articulos.Location = new System.Drawing.Point(332, 41);
             this.grid_Articulos.Name = "grid_Articulos";
             this.grid_Articulos.ReadOnly = true;
             this.grid_Articulos.Size = new System.Drawing.Size(498, 188);
@@ -356,7 +356,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // 
             // txt_buscar
             // 
-            this.txt_buscar.Location = new System.Drawing.Point(517, 11);
+            this.txt_buscar.Location = new System.Drawing.Point(443, 11);
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(387, 24);
             this.txt_buscar.TabIndex = 25;
@@ -365,7 +365,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(404, 13);
+            this.label7.Location = new System.Drawing.Point(330, 13);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 18);
             this.label7.TabIndex = 26;
@@ -375,7 +375,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 554);
+            this.ClientSize = new System.Drawing.Size(840, 555);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.grid_Articulos);

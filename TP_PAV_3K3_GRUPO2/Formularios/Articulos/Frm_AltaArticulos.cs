@@ -245,5 +245,10 @@ namespace TP_PAV_3K3_GRUPO2
             cmb_rubro._Cargar();
             cmb_marca._Cargar();
         }
+
+        private void txt_costo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

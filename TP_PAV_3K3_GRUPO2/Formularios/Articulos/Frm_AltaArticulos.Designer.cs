@@ -109,6 +109,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.txt_costo.Size = new System.Drawing.Size(206, 24);
             this.txt_costo.TabIndex = 3;
             this.txt_costo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_costo.TextChanged += new System.EventHandler(this.txt_costo_TextChanged);
             this.txt_costo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_costo_KeyPress);
             // 
             // txt_stock

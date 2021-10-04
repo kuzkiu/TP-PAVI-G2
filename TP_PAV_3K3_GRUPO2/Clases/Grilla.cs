@@ -40,7 +40,7 @@ namespace TP_PAV_3K3_GRUPO2.Clases
                             break;
                         case "D":
                             this.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-                            this.Columns[i].DefaultCellStyle.Format = "N2";
+                            this.Columns[i].DefaultCellStyle.Format = "F2";
                             break;
                         case "C":
                             this.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;

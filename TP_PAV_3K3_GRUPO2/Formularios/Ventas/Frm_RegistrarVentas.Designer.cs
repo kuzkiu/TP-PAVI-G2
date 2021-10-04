@@ -44,17 +44,20 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_limpiar = new System.Windows.Forms.Button();
             this.cmb_fpagos = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
-            this.grilla2 = new TP_PAV_3K3_GRUPO2.Clases.Grilla();
+            this.grid_Venta = new TP_PAV_3K3_GRUPO2.Clases.Grilla();
             this.cmb_empleados = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.cmb_sucursales = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.cmb_clientes = new TP_PAV_3K3_GRUPO2.Clases.ComboBox01();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_cantidad = new System.Windows.Forms.TextBox();
+            this.txt_precio = new System.Windows.Forms.TextBox();
             this.grid_Articulos = new TP_PAV_3K3_GRUPO2.Clases.Grilla();
+            this.txt_descripcion = new System.Windows.Forms.TextBox();
+            this.txt_idarticulo = new System.Windows.Forms.TextBox();
+            this.txt_stock = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Venta)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Articulos)).BeginInit();
             this.SuspendLayout();
@@ -123,7 +126,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // Subtotal
             // 
             this.Subtotal.AutoSize = true;
-            this.Subtotal.Location = new System.Drawing.Point(16, 30);
+            this.Subtotal.Location = new System.Drawing.Point(16, 64);
             this.Subtotal.Name = "Subtotal";
             this.Subtotal.Size = new System.Drawing.Size(106, 18);
             this.Subtotal.TabIndex = 12;
@@ -133,7 +136,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(56, 72);
+            this.label6.Location = new System.Drawing.Point(56, 99);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 18);
             this.label6.TabIndex = 14;
@@ -152,9 +155,9 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Location = new System.Drawing.Point(543, 364);
+            this.groupBox2.Location = new System.Drawing.Point(543, 376);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(277, 61);
+            this.groupBox2.Size = new System.Drawing.Size(277, 49);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Total";
@@ -168,6 +171,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.textBox4.Size = new System.Drawing.Size(142, 29);
             this.textBox4.TabIndex = 0;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // btn_guardar
             // 
@@ -203,15 +207,15 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.cmb_fpagos.Size = new System.Drawing.Size(218, 26);
             this.cmb_fpagos.TabIndex = 18;
             // 
-            // grilla2
+            // grid_Venta
             // 
-            this.grilla2._formatoLetraHeader = System.Drawing.FontStyle.Regular;
-            this.grilla2._tamannoLetraHeader = 9;
-            this.grilla2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grilla2.Location = new System.Drawing.Point(29, 235);
-            this.grilla2.Name = "grilla2";
-            this.grilla2.Size = new System.Drawing.Size(461, 307);
-            this.grilla2.TabIndex = 11;
+            this.grid_Venta._formatoLetraHeader = System.Drawing.FontStyle.Regular;
+            this.grid_Venta._tamannoLetraHeader = 9;
+            this.grid_Venta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_Venta.Location = new System.Drawing.Point(12, 239);
+            this.grid_Venta.Name = "grid_Venta";
+            this.grid_Venta.Size = new System.Drawing.Size(511, 307);
+            this.grid_Venta.TabIndex = 11;
             // 
             // cmb_empleados
             // 
@@ -263,33 +267,36 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.txt_descripcion);
+            this.groupBox3.Controls.Add(this.txt_cantidad);
+            this.groupBox3.Controls.Add(this.txt_precio);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.Subtotal);
-            this.groupBox3.Location = new System.Drawing.Point(543, 258);
+            this.groupBox3.Location = new System.Drawing.Point(543, 247);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(277, 100);
+            this.groupBox3.Size = new System.Drawing.Size(277, 123);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Artículo seleccionado";
             // 
-            // textBox3
+            // txt_cantidad
             // 
-            this.textBox3.Location = new System.Drawing.Point(128, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(142, 24);
-            this.textBox3.TabIndex = 17;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_cantidad.Location = new System.Drawing.Point(128, 93);
+            this.txt_cantidad.Name = "txt_cantidad";
+            this.txt_cantidad.Size = new System.Drawing.Size(142, 24);
+            this.txt_cantidad.TabIndex = 17;
+            this.txt_cantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_cantidad.TextChanged += new System.EventHandler(this.txt_cantidad_TextChanged);
+            this.txt_cantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_cantidad_KeyPress);
             // 
-            // textBox2
+            // txt_precio
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(128, 24);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(142, 24);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_precio.Enabled = false;
+            this.txt_precio.Location = new System.Drawing.Point(128, 58);
+            this.txt_precio.Name = "txt_precio";
+            this.txt_precio.Size = new System.Drawing.Size(142, 24);
+            this.txt_precio.TabIndex = 16;
+            this.txt_precio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // grid_Articulos
             // 
@@ -300,6 +307,31 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.grid_Articulos.Name = "grid_Articulos";
             this.grid_Articulos.Size = new System.Drawing.Size(498, 208);
             this.grid_Articulos.TabIndex = 23;
+            this.grid_Articulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Articulos_CellContentClick);
+            this.grid_Articulos.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Articulos_CellContentDoubleClick);
+            // 
+            // txt_descripcion
+            // 
+            this.txt_descripcion.Enabled = false;
+            this.txt_descripcion.Location = new System.Drawing.Point(19, 23);
+            this.txt_descripcion.Name = "txt_descripcion";
+            this.txt_descripcion.Size = new System.Drawing.Size(251, 24);
+            this.txt_descripcion.TabIndex = 18;
+            this.txt_descripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt_idarticulo
+            // 
+            this.txt_idarticulo.Location = new System.Drawing.Point(579, 190);
+            this.txt_idarticulo.Name = "txt_idarticulo";
+            this.txt_idarticulo.Size = new System.Drawing.Size(48, 24);
+            this.txt_idarticulo.TabIndex = 24;
+            // 
+            // txt_stock
+            // 
+            this.txt_stock.Location = new System.Drawing.Point(671, 178);
+            this.txt_stock.Name = "txt_stock";
+            this.txt_stock.Size = new System.Drawing.Size(100, 24);
+            this.txt_stock.TabIndex = 20;
             // 
             // Frm_RegistrarVentas
             // 
@@ -312,7 +344,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.grilla2);
+            this.Controls.Add(this.grid_Venta);
             this.Controls.Add(this.cmb_empleados);
             this.Controls.Add(this.cmb_sucursales);
             this.Controls.Add(this.textBox1);
@@ -323,6 +355,8 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmb_clientes);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_idarticulo);
+            this.Controls.Add(this.txt_stock);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_RegistrarVentas";
@@ -331,7 +365,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grilla2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Venta)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Articulos)).EndInit();
@@ -352,7 +386,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
         private System.Windows.Forms.TextBox textBox1;
         private Clases.ComboBox01 cmb_sucursales;
         private Clases.ComboBox01 cmb_empleados;
-        private Clases.Grilla grilla2;
+        private Clases.Grilla grid_Venta;
         private System.Windows.Forms.Label Subtotal;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -362,8 +396,11 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Button btn_limpiar;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_cantidad;
+        private System.Windows.Forms.TextBox txt_precio;
         private Clases.Grilla grid_Articulos;
+        private System.Windows.Forms.TextBox txt_descripcion;
+        private System.Windows.Forms.TextBox txt_idarticulo;
+        private System.Windows.Forms.TextBox txt_stock;
     }
 }

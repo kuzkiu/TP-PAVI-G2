@@ -203,6 +203,30 @@
     <Compile Include="Formularios\Rubro\Frm_RegRubro.Designer.cs">
       <DependentUpon>Frm_RegRubro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Tipo_Telefono\Frm_BajaTipoTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Telefono\Frm_BajaTipoTelefono.Designer.cs">
+      <DependentUpon>Frm_BajaTipoTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Telefono\Frm_ConsultarTipoTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Telefono\Frm_ConsultarTipoTelefono.Designer.cs">
+      <DependentUpon>Frm_ConsultarTipoTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Telefono\Frm_ModificarTipoTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Telefono\Frm_ModificarTipoTelefono.Designer.cs">
+      <DependentUpon>Frm_ModificarTipoTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Telefono\Frm_RegTipoTeleono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Telefono\Frm_RegTipoTeleono.Designer.cs">
+      <DependentUpon>Frm_RegTipoTeleono.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Ventas\Frm_RegistrarVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +238,7 @@
     <Compile Include="Negocios\Ne_Cliente.cs" />
     <Compile Include="Negocios\NE_Empleados.cs" />
     <Compile Include="Negocios\NE_Rubro.cs" />
+    <Compile Include="Negocios\NE_TipoTelefono.cs" />
     <Compile Include="Negocios\NE_Ventas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -289,6 +314,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Rubro\Frm_RegRubro.resx">
       <DependentUpon>Frm_RegRubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Telefono\Frm_BajaTipoTelefono.resx">
+      <DependentUpon>Frm_BajaTipoTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Telefono\Frm_ConsultarTipoTelefono.resx">
+      <DependentUpon>Frm_ConsultarTipoTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Telefono\Frm_ModificarTipoTelefono.resx">
+      <DependentUpon>Frm_ModificarTipoTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Telefono\Frm_RegTipoTeleono.resx">
+      <DependentUpon>Frm_RegTipoTeleono.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Ventas\Frm_RegistrarVentas.resx">
       <DependentUpon>Frm_RegistrarVentas.cs</DependentUpon>

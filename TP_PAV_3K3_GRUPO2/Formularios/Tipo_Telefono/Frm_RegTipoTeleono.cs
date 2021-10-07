@@ -43,7 +43,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Tipo_Telefono
 
             else if(txt_nombre_tipo_tel._Text == "")
             {
-                MessageBox.Show("no se ha ingresado un nombre para el tipo de telefono");
+                MessageBox.Show("no se ha ingresado un nombre para el tipo de telefonoo");
                 this.txt_id_tipo_telefono.Focus();
                 return;
             }

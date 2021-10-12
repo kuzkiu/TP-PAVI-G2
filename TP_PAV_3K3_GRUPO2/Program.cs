@@ -33,7 +33,9 @@ namespace TP_PAV_3K3_GRUPO2
             //Application.Run(new Frm_RegTipoTeleono());
             //Application.Run(new Frm_BajaTipoTelefono());
             //Application.Run(new Frm_ModificarTipoTelefono());
-            Application.Run(new Frm_ConsultarTipoTelefono());
+            //Application.Run(new Frm_Login());
+            Application.Run(new Frm_MenuPrincipal());
+
         }
 
         

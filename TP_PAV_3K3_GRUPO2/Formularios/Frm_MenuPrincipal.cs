@@ -12,6 +12,8 @@ using TP_PAV_3K3_GRUPO2.Formularios;
 using TP_PAV_3K3_GRUPO2.Formularios.Rubro;
 using TP_PAV_3K3_GRUPO2.Formularios.Cargo;
 using TP_PAV_3K3_GRUPO2.Formularios.Ventas;
+using TP_PAV_3K3_GRUPO2.Formularios.ListadePrecios;
+using TP_PAV_3K3_GRUPO2.Formularios.Sucursal;
 
 namespace TP_PAV_3K3_GRUPO2
 {
@@ -301,6 +303,20 @@ namespace TP_PAV_3K3_GRUPO2
         {
             Frm_RegistrarVentas _regVenta_ = new Frm_RegistrarVentas();
             _regVenta_.ShowDialog(); 
+        }
+
+        private void administrarListasDePreciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Consultar_Listas lista = new Frm_Consultar_Listas();
+            lista.ShowDialog();
+            lista.Dispose();
+        }
+
+        private void administrarSucursalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_AdministrarSucursal adm_suc = new Frm_AdministrarSucursal();
+            adm_suc.ShowDialog();
+            adm_suc.Dispose();
         }
     }
 }

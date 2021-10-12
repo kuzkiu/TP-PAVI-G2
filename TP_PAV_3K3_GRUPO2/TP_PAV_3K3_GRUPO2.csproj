@@ -157,6 +157,7 @@
     <Compile Include="Formularios\Clientes\Frm_RegistrarTelefonoCliente.Designer.cs">
       <DependentUpon>Frm_RegistrarTelefonoCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Frm_Adm_Listas.cs" />
     <Compile Include="Formularios\Frm_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +169,18 @@
     </Compile>
     <Compile Include="Formularios\Articulos\Frm_AltaArticulos.Designer.cs">
       <DependentUpon>Frm_AltaArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ListadePrecios\Frm_Adm_Listas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListadePrecios\Frm_Adm_Listas.Designer.cs">
+      <DependentUpon>Frm_Adm_Listas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ListadePrecios\Frm_Registrar_Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListadePrecios\Frm_Registrar_Lista.Designer.cs">
+      <DependentUpon>Frm_Registrar_Lista.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Login\Frm_Login.cs">
       <SubType>Form</SubType>
@@ -203,6 +216,54 @@
     <Compile Include="Formularios\Rubro\Frm_RegRubro.Designer.cs">
       <DependentUpon>Frm_RegRubro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_AdministrarSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_AdministrarSucursal.Designer.cs">
+      <DependentUpon>Frm_AdministrarSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Adm_Telefono_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Adm_Telefono_Sucursal.Designer.cs">
+      <DependentUpon>Frm_Adm_Telefono_Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_BajaSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_BajaSucursal.Designer.cs">
+      <DependentUpon>Frm_BajaSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Eliminar_Telefono_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Eliminar_Telefono_Sucursal.Designer.cs">
+      <DependentUpon>Frm_Eliminar_Telefono_Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_ModificarSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_ModificarSucursal.Designer.cs">
+      <DependentUpon>Frm_ModificarSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Modificar_Telefono_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Modificar_Telefono_Sucursal.Designer.cs">
+      <DependentUpon>Frm_Modificar_Telefono_Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Registrar_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Registrar_Sucursal.Designer.cs">
+      <DependentUpon>Frm_Registrar_Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Reg_Telefono_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sucursal\Frm_Reg_Telefono_Sucursal.Designer.cs">
+      <DependentUpon>Frm_Reg_Telefono_Sucursal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Tipo_Telefono\Frm_BajaTipoTelefono.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,7 +298,9 @@
     <Compile Include="Negocios\NE_Cargo.cs" />
     <Compile Include="Negocios\Ne_Cliente.cs" />
     <Compile Include="Negocios\NE_Empleados.cs" />
+    <Compile Include="Negocios\Ne_Lista_de_Precios.cs" />
     <Compile Include="Negocios\NE_Rubro.cs" />
+    <Compile Include="Negocios\Ne_Sucursal.cs" />
     <Compile Include="Negocios\NE_TipoTelefono.cs" />
     <Compile Include="Negocios\NE_Ventas.cs" />
     <Compile Include="Program.cs" />
@@ -299,6 +362,12 @@
     <EmbeddedResource Include="Formularios\Articulos\Frm_AltaArticulos.resx">
       <DependentUpon>Frm_AltaArticulos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListadePrecios\Frm_Adm_Listas.resx">
+      <DependentUpon>Frm_Adm_Listas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListadePrecios\Frm_Registrar_Lista.resx">
+      <DependentUpon>Frm_Registrar_Lista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,6 +383,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Rubro\Frm_RegRubro.resx">
       <DependentUpon>Frm_RegRubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sucursal\Frm_AdministrarSucursal.resx">
+      <DependentUpon>Frm_AdministrarSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sucursal\Frm_Adm_Telefono_Sucursal.resx">
+      <DependentUpon>Frm_Adm_Telefono_Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sucursal\Frm_BajaSucursal.resx">
+      <DependentUpon>Frm_BajaSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sucursal\Frm_Eliminar_Telefono_Sucursal.resx">
+      <DependentUpon>Frm_Eliminar_Telefono_Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sucursal\Frm_ModificarSucursal.resx">
+      <DependentUpon>Frm_ModificarSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sucursal\Frm_Modificar_Telefono_Sucursal.resx">
+      <DependentUpon>Frm_Modificar_Telefono_Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sucursal\Frm_Registrar_Sucursal.resx">
+      <DependentUpon>Frm_Registrar_Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sucursal\Frm_Reg_Telefono_Sucursal.resx">
+      <DependentUpon>Frm_Reg_Telefono_Sucursal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Tipo_Telefono\Frm_BajaTipoTelefono.resx">
       <DependentUpon>Frm_BajaTipoTelefono.cs</DependentUpon>

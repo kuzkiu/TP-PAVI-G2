@@ -218,6 +218,12 @@ namespace TP_PAV_3K3_GRUPO2
                 this.txt_NombreE.Focus();
                 return;
             }
+            if (this.dp_FechaIngE.Value < this.dp_FechaNacE.Value)
+            {
+                MessageBox.Show("Debe introducir una fecha válida para el nacimiento del cliente");
+                return;
+            }
+            
             else
             {
             Negocios.NE_Empleados clie = new Negocios.NE_Empleados();

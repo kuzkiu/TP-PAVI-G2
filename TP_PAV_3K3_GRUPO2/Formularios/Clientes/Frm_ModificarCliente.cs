@@ -14,6 +14,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
 {
     public partial class Frm_ModificarCliente : Form
     {
+
         public Frm_ModificarCliente()
         {
             InitializeComponent();
@@ -103,7 +104,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
 
         private void cmb_cuil_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
+            
             Ne_Cliente cliente_mod = new Ne_Cliente();
             DataTable tabla_mod = new DataTable();
             tabla_mod = cliente_mod.BuscarClienteModificacion(cmb_cuil.Text);
@@ -156,6 +157,16 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Clientes
             adm_tel.dgv_telefonocliente.DataSource = tabla_tel;
             adm_tel.ShowDialog();
             adm_tel.Dispose();
+        }
+
+        private void cmb_cuil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_localidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

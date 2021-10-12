@@ -11,7 +11,7 @@ using System.Drawing;
 
 namespace TP_PAV_3K3_GRUPO2.Clases
 {
-    class Grilla : DataGridView
+    class Grilla : DataGridView 
     {
         public int _tamannoLetraHeader { get { return tamLet; } set { tamLet = value; } }
         public FontStyle _formatoLetraHeader { get { return forLet; } set { forLet = value; } }

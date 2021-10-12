@@ -305,5 +305,10 @@ namespace TP_PAV_3K3_GRUPO2
                 cmb_Barrio.Items.Add(tabla_barrio.Rows[i]["nombre_barrio"]);
             }
         }
+
+        private void txt_numdir_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

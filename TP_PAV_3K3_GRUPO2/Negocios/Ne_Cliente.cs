@@ -158,7 +158,7 @@ WHERE C.id_direccion = D.id_direccion AND D.id_barrio= B.id_barrio AND B.id_loca
 
 
         public void modificar_ClienteDefinitivo(string cuil, string Razons, string id_tipodoc, string doc,
-            string id_direc, string calle, string num_calle, string depto, string piso, string id_barrio) 
+           string id_direc, string calle, string num_calle, string depto, string piso, string id_barrio) 
         {
             modificar_Cliente(cuil, Razons, id_tipodoc, doc);
             modificar_Direccion(id_direc, calle, num_calle, depto, piso, id_barrio);

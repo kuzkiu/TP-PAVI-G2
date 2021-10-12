@@ -61,7 +61,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Base
         }
 
         private void btn_registrar_Click(object sender, EventArgs e)
-        {
+        {  
             Frm_RegCliente reg_clie = new Frm_RegCliente();
             reg_clie.ShowDialog();
             reg_clie.Dispose();

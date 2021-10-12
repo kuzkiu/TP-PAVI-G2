@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TP_PAV_3K3_GRUPO2.Formularios.Base;
 using TP_PAV_3K3_GRUPO2.Formularios;
+using TP_PAV_3K3_GRUPO2.Formularios.Empleados;
+using TP_PAV_3K3_GRUPO2.Formularios.Barrio;
 using TP_PAV_3K3_GRUPO2.Formularios.Rubro;
 using TP_PAV_3K3_GRUPO2.Formularios.Cargo;
 
@@ -294,6 +296,52 @@ namespace TP_PAV_3K3_GRUPO2
         {
             Frm_ConsultarRubro _consultaRubro_ = new Frm_ConsultarRubro();
             _consultaRubro_.ShowDialog();
+        }
+
+        private void consultarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ConsultarEmpleado cons_empleado = new Frm_ConsultarEmpleado();
+            cons_empleado.ShowDialog();
+
+        }
+
+        private void modificarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ModificarEmpleado mod_empleado = new Frm_ModificarEmpleado();
+            mod_empleado.ShowDialog();
+
+        }
+
+        private void eliminarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_BajaEmpleado elim_empleado = new Frm_BajaEmpleado();
+            elim_empleado.ShowDialog();
+        }
+
+        private void registrarBarrioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_RegBarrio reg_barrio = new Frm_RegBarrio();
+            reg_barrio.ShowDialog();
+        }
+
+        private void consultarBarrioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ConsultarBarrio consultar_barrio = new Frm_ConsultarBarrio();
+            consultar_barrio.ShowDialog();
+
+        }
+
+        private void modificarBarrioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ModificarBarrio modificar_barrio = new Frm_ModificarBarrio();
+            modificar_barrio.ShowDialog();
+        }
+
+        private void eliminarBarrioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_BajaBarrio eliminar_barrio = new Frm_BajaBarrio();
+            eliminar_barrio.ShowDialog();
+
         }
     }
 }

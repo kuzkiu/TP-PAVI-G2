@@ -279,7 +279,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class Datos_VentasPorSucursalDataTable : global::System.Data.TypedTableBase<Datos_VentasPorSucursalRow> {
             
-            private global::System.Data.DataColumn columndescripcion;
+            private global::System.Data.DataColumn columnnombre;
             
             private global::System.Data.DataColumn columnfecha_venta;
             
@@ -322,9 +322,9 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn descripcionColumn {
+            public global::System.Data.DataColumn nombreColumn {
                 get {
-                    return this.columndescripcion;
+                    return this.columnnombre;
                 }
             }
             
@@ -389,10 +389,10 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Datos_VentasPorSucursalRow AddDatos_VentasPorSucursalRow(string descripcion, System.TimeSpan fecha_venta, int nro_factura, double monto_total) {
+            public Datos_VentasPorSucursalRow AddDatos_VentasPorSucursalRow(string nombre, System.TimeSpan fecha_venta, int nro_factura, double monto_total) {
                 Datos_VentasPorSucursalRow rowDatos_VentasPorSucursalRow = ((Datos_VentasPorSucursalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        descripcion,
+                        nombre,
                         fecha_venta,
                         nro_factura,
                         monto_total};
@@ -418,7 +418,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columndescripcion = base.Columns["descripcion"];
+                this.columnnombre = base.Columns["nombre"];
                 this.columnfecha_venta = base.Columns["fecha_venta"];
                 this.columnnro_factura = base.Columns["nro_factura"];
                 this.columnmonto_total = base.Columns["monto_total"];
@@ -427,8 +427,8 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columndescripcion = new global::System.Data.DataColumn("descripcion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndescripcion);
+                this.columnnombre = new global::System.Data.DataColumn("nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnombre);
                 this.columnfecha_venta = new global::System.Data.DataColumn("fecha_venta", typeof(global::System.TimeSpan), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnfecha_venta);
                 this.columnnro_factura = new global::System.Data.DataColumn("nro_factura", typeof(int), null, global::System.Data.MappingType.Element);
@@ -577,18 +577,17 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string descripcion {
+            public string nombre {
                 get {
                     try {
-                        return ((string)(this[this.tableDatos_VentasPorSucursal.descripcionColumn]));
+                        return ((string)(this[this.tableDatos_VentasPorSucursal.nombreColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion\' de la tabla \'Datos_VentasPorSucursal\' es DBN" +
-                                "ull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre\' de la tabla \'Datos_VentasPorSucursal\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDatos_VentasPorSucursal.descripcionColumn] = value;
+                    this[this.tableDatos_VentasPorSucursal.nombreColumn] = value;
                 }
             }
             
@@ -645,14 +644,14 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsdescripcionNull() {
-                return this.IsNull(this.tableDatos_VentasPorSucursal.descripcionColumn);
+            public bool IsnombreNull() {
+                return this.IsNull(this.tableDatos_VentasPorSucursal.nombreColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetdescripcionNull() {
-                this[this.tableDatos_VentasPorSucursal.descripcionColumn] = global::System.Convert.DBNull;
+            public void SetnombreNull() {
+                this[this.tableDatos_VentasPorSucursal.nombreColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

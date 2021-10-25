@@ -49,9 +49,11 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
         public DataTable BuscarVentasPorMesPorSucursal(string fechadesde, string fechahasta, int sucursal)
         {
 
-            string sql = @"SELECT s.descripcion, f.fecha_venta, f.nro_factura, f.monto_total
-            FROM Factura f JOIN Sucursal s ON  f.id_sucursal = s.id_sucursal
-            WHERE f.id_sucursal = '" + sucursal + "' AND f.fecha_venta BETWEEN '"+ fechadesde +"' AND '"+ fechahasta +"'";
+            string sql = @"SELECT e.nombre, f.fecha_venta, f.nro_factura, f.monto_total
+            FROM Factura f
+            INNER JOIN Sucursal s ON  f.id_sucursal = s.id_sucursal
+            INNER JOIN Empleado e ON  f.nro_doc_emp = e.nro_doc_emp
+            WHERE f.id_sucursal = '" + sucursal + "' AND f.fecha_venta BETWEEN '" + fechadesde + "' AND '" + fechahasta + "'";
             DataTable tabla = new DataTable();
             return _BD.EjecutarSelect(sql);
 
@@ -61,7 +63,9 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
         {
 
             string sql = @"SELECT s.descripcion, f.fecha_venta, f.nro_factura, f.monto_total
-            FROM Factura f JOIN Sucursal s ON  f.id_sucursal = s.id_sucursal
+            FROM Factura f
+            INNER JOIN Sucursal s ON  f.id_sucursal = s.id_sucursal
+            INNER JOIN Empleado e ON  f.nro_doc_emp = e.nro_doc_emp
             WHERE f.nro_doc_emp = '" + empleado + "' AND f.fecha_venta BETWEEN '" + fechadesde + "' AND '" + fechahasta + "'";
             DataTable tabla = new DataTable();
             return _BD.EjecutarSelect(sql);

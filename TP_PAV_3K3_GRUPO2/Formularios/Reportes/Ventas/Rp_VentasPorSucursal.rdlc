@@ -24,21 +24,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="descripcion">
+                    <Textbox Name="nombre">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!descripcion.Value</Value>
+                              <Value>=Fields!nombre.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>descripcion</rd:DefaultName>
+                      <rd:DefaultName>nombre</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -165,7 +165,7 @@
         <Top>0.17639cm</Top>
         <Left>1.31974cm</Left>
         <Height>0.6cm</Height>
-        <Width>15.5175cm</Width>
+        <Width>15.51752cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -176,7 +176,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>7.22742in</Width>
+  <Width>7.22743in</Width>
   <Page>
     <PageHeader>
       <Height>2.8987cm</Height>
@@ -223,7 +223,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Descripción</Value>
+                  <Value>Empleado</Value>
                   <Style>
                     <FontSize>11pt</FontSize>
                   </Style>
@@ -482,13 +482,13 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="descripcion">
-          <DataField>descripcion</DataField>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="fecha_venta">
           <DataField>fecha_venta</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.TimeSpan</rd:TypeName>
         </Field>
         <Field Name="nro_factura">
           <DataField>nro_factura</DataField>
@@ -496,7 +496,7 @@
         </Field>
         <Field Name="monto_total">
           <DataField>monto_total</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>

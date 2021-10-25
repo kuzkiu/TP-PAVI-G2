@@ -118,7 +118,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Ventas
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(72, 82);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2021, 10, 4, 0, 0, 0, 0);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2021, 12, 4, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(126, 24);
             this.dateTimePicker1.TabIndex = 6;

@@ -14,7 +14,7 @@ using TP_PAV_3K3_GRUPO2.Formularios.Cargo;
 using TP_PAV_3K3_GRUPO2.Formularios.Ventas;
 using TP_PAV_3K3_GRUPO2.Formularios.ListadePrecios;
 using TP_PAV_3K3_GRUPO2.Formularios.Sucursal;
-
+using TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas;
 namespace TP_PAV_3K3_GRUPO2
 {
 
@@ -322,6 +322,13 @@ namespace TP_PAV_3K3_GRUPO2
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void ventasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_ReporteVentas rep_ventas = new Frm_ReporteVentas();
+            rep_ventas.ShowDialog();
+            rep_ventas.Dispose();
         }
     }
 }

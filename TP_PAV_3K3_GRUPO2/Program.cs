@@ -7,6 +7,7 @@ using TP_PAV_3K3_GRUPO2.Formularios.Cargo;
 using TP_PAV_3K3_GRUPO2.Formularios.Rubro;
 using TP_PAV_3K3_GRUPO2.Formularios.Ventas;
 using TP_PAV_3K3_GRUPO2.Formularios.Tipo_Telefono;
+using TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas;
 
 namespace TP_PAV_3K3_GRUPO2
 {
@@ -34,7 +35,8 @@ namespace TP_PAV_3K3_GRUPO2
             //Application.Run(new Frm_BajaTipoTelefono());
             //Application.Run(new Frm_ModificarTipoTelefono());
             //Application.Run(new Frm_Login());
-            Application.Run(new Frm_MenuPrincipal());
+            Application.Run(new Frm_ReporteVentas());
+            //Application.Run(new Frm_MenuPrincipal());
 
         }
 

@@ -65,6 +65,14 @@ namespace TP_PAV_3K3_GRUPO2
             this.promocionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarPromocionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarPromocionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listasDePreciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promocionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listasDePreciosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.promocionesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.soporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarTipoFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarTipoFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,14 +123,6 @@ namespace TP_PAV_3K3_GRUPO2
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.acercadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.estadisticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listasDePreciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.promocionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listasDePreciosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.promocionesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -191,28 +191,28 @@ namespace TP_PAV_3K3_GRUPO2
             // registrarArticuloToolStripMenuItem
             // 
             this.registrarArticuloToolStripMenuItem.Name = "registrarArticuloToolStripMenuItem";
-            this.registrarArticuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarArticuloToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.registrarArticuloToolStripMenuItem.Text = "Registrar Articulo";
             this.registrarArticuloToolStripMenuItem.Click += new System.EventHandler(this.registrarArticuloToolStripMenuItem_Click);
             // 
             // modificarArtículoToolStripMenuItem
             // 
             this.modificarArtículoToolStripMenuItem.Name = "modificarArtículoToolStripMenuItem";
-            this.modificarArtículoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarArtículoToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.modificarArtículoToolStripMenuItem.Text = "Modificar Artículo";
             this.modificarArtículoToolStripMenuItem.Click += new System.EventHandler(this.modificarArtículoToolStripMenuItem_Click);
             // 
             // mostrarEmpleadoToolStripMenuItem
             // 
             this.mostrarEmpleadoToolStripMenuItem.Name = "mostrarEmpleadoToolStripMenuItem";
-            this.mostrarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mostrarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.mostrarEmpleadoToolStripMenuItem.Text = "Consultar Artículos";
             this.mostrarEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.mostrarEmpleadoToolStripMenuItem_Click);
             // 
             // eliminarEmpleadoToolStripMenuItem1
             // 
             this.eliminarEmpleadoToolStripMenuItem1.Name = "eliminarEmpleadoToolStripMenuItem1";
-            this.eliminarEmpleadoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.eliminarEmpleadoToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
             this.eliminarEmpleadoToolStripMenuItem1.Text = "Eliminar Artículo";
             this.eliminarEmpleadoToolStripMenuItem1.Click += new System.EventHandler(this.eliminarEmpleadoToolStripMenuItem1_Click);
             // 
@@ -224,7 +224,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.consultarRubroToolStripMenuItem,
             this.eliminarRubroToolStripMenuItem});
             this.administrarRubroToolStripMenuItem.Name = "administrarRubroToolStripMenuItem";
-            this.administrarRubroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.administrarRubroToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.administrarRubroToolStripMenuItem.Text = "Administrar Rubro";
             this.administrarRubroToolStripMenuItem.Click += new System.EventHandler(this.administrarRubroToolStripMenuItem_Click);
             // 
@@ -264,7 +264,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.modificarMarcaToolStripMenuItem,
             this.eliminarMarcaToolStripMenuItem});
             this.administrarMarcaToolStripMenuItem.Name = "administrarMarcaToolStripMenuItem";
-            this.administrarMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.administrarMarcaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.administrarMarcaToolStripMenuItem.Text = "Administrar Marca";
             // 
             // registrarMarcaToolStripMenuItem
@@ -380,14 +380,14 @@ namespace TP_PAV_3K3_GRUPO2
             // registrarVentaToolStripMenuItem
             // 
             this.registrarVentaToolStripMenuItem.Name = "registrarVentaToolStripMenuItem";
-            this.registrarVentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarVentaToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.registrarVentaToolStripMenuItem.Text = "Registrar Venta";
             this.registrarVentaToolStripMenuItem.Click += new System.EventHandler(this.registrarVentaToolStripMenuItem_Click);
             // 
             // consultarVentaToolStripMenuItem
             // 
             this.consultarVentaToolStripMenuItem.Name = "consultarVentaToolStripMenuItem";
-            this.consultarVentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarVentaToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.consultarVentaToolStripMenuItem.Text = "Consultar Venta";
             // 
             // promocionesToolStripMenuItem
@@ -411,6 +411,63 @@ namespace TP_PAV_3K3_GRUPO2
             this.consultarPromocionToolStripMenuItem.Name = "consultarPromocionToolStripMenuItem";
             this.consultarPromocionToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.consultarPromocionToolStripMenuItem.Text = "Consultar Promoción ";
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ventasToolStripMenuItem1,
+            this.listasDePreciosToolStripMenuItem,
+            this.promocionesToolStripMenuItem1});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 22);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // ventasToolStripMenuItem1
+            // 
+            this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
+            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ventasToolStripMenuItem1.Text = "Ventas";
+            this.ventasToolStripMenuItem1.Click += new System.EventHandler(this.ventasToolStripMenuItem1_Click);
+            // 
+            // listasDePreciosToolStripMenuItem
+            // 
+            this.listasDePreciosToolStripMenuItem.Name = "listasDePreciosToolStripMenuItem";
+            this.listasDePreciosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listasDePreciosToolStripMenuItem.Text = "Listas de precios";
+            // 
+            // promocionesToolStripMenuItem1
+            // 
+            this.promocionesToolStripMenuItem1.Name = "promocionesToolStripMenuItem1";
+            this.promocionesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.promocionesToolStripMenuItem1.Text = "Promociones";
+            // 
+            // estadisticasToolStripMenuItem
+            // 
+            this.estadisticasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ventasToolStripMenuItem2,
+            this.listasDePreciosToolStripMenuItem1,
+            this.promocionesToolStripMenuItem2});
+            this.estadisticasToolStripMenuItem.Name = "estadisticasToolStripMenuItem";
+            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(79, 22);
+            this.estadisticasToolStripMenuItem.Text = "Estadísticas";
+            // 
+            // ventasToolStripMenuItem2
+            // 
+            this.ventasToolStripMenuItem2.Name = "ventasToolStripMenuItem2";
+            this.ventasToolStripMenuItem2.Size = new System.Drawing.Size(160, 22);
+            this.ventasToolStripMenuItem2.Text = "Ventas";
+            // 
+            // listasDePreciosToolStripMenuItem1
+            // 
+            this.listasDePreciosToolStripMenuItem1.Name = "listasDePreciosToolStripMenuItem1";
+            this.listasDePreciosToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.listasDePreciosToolStripMenuItem1.Text = "Listas de precios";
+            // 
+            // promocionesToolStripMenuItem2
+            // 
+            this.promocionesToolStripMenuItem2.Name = "promocionesToolStripMenuItem2";
+            this.promocionesToolStripMenuItem2.Size = new System.Drawing.Size(160, 22);
+            this.promocionesToolStripMenuItem2.Text = "Promociones";
             // 
             // soporteToolStripMenuItem
             // 
@@ -585,7 +642,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.nuevoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
             this.nuevoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.nuevoToolStripMenuItem.Text = "&Nuevo";
             // 
             // abrirToolStripMenuItem
@@ -594,13 +651,13 @@ namespace TP_PAV_3K3_GRUPO2
             this.abrirToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
             this.abrirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.abrirToolStripMenuItem.Text = "&Abrir";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(211, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(203, 6);
             // 
             // guardarToolStripMenuItem
             // 
@@ -608,19 +665,19 @@ namespace TP_PAV_3K3_GRUPO2
             this.guardarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
             this.guardarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.guardarToolStripMenuItem.Text = "&Guardar";
             // 
             // guardarcomoToolStripMenuItem
             // 
             this.guardarcomoToolStripMenuItem.Name = "guardarcomoToolStripMenuItem";
-            this.guardarcomoToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
+            this.guardarcomoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.guardarcomoToolStripMenuItem.Text = "G&uardar como";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(211, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(203, 6);
             // 
             // imprimirToolStripMenuItem
             // 
@@ -628,7 +685,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.imprimirToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
             this.imprimirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.imprimirToolStripMenuItem.Text = "&Imprimir";
             // 
             // vistapreviadeimpresiónToolStripMenuItem
@@ -636,18 +693,18 @@ namespace TP_PAV_3K3_GRUPO2
             this.vistapreviadeimpresiónToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vistapreviadeimpresiónToolStripMenuItem.Image")));
             this.vistapreviadeimpresiónToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.vistapreviadeimpresiónToolStripMenuItem.Name = "vistapreviadeimpresiónToolStripMenuItem";
-            this.vistapreviadeimpresiónToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
+            this.vistapreviadeimpresiónToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.vistapreviadeimpresiónToolStripMenuItem.Text = "&Vista previa de impresión";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(211, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(203, 6);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.salirToolStripMenuItem.Text = "&Salir";
             // 
             // editarToolStripMenuItem
@@ -669,20 +726,20 @@ namespace TP_PAV_3K3_GRUPO2
             // 
             this.deshacerToolStripMenuItem.Name = "deshacerToolStripMenuItem";
             this.deshacerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.deshacerToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
+            this.deshacerToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.deshacerToolStripMenuItem.Text = "&Deshacer";
             // 
             // rehacerToolStripMenuItem
             // 
             this.rehacerToolStripMenuItem.Name = "rehacerToolStripMenuItem";
             this.rehacerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.rehacerToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
+            this.rehacerToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.rehacerToolStripMenuItem.Text = "&Rehacer";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(168, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(160, 6);
             // 
             // cortarToolStripMenuItem
             // 
@@ -690,7 +747,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.cortarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cortarToolStripMenuItem.Name = "cortarToolStripMenuItem";
             this.cortarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cortarToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
+            this.cortarToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.cortarToolStripMenuItem.Text = "Cor&tar";
             // 
             // copiarToolStripMenuItem
@@ -699,7 +756,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.copiarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
             this.copiarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
+            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.copiarToolStripMenuItem.Text = "&Copiar";
             // 
             // pegarToolStripMenuItem
@@ -708,18 +765,18 @@ namespace TP_PAV_3K3_GRUPO2
             this.pegarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pegarToolStripMenuItem.Name = "pegarToolStripMenuItem";
             this.pegarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pegarToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
+            this.pegarToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.pegarToolStripMenuItem.Text = "&Pegar";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(168, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(160, 6);
             // 
             // seleccionartodoToolStripMenuItem
             // 
             this.seleccionartodoToolStripMenuItem.Name = "seleccionartodoToolStripMenuItem";
-            this.seleccionartodoToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
+            this.seleccionartodoToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.seleccionartodoToolStripMenuItem.Text = "&Seleccionar todo";
             // 
             // herramientasToolStripMenuItem
@@ -784,62 +841,6 @@ namespace TP_PAV_3K3_GRUPO2
             this.acercadeToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.acercadeToolStripMenuItem.Text = "&Acerca de...";
             // 
-            // reportesToolStripMenuItem
-            // 
-            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ventasToolStripMenuItem1,
-            this.listasDePreciosToolStripMenuItem,
-            this.promocionesToolStripMenuItem1});
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 22);
-            this.reportesToolStripMenuItem.Text = "Reportes";
-            // 
-            // estadisticasToolStripMenuItem
-            // 
-            this.estadisticasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ventasToolStripMenuItem2,
-            this.listasDePreciosToolStripMenuItem1,
-            this.promocionesToolStripMenuItem2});
-            this.estadisticasToolStripMenuItem.Name = "estadisticasToolStripMenuItem";
-            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(79, 22);
-            this.estadisticasToolStripMenuItem.Text = "Estadísticas";
-            // 
-            // ventasToolStripMenuItem1
-            // 
-            this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.ventasToolStripMenuItem1.Text = "Ventas";
-            // 
-            // listasDePreciosToolStripMenuItem
-            // 
-            this.listasDePreciosToolStripMenuItem.Name = "listasDePreciosToolStripMenuItem";
-            this.listasDePreciosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listasDePreciosToolStripMenuItem.Text = "Listas de precios";
-            // 
-            // promocionesToolStripMenuItem1
-            // 
-            this.promocionesToolStripMenuItem1.Name = "promocionesToolStripMenuItem1";
-            this.promocionesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.promocionesToolStripMenuItem1.Text = "Promociones";
-            // 
-            // ventasToolStripMenuItem2
-            // 
-            this.ventasToolStripMenuItem2.Name = "ventasToolStripMenuItem2";
-            this.ventasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.ventasToolStripMenuItem2.Text = "Ventas";
-            // 
-            // listasDePreciosToolStripMenuItem1
-            // 
-            this.listasDePreciosToolStripMenuItem1.Name = "listasDePreciosToolStripMenuItem1";
-            this.listasDePreciosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.listasDePreciosToolStripMenuItem1.Text = "Listas de precios";
-            // 
-            // promocionesToolStripMenuItem2
-            // 
-            this.promocionesToolStripMenuItem2.Name = "promocionesToolStripMenuItem2";
-            this.promocionesToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.promocionesToolStripMenuItem2.Text = "Promociones";
-            // 
             // Frm_MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -847,7 +848,7 @@ namespace TP_PAV_3K3_GRUPO2
             this.ClientSize = new System.Drawing.Size(696, 319);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_MenuPrincipal";

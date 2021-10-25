@@ -318,6 +318,11 @@ namespace TP_PAV_3K3_GRUPO2
             adm_suc.ShowDialog();
             adm_suc.Dispose();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
 

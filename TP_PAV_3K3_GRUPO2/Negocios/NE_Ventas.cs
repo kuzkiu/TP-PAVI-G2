@@ -59,6 +59,38 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
 
 
         }
+        public DataTable BuscarVentasPorMesPorSucursalEst(string fechadesde, string fechahasta)
+        {
+            //INNER JOIN Sucursal s ON  f.id_sucursal = s.id_sucursal
+
+            string sql = @"SELECT s.descripcion
+            , count(*) cant_factura
+            , sum(f.monto_total) monto_total
+            FROM Factura f
+            INNER JOIN Sucursal s ON  f.id_sucursal = s.id_sucursal
+            WHERE f.fecha_venta BETWEEN '" + fechadesde + "' AND '" + fechahasta + "'" +
+            "GROUP BY s.descripcion";
+            DataTable tabla = new DataTable();
+            return _BD.EjecutarSelect(sql);
+
+
+        }
+        public DataTable BuscarVentasPorMesPorEmpleadoEst(string fechadesde, string fechahasta)
+        {
+            //INNER JOIN Sucursal s ON  f.id_sucursal = s.id_sucursal
+
+            string sql = @"SELECT e.nombre
+            , count(*) cant_factura
+            , sum(f.monto_total) monto_total
+            FROM Factura f
+            INNER JOIN Empleado e ON  f.nro_doc_emp = e.nro_doc_emp
+            WHERE f.fecha_venta BETWEEN '" + fechadesde + "' AND '" + fechahasta + "'" +
+            "GROUP BY e.nombre";
+            DataTable tabla = new DataTable();
+            return _BD.EjecutarSelect(sql);
+
+
+        }
         public DataTable BuscarVentasPorMesPorEmpleado(string fechadesde, string fechahasta, int empleado)
         {
 

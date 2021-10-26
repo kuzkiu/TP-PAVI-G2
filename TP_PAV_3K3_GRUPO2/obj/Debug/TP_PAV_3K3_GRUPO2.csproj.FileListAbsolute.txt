@@ -231,3 +231,4 @@ C:\Users\Luz\Documents\GitHub\Repo\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\bin\Debug\zh-CHT
 C:\Users\Luz\Documents\GitHub\Repo\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.csproj.CopyComplete
 C:\Users\Luz\Documents\GitHub\Repo\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\RdlCompile.cache
 C:\Users\Luz\Documents\GitHub\Repo\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\RdlCompile.compiled
+C:\Users\Luz\Documents\GitHub\Repo\TP-PAVI-G2\TP_PAV_3K3_GRUPO2\obj\Debug\TP_PAV_3K3_GRUPO2.Formularios.Estadisticas.Ventas.Frm_EstVentas.resources

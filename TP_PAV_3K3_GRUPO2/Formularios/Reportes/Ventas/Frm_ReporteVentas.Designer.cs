@@ -227,6 +227,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas
             this.txt_mes2.Size = new System.Drawing.Size(82, 22);
             this.txt_mes2.TabIndex = 5;
             this.txt_mes2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_mes2.TextChanged += new System.EventHandler(this.txt_mes2_TextChanged);
             this.txt_mes2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_mes2_KeyPress);
             // 
             // label7

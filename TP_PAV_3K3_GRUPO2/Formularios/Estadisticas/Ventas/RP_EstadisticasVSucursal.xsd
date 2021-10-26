@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RP_EstadisticasVSucursal" targetNamespace="http://tempuri.org/RP_EstadisticasVSucursal.xsd" xmlns:mstns="http://tempuri.org/RP_EstadisticasVSucursal.xsd" xmlns="http://tempuri.org/RP_EstadisticasVSucursal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RP_EstadisticasVSucursal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RP_EstadisticasVSucursal" msprop:Generator_UserDSName="RP_EstadisticasVSucursal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="G_VSucursal" msprop:Generator_TableClassName="G_VSucursalDataTable" msprop:Generator_TableVarName="tableG_VSucursal" msprop:Generator_TablePropName="G_VSucursal" msprop:Generator_RowDeletingName="G_VSucursalRowDeleting" msprop:Generator_RowChangingName="G_VSucursalRowChanging" msprop:Generator_RowEvHandlerName="G_VSucursalRowChangeEventHandler" msprop:Generator_RowDeletedName="G_VSucursalRowDeleted" msprop:Generator_UserTableName="G_VSucursal" msprop:Generator_RowChangedName="G_VSucursalRowChanged" msprop:Generator_RowEvArgName="G_VSucursalRowChangeEvent" msprop:Generator_RowClassName="G_VSucursalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:int" minOccurs="0" />
+              <xs:element name="cant_factura" msprop:Generator_ColumnVarNameInTable="columncant_factura" msprop:Generator_ColumnPropNameInRow="cant_factura" msprop:Generator_ColumnPropNameInTable="cant_facturaColumn" msprop:Generator_UserColumnName="cant_factura" type="xs:int" minOccurs="0" />
+              <xs:element name="monto_total" msprop:Generator_ColumnVarNameInTable="columnmonto_total" msprop:Generator_ColumnPropNameInRow="monto_total" msprop:Generator_ColumnPropNameInTable="monto_totalColumn" msprop:Generator_UserColumnName="monto_total" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

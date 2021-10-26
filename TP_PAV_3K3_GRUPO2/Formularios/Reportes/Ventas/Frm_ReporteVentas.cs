@@ -69,7 +69,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas
             NE_Ventas venta = new NE_Ventas();
             DataTable tabla = new DataTable();
             int sucursal = Int32.Parse(cmb_sucursal.SelectedValue.ToString());
-            string fechadesde = "01/" + txt_mes.Text + "/"+ txt_anio.Text;
+            string fechadesde = "01/" + txt_mes.Text + "/" + txt_anio.Text;
             string fechahasta = "31/" + txt_mes.Text + "/" + txt_anio.Text;
             tabla = venta.BuscarVentasPorMesPorSucursal(fechadesde, fechahasta, sucursal);
 
@@ -169,6 +169,11 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas
             rv02.LocalReport.DataSources.Clear();
             rv02.LocalReport.DataSources.Add(datos);
             rv02.RefreshReport();
+        }
+
+        private void txt_mes2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

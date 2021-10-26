@@ -235,6 +235,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Marca\Frm_RegMarca.Designer.cs" />
+    <Compile Include="Formularios\Promociones\Frm_RegPromociones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Promociones\Frm_RegPromociones.Designer.cs">
+      <DependentUpon>Frm_RegPromociones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Reportes\Ventas\Frm_ReporteVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -364,6 +370,7 @@
     <Compile Include="Negocios\Ne_Cliente.cs" />
     <Compile Include="Negocios\NE_Empleados.cs" />
     <Compile Include="Negocios\Ne_Lista_de_Precios.cs" />
+    <Compile Include="Negocios\NE_Promociones.cs" />
     <Compile Include="Negocios\NE_Rubro.cs" />
     <Compile Include="Negocios\Ne_Sucursal.cs" />
     <Compile Include="Negocios\NE_TipoTelefono.cs" />
@@ -448,6 +455,9 @@
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Marca\Frm_RegMarca.resx" />
+    <EmbeddedResource Include="Formularios\Promociones\Frm_RegPromociones.resx">
+      <DependentUpon>Frm_RegPromociones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Ventas\Frm_ReporteVentas.resx">
       <DependentUpon>Frm_ReporteVentas.cs</DependentUpon>
     </EmbeddedResource>

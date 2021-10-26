@@ -58,7 +58,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.ListadePrecios
 
         private void Frm_Consultar_Listas_Load(object sender, EventArgs e)
         {
-            dtp_inicio.MaxDate = DateTime.Today;
+
         }
 
         private void dgw_listas_CellContentClick(object sender, DataGridViewCellEventArgs e)

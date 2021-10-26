@@ -21,22 +21,22 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
             return tabla_cuils;
         }
 
-        public DataTable Buscar_Listas(string cuil, string fecha_inicio, bool activa) 
+        public DataTable Buscar_Listas(string cuil, string fecha_inicio, bool activa)
         {
-            string sql="";
+            string sql = "";
             DataTable to_monkee = new DataTable();
-            if (cuil =="" && fecha_inicio == "" && activa == false) 
+            if (cuil == "" && fecha_inicio == "" && activa == false)
             {
-                 sql = @"SELECT L.cuil_cliente, L.id_lista_precios, L.fecha_inicio, L.fecha_fin
+                sql = @"SELECT L.cuil_cliente, L.id_lista_precios, L.fecha_inicio, L.fecha_fin
                             FROM Lista_de_precios L
                             WHERE L.alta_logica = 1";
             }
 
-            if (cuil != "" && activa == true && fecha_inicio=="") 
+            if (cuil != "" && activa == true && fecha_inicio == "")
             {
-                 sql = @"SELECT L.cuil_cliente, L.id_lista_precios, L.fecha_inicio, L.fecha_fin
+                sql = @"SELECT L.cuil_cliente, L.id_lista_precios, L.fecha_inicio, L.fecha_fin
                             FROM Lista_de_precios L
-                            WHERE L.alta_logica = 1 AND L.fecha_fin IS NULL AND L.cuil_cliente LIKE '%"+cuil+"%'";
+                            WHERE L.alta_logica = 1 AND L.fecha_fin IS NULL AND L.cuil_cliente LIKE '%" + cuil + "%'";
             }
 
             if (cuil == "" && activa == false && fecha_inicio != "")
@@ -54,32 +54,32 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
                             WHERE L.fecha_fin IS NULL AND L.alta_logica = 1";
             }
 
-            if (cuil =="" && fecha_inicio !="" && activa == true) 
-            {
-                 sql = @"SELECT L.cuil_cliente, L.id_lista_precios, L.fecha_inicio, L.fecha_fin
-                            FROM Lista_de_precios L
-                            WHERE L.fecha_fin IS NULL AND L.fecha_inicio >='"+ fecha_inicio+"' AND L.alta_logica = 1";
-            }
-
-            if (cuil != ""  && fecha_inicio == "" && activa == false)
+            if (cuil == "" && fecha_inicio != "" && activa == true)
             {
                 sql = @"SELECT L.cuil_cliente, L.id_lista_precios, L.fecha_inicio, L.fecha_fin
                             FROM Lista_de_precios L
-                            WHERE  L.alta_logica = 1 AND L.cuil_cliente LIKE '%"+cuil+"%' ";
+                            WHERE L.fecha_fin IS NULL AND L.fecha_inicio >='" + fecha_inicio + "' AND L.alta_logica = 1";
+            }
+
+            if (cuil != "" && fecha_inicio == "" && activa == false)
+            {
+                sql = @"SELECT L.cuil_cliente, L.id_lista_precios, L.fecha_inicio, L.fecha_fin
+                            FROM Lista_de_precios L
+                            WHERE  L.alta_logica = 1 AND L.cuil_cliente LIKE '%" + cuil + "%' ";
             }
             if (cuil != "" && fecha_inicio != "" && activa == false)
             {
                 sql = @"SELECT L.cuil_cliente, L.id_lista_precios, L.fecha_inicio, L.fecha_fin
                             FROM Lista_de_precios L 
                             WHERE L.fecha_inicio >='" + fecha_inicio + "' AND L.alta_logica = 1" +
-                            "AND L.cuil_cliente LIKE '%"+cuil+"%'";
+                            "AND L.cuil_cliente LIKE '%" + cuil + "%'";
             }
             if (cuil != "" && fecha_inicio != "" && activa == true)
             {
                 sql = @"SELECT L.cuil_cliente, L.id_lista_precios, L.fecha_inicio, L.fecha_fin
                             FROM Lista_de_precios L 
                             WHERE  L.fecha_inicio >= '" + fecha_inicio + "' " +
-                            "AND  L.alta_logica = 1 AND L.cuil_cliente LIKE '%"+cuil+"%' AND L.fecha_fin IS NULL ";
+                            "AND  L.alta_logica = 1 AND L.cuil_cliente LIKE '%" + cuil + "%' AND L.fecha_fin IS NULL ";
             }
             to_monkee = bd.Consulta(sql);
             return to_monkee;
@@ -104,7 +104,7 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
 
         }
 
-        public DataTable Buscar_cuils_Seleccion() 
+        public DataTable Buscar_cuils_Seleccion()
         {
             string sql = @"Select C.cuil_cliente
                         From Clientes C
@@ -113,35 +113,35 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
             return tabla_cuils;
         }
 
-        public String Buscar_Razon_Cliente(string cuil) 
+        public String Buscar_Razon_Cliente(string cuil)
         {
             string sql = @"SELECT C.razon_social
                         FROM Clientes C
-                        WHERE C.cuil_cliente ='"+cuil+"'";
+                        WHERE C.cuil_cliente ='" + cuil + "'";
             DataTable tabla_razon = bd.Consulta(sql);
-            return tabla_razon.Rows[0]["razon_social"].ToString();
+            return tabla_razon.Rows[0][0].ToString();
 
         }
 
-        public bool Buscar_id_existente(string id) 
+        public bool Buscar_id_existente(string id)
         {
             string sql = @"Select L.id_lista_precios
                           From Lista_de_precios L
-                           WHERE L.id_lista_precios ='"+id+"'";
+                           WHERE L.id_lista_precios ='" + id + "'";
             DataTable tabla = bd.Consulta(sql);
 
-            if (tabla.Rows.Count == 0) 
+            if (tabla.Rows.Count == 0)
             {
                 return false;
             }
 
-            else 
+            else
             {
                 return true;
             }
         }
 
-        public int Sugerir_id() 
+        public int Sugerir_id()
         {
             string sql = @"Select Max(L.id_lista_precios)
                         FROM Lista_de_precios L";
@@ -151,16 +151,16 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
             return (int)tabla.Rows[0][0] + 1;
         }
 
-        public DataTable Buscar_DatosArticulo(string id) 
+        public DataTable Buscar_DatosArticulo(string id)
         {
             string sql = @"SELECT A.descripcion, A.precio_venta
                         FROM ARTICULOS A
-                        WHERE id_articulo ='"+id+"'";
+                        WHERE id_articulo ='" + id + "'";
             DataTable tabla = bd.Consulta(sql);
             return tabla;
         }
 
-        public DataTable Buscar_IDArticulos() 
+        public DataTable Buscar_IDArticulos()
         {
             string sql = @"SELECT A.id_articulo
                             FROM Articulos A
@@ -170,32 +170,69 @@ namespace TP_PAV_3K3_GRUPO2.Negocios
             return tabla;
         }
 
-       
+
 
         //registramos fechafin de la lista vigente
 
-        public void Baja_lista_Anterior(string cuil) 
+        public void Baja_lista_Anterior(string cuil)
         {
             string sql = @"UPDATE Lista_de_precios 
                         SET fecha_fin = CONVERT(DATE, GETDATE())
-                        WHERE Lista_de_precios.cuil_cliente = '"+cuil+"' AND Lista_de_precios.fecha_fin IS NULL";
+                        WHERE Lista_de_precios.cuil_cliente = '" + cuil + "' AND Lista_de_precios.fecha_fin IS NULL";
             bd.Consulta(sql);
         }
 
         // registrar nueva lista
-        public void Reg_Nueva_Lista(string id, string cuil) 
+        public void Reg_Nueva_Lista(string id, string cuil)
         {
             string sql = @"INSERT INTO Lista_de_precios 
-                        VALUES ('"+id+ "', CONVERT(DATE, GETDATE()), NULL, 1, '"+cuil+"')";
+                        VALUES ('" + id + "', CONVERT(DATE, GETDATE()), NULL, 1, '" + cuil + "')";
             bd.Consulta(sql);
         }
 
         //registrar los detalles
-        public void Reg_detalle_lista(string id_lista, string id_articulo, string precio) 
+        public void Reg_detalle_lista(string id_lista, string id_articulo, string precio)
         {
             string sql = @"INSERT INTO Detalle_lista
-                         VALUES ('"+id_lista+"','"+id_articulo+"','"+precio+"',1)";
+                         VALUES ('" + id_lista + "','" + id_articulo + "','" + precio + "',1)";
             bd.Consulta(sql);
+        }
+
+        public DataTable Buscar_clientes_con_lista()
+        {
+            string sql = @"SELECT C.cuil_cliente
+                        FROM Clientes C, Lista_de_precios L 
+                        WHERE C.cuil_cliente = L.cuil_cliente AND C.alta_logica = 1  AND L.fecha_Fin IS NULL";
+            DataTable tabla = bd.Consulta(sql);
+            return tabla;
+        }
+
+        public string Buscar_Razon_Social(string id)
+        {
+            string sql = @"SELECT C.razon_social 
+                        FROM Clientes C
+                        WHERE C.cuil_cliente = '" + id + "'";
+            DataTable tabla = bd.Consulta(sql);
+            return tabla.Rows[0][0].ToString();
+        }
+        public DataTable Listas_de_un_cliente(string id)
+        {
+            string sql = @"SELECT L.id_lista_precios, CAST(L.fecha_inicio AS varchar) as fecha_inicio, CAST(L.fecha_fin AS varchar) as fecha_fin, COUNT(D.id_articulo) as Cantidad_Articulos
+                        FROM Lista_de_precios L, Detalle_lista D  
+                        WHERE D.id_lista = L.id_lista_precios AND L.cuil_cliente ='" + id +
+                        "' GROUP BY D.id_lista, L.id_lista_precios, L.fecha_inicio, L.fecha_fin";
+            DataTable tabla = bd.Consulta(sql);
+            return tabla;
+        }
+
+        public DataTable Buscar_Lista_Actual_Reporte(string id) 
+        {
+            string sql = @"Select A.id_articulo, A.descripcion, cast(D.precio_dif as int) AS precio_dif,cast( A.precio_venta as int) as precio_venta  
+                        FROM Articulos A, Detalle_lista D, Lista_de_precios L 
+                        WHERE A.id_articulo = D.id_articulo AND D.id_lista = L.id_lista_precios AND 
+                        L.cuil_cliente = '" + id+"' AND L.fecha_fin IS NULL";
+            DataTable tabla = bd.Consulta(sql);
+            return tabla;
         }
     }
 }

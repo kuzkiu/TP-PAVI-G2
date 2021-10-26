@@ -330,6 +330,13 @@ namespace TP_PAV_3K3_GRUPO2
             rep_ventas.ShowDialog();
             rep_ventas.Dispose();
         }
+
+        private void listasDePreciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ReporteListaDePrecios report_lista = new Frm_ReporteListaDePrecios();
+            report_lista.ShowDialog();
+            report_lista.Dispose();
+        }
     }
 }
 

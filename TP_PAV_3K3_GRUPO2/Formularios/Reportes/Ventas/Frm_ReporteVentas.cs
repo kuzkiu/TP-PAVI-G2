@@ -70,7 +70,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas
             DataTable tabla = new DataTable();
             int sucursal = Int32.Parse(cmb_sucursal.SelectedValue.ToString());
             string fechadesde = "01/" + txt_mes.Text + "/" + txt_anio.Text;
-            string fechahasta = "31/" + txt_mes.Text + "/" + txt_anio.Text;
+            string fechahasta = "28/" + txt_mes.Text + "/" + txt_anio.Text;
             tabla = venta.BuscarVentasPorMesPorSucursal(fechadesde, fechahasta, sucursal);
 
             ReportDataSource datos = new ReportDataSource("DataSet1", tabla);
@@ -161,7 +161,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.Reportes.Ventas
             DataTable tabla = new DataTable();
             int empleado = Int32.Parse(cmb_empleado.SelectedValue.ToString());
             string fechadesde = "01/" + txt_mes2.Text + "/" + txt_anio2.Text;
-            string fechahasta = "31/" + txt_mes2.Text + "/" + txt_anio2.Text;
+            string fechahasta = "28/" + txt_mes2.Text + "/" + txt_anio2.Text;
             tabla = venta.BuscarVentasPorMesPorEmpleado(fechadesde, fechahasta, empleado);
 
             ReportDataSource datos = new ReportDataSource("DataSet1", tabla);

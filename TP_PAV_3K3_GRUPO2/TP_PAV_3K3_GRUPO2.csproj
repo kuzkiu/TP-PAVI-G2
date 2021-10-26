@@ -219,6 +219,12 @@
     <Compile Include="Formularios\ListadePrecios\Frm_Registrar_Lista.Designer.cs">
       <DependentUpon>Frm_Registrar_Lista.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ListadePrecios\Frm_ReporteListaDePrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListadePrecios\Frm_ReporteListaDePrecios.Designer.cs">
+      <DependentUpon>Frm_ReporteListaDePrecios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Login\Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -433,6 +439,11 @@
     <EmbeddedResource Include="Formularios\ListadePrecios\Frm_Registrar_Lista.resx">
       <DependentUpon>Frm_Registrar_Lista.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListadePrecios\Frm_ReporteListaDePrecios.resx">
+      <DependentUpon>Frm_ReporteListaDePrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListadePrecios\Report1.rdlc" />
+    <EmbeddedResource Include="Formularios\ListadePrecios\Report2.rdlc" />
     <EmbeddedResource Include="Formularios\Login\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>

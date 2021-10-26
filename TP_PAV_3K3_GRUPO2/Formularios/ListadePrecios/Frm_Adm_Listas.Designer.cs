@@ -89,7 +89,7 @@ namespace TP_PAV_3K3_GRUPO2.Formularios.ListadePrecios
             this.dtp_inicio.Enabled = false;
             this.dtp_inicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_inicio.Location = new System.Drawing.Point(177, 80);
-            this.dtp_inicio.MaxDate = new System.DateTime(2021, 10, 12, 0, 0, 0, 0);
+            this.dtp_inicio.MaxDate = new System.DateTime(2021, 10, 8, 16, 32, 29, 0);
             this.dtp_inicio.Name = "dtp_inicio";
             this.dtp_inicio.Size = new System.Drawing.Size(144, 26);
             this.dtp_inicio.TabIndex = 11;
